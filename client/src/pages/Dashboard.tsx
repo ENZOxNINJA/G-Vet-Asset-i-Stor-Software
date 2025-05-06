@@ -69,7 +69,7 @@ const Dashboard = () => {
   return (
     <AppLayout>
       <div className="flex flex-col space-y-6">
-        <h2 className="text-3xl font-bold tracking-tight">Welcome to G-ASSET</h2>
+        <h2 className="text-3xl font-bold tracking-tight">Welcome to PLT ASSET</h2>
         <p className="text-muted-foreground">
           View and manage your organization's assets and inventory efficiently.
         </p>
