@@ -15,6 +15,9 @@ import AssetVerification from "@/pages/AssetVerification";
 import AssetMovement from "@/pages/AssetMovement";
 import AssetSearch from "@/pages/AssetSearch";
 import Suppliers from "@/pages/Suppliers";
+import FilterModal from "@/components/FilterModal";
+import DeleteConfirmationModal from "@/components/DeleteConfirmationModal";
+import ItemFormModal from "@/components/ItemFormModal";
 
 function Router() {
   return (
@@ -41,6 +44,10 @@ function App() {
             <InventoryProvider>
               <Toaster />
               <Router />
+              {/* Global Modals */}
+              <FilterModal />
+              <DeleteConfirmationModal />
+              <ItemFormModal />
             </InventoryProvider>
           </AssetProvider>
         </TooltipProvider>

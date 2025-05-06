@@ -1,27 +1,91 @@
+import { useState, useEffect } from "react";
 import { useMutation } from "@tanstack/react-query";
 import { useToast } from "@/hooks/use-toast";
+import {
+  AlertDialog,
+  AlertDialogAction,
+  AlertDialogCancel,
+  AlertDialogContent,
+  AlertDialogDescription,
+  AlertDialogFooter,
+  AlertDialogHeader,
+  AlertDialogTitle,
+} from "@/components/ui/alert-dialog";
 import { apiRequest, queryClient } from "@/lib/queryClient";
+import { useAsset } from "@/contexts/AssetContext";
 import { useInventory } from "@/contexts/InventoryContext";
-import { AlertDialog, AlertDialogAction, AlertDialogCancel, AlertDialogContent, AlertDialogDescription, AlertDialogFooter, AlertDialogHeader, AlertDialogTitle } from "./ui/alert-dialog";
-import { Trash2 } from "lucide-react";
 
 const DeleteConfirmationModal = () => {
   const { toast } = useToast();
-  const { 
-    isDeleteModalOpen, 
-    setIsDeleteModalOpen,
+  const [deleteType, setDeleteType] = useState<"asset" | "inventory">("asset");
+  
+  // Asset context
+  const {
+    isDeleteModalOpen: isAssetDeleteModalOpen,
+    setIsDeleteModalOpen: setIsAssetDeleteModalOpen,
+    assetToDelete,
+    setAssetToDelete,
+  } = useAsset();
+  
+  // Inventory context
+  const {
+    isDeleteModalOpen: isInventoryDeleteModalOpen,
+    setIsDeleteModalOpen: setIsInventoryDeleteModalOpen,
     itemToDelete,
-    setItemToDelete
+    setItemToDelete,
   } = useInventory();
 
-  const deleteMutation = useMutation({
+  // Determine which modal to show
+  const isOpen = isAssetDeleteModalOpen || isInventoryDeleteModalOpen;
+  
+  // Set the type of deletion based on context
+  useEffect(() => {
+    if (assetToDelete) {
+      setDeleteType("asset");
+    } else if (itemToDelete) {
+      setDeleteType("inventory");
+    }
+  }, [assetToDelete, itemToDelete]);
+
+  // Delete asset mutation
+  const deleteAssetMutation = useMutation({
     mutationFn: async (id: number) => {
-      await apiRequest('DELETE', `/api/inventory/${id}`);
+      const response = await apiRequest('DELETE', `/api/assets/${id}`);
+      if (!response.ok) {
+        throw new Error('Failed to delete asset');
+      }
+      return true;
     },
     onSuccess: () => {
       toast({
         title: "Success",
-        description: "Item deleted successfully",
+        description: "Asset deleted successfully",
+      });
+      queryClient.invalidateQueries({ queryKey: ['/api/assets'] });
+      handleClose();
+    },
+    onError: (error: any) => {
+      toast({
+        variant: "destructive",
+        title: "Error",
+        description: error.message || "Failed to delete asset",
+      });
+    },
+  });
+
+  // Delete inventory item mutation
+  const deleteInventoryMutation = useMutation({
+    mutationFn: async (id: number) => {
+      const response = await apiRequest('DELETE', `/api/inventory/${id}`);
+      if (!response.ok) {
+        throw new Error('Failed to delete inventory item');
+      }
+      return true;
+    },
+    onSuccess: () => {
+      toast({
+        title: "Success",
+        description: "Inventory item deleted successfully",
       });
       queryClient.invalidateQueries({ queryKey: ['/api/inventory'] });
       handleClose();
@@ -30,47 +94,64 @@ const DeleteConfirmationModal = () => {
       toast({
         variant: "destructive",
         title: "Error",
-        description: error.message || "Failed to delete item",
+        description: error.message || "Failed to delete inventory item",
       });
     },
   });
 
   const handleDelete = () => {
-    if (itemToDelete) {
-      deleteMutation.mutate(itemToDelete.id);
+    if (deleteType === "asset" && assetToDelete) {
+      deleteAssetMutation.mutate(assetToDelete.id);
+    } else if (deleteType === "inventory" && itemToDelete) {
+      deleteInventoryMutation.mutate(itemToDelete.id);
     }
   };
 
   const handleClose = () => {
-    setIsDeleteModalOpen(false);
-    setItemToDelete(null);
+    if (deleteType === "asset") {
+      setIsAssetDeleteModalOpen(false);
+      setAssetToDelete(null);
+    } else {
+      setIsInventoryDeleteModalOpen(false);
+      setItemToDelete(null);
+    }
   };
 
+  // Get the name of the item being deleted
+  const getItemName = () => {
+    if (deleteType === "asset" && assetToDelete) {
+      return assetToDelete.name;
+    } else if (deleteType === "inventory" && itemToDelete) {
+      return itemToDelete.name;
+    }
+    return "";
+  };
+
+  // Get the item type for the confirmation message
+  const getItemType = () => {
+    return deleteType === "asset" ? "asset" : "inventory item";
+  };
+
+  const isPending = deleteAssetMutation.isPending || deleteInventoryMutation.isPending;
+
   return (
-    <AlertDialog open={isDeleteModalOpen} onOpenChange={handleClose}>
+    <AlertDialog open={isOpen} onOpenChange={handleClose}>
       <AlertDialogContent>
         <AlertDialogHeader>
-          <div className="mx-auto flex items-center justify-center h-12 w-12 rounded-full bg-red-100 mb-4">
-            <Trash2 className="h-6 w-6 text-red-600" />
-          </div>
-          <AlertDialogTitle className="text-center">Delete Item</AlertDialogTitle>
-          <AlertDialogDescription className="text-center">
-            Are you sure you want to delete this item? This action cannot be undone.
+          <AlertDialogTitle>Are you sure?</AlertDialogTitle>
+          <AlertDialogDescription>
+            This will permanently delete the {getItemType()} <strong>{getItemName()}</strong>.
+            This action cannot be undone.
           </AlertDialogDescription>
         </AlertDialogHeader>
-        <AlertDialogFooter className="flex justify-center space-x-4">
-          <AlertDialogCancel 
-            className="mt-0"
-            disabled={deleteMutation.isPending}
-          >
-            Cancel
-          </AlertDialogCancel>
+        <AlertDialogFooter>
+          <AlertDialogCancel disabled={isPending}>Cancel</AlertDialogCancel>
           <AlertDialogAction 
-            className="bg-red-600 hover:bg-red-700 focus:ring-red-600"
             onClick={handleDelete}
-            disabled={deleteMutation.isPending}
+            disabled={isPending}
+            className="bg-destructive text-destructive-foreground hover:bg-destructive/90"
           >
-            {deleteMutation.isPending ? "Deleting..." : "Delete"}
+            {isPending ? "Deleting..." : "Delete"}
           </AlertDialogAction>
         </AlertDialogFooter>
       </AlertDialogContent>
