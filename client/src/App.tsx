@@ -7,11 +7,26 @@ import { InventoryProvider } from "./contexts/InventoryContext";
 import NotFound from "@/pages/not-found";
 import Inventory from "@/pages/Inventory";
 import { ThemeProvider } from "@/components/ui/theme-provider";
+import { AssetProvider } from "./contexts/AssetContext";
+import Dashboard from "@/pages/Dashboard";
+import Assets from "@/pages/Assets";
+import AssetRegistration from "@/pages/AssetRegistration";
+import AssetVerification from "@/pages/AssetVerification";
+import AssetMovement from "@/pages/AssetMovement";
+import AssetSearch from "@/pages/AssetSearch";
+import Suppliers from "@/pages/Suppliers";
 
 function Router() {
   return (
     <Switch>
-      <Route path="/" component={Inventory} />
+      <Route path="/" component={Dashboard} />
+      <Route path="/inventory" component={Inventory} />
+      <Route path="/assets" component={Assets} />
+      <Route path="/asset-registration" component={AssetRegistration} />
+      <Route path="/asset-verification" component={AssetVerification} />
+      <Route path="/asset-movement" component={AssetMovement} />
+      <Route path="/asset-search" component={AssetSearch} />
+      <Route path="/suppliers" component={Suppliers} />
       <Route component={NotFound} />
     </Switch>
   );
@@ -19,13 +34,15 @@ function Router() {
 
 function App() {
   return (
-    <ThemeProvider defaultTheme="light" storageKey="inventory-theme">
+    <ThemeProvider defaultTheme="light" storageKey="g-asset-theme">
       <QueryClientProvider client={queryClient}>
         <TooltipProvider>
-          <InventoryProvider>
-            <Toaster />
-            <Router />
-          </InventoryProvider>
+          <AssetProvider>
+            <InventoryProvider>
+              <Toaster />
+              <Router />
+            </InventoryProvider>
+          </AssetProvider>
         </TooltipProvider>
       </QueryClientProvider>
     </ThemeProvider>

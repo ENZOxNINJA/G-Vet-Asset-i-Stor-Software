@@ -15,6 +15,7 @@ import { useInventory } from "@/contexts/InventoryContext";
 import { inventoryItemFormSchema } from "@shared/schema";
 import { type InventoryItem } from "@shared/schema";
 import { Upload } from "lucide-react";
+import { useEffect } from "react";
 
 const ItemFormModal = () => {
   const { toast } = useToast();
@@ -41,7 +42,7 @@ const ItemFormModal = () => {
   });
 
   // Update form values when currentItem changes
-  React.useEffect(() => {
+  useEffect(() => {
     if (currentItem) {
       form.reset({
         name: currentItem.name,
