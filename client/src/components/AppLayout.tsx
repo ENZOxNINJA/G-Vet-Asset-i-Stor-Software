@@ -104,7 +104,7 @@ const AppLayout = ({ children }: AppLayoutProps) => {
             >
               <Menu className="h-6 w-6" />
             </Button>
-            <h1 className="text-xl font-bold">G-ASSET</h1>
+            <h1 className="text-xl font-bold">PLT ASSET</h1>
           </div>
           <div className="flex items-center space-x-2">
             <Button
@@ -139,7 +139,7 @@ const AppLayout = ({ children }: AppLayoutProps) => {
           >
             <div className="flex flex-col h-full">
               <div className="bg-primary text-primary-foreground p-4 flex items-center justify-between">
-                <h1 className="text-xl font-bold">G-ASSET</h1>
+                <h1 className="text-xl font-bold">PLT ASSET</h1>
                 <Button
                   variant="ghost"
                   size="icon"
@@ -208,7 +208,7 @@ const AppLayout = ({ children }: AppLayoutProps) => {
           )}
         >
           {sidebarOpen ? (
-            <h1 className="text-xl font-bold text-foreground">G-ASSET</h1>
+            <h1 className="text-xl font-bold text-foreground">PLT ASSET</h1>
           ) : null}
           <Button
             variant="ghost"

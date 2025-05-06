@@ -37,7 +37,7 @@ function Router() {
 
 function App() {
   return (
-    <ThemeProvider defaultTheme="light" storageKey="g-asset-theme">
+    <ThemeProvider defaultTheme="light" storageKey="plt-asset-theme">
       <QueryClientProvider client={queryClient}>
         <TooltipProvider>
           <AssetProvider>
