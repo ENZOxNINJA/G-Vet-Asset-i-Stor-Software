@@ -118,7 +118,7 @@ export class DatabaseStorage implements IStorage {
 
   async deleteInventoryItem(id: number): Promise<boolean> {
     const result = await db.delete(inventoryItems).where(eq(inventoryItems.id, id));
-    return result.rowCount > 0;
+    return result.rowCount !== null && result.rowCount > 0;
   }
 
   // Asset Operations
@@ -162,7 +162,7 @@ export class DatabaseStorage implements IStorage {
 
   async deleteAsset(id: number): Promise<boolean> {
     const result = await db.delete(assets).where(eq(assets.id, id));
-    return result.rowCount > 0;
+    return result.rowCount !== null && result.rowCount > 0;
   }
 
   // Supplier Operations
@@ -200,7 +200,7 @@ export class DatabaseStorage implements IStorage {
 
   async deleteSupplier(id: number): Promise<boolean> {
     const result = await db.delete(suppliers).where(eq(suppliers.id, id));
-    return result.rowCount > 0;
+    return result.rowCount !== null && result.rowCount > 0;
   }
 
   // Asset Movement Operations
@@ -243,7 +243,7 @@ export class DatabaseStorage implements IStorage {
 
   async deleteMovement(id: number): Promise<boolean> {
     const result = await db.delete(assetMovements).where(eq(assetMovements.id, id));
-    return result.rowCount > 0;
+    return result.rowCount !== null && result.rowCount > 0;
   }
 }
 

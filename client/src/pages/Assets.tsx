@@ -31,6 +31,7 @@ import {
 import { Input } from "@/components/ui/input";
 import { type Asset } from "@shared/schema";
 import { formatCurrency } from "@/lib/utils";
+import AssetFormModal from "@/components/AssetFormModal";
 
 const Assets = () => {
   const { toast } = useToast();
@@ -139,19 +140,22 @@ const Assets = () => {
   }) || [];
 
   const getStatusBadge = (status: string) => {
-    switch (status.toLowerCase()) {
-      case 'active':
-        return <Badge className="bg-green-100 text-green-800">Active</Badge>;
-      case 'maintenance':
-        return <Badge className="bg-yellow-100 text-yellow-800">Maintenance</Badge>;
-      case 'disposed':
-        return <Badge className="bg-red-100 text-red-800">Disposed</Badge>;
-      default:
-        return <Badge variant="outline">{status}</Badge>;
+    const statusLower = status.toLowerCase();
+    if (statusLower.includes('active') || statusLower.includes('in use')) {
+      return <Badge className="bg-green-100 text-green-800">{status}</Badge>;
+    } else if (statusLower.includes('storage')) {
+      return <Badge className="bg-blue-100 text-blue-800">{status}</Badge>;
+    } else if (statusLower.includes('maintenance')) {
+      return <Badge className="bg-yellow-100 text-yellow-800">{status}</Badge>;
+    } else if (statusLower.includes('disposed') || statusLower.includes('lost')) {
+      return <Badge className="bg-red-100 text-red-800">{status}</Badge>;
     }
+    return <Badge variant="outline">{status}</Badge>;
   };
 
-  const getConditionBadge = (condition: string) => {
+  const getConditionBadge = (condition: string | null) => {
+    if (!condition) return <Badge variant="outline">Unknown</Badge>;
+    
     switch (condition.toLowerCase()) {
       case 'good':
         return <Badge className="bg-green-100 text-green-800">Good</Badge>;
@@ -251,10 +255,10 @@ const Assets = () => {
                         <TableCell>{asset.name}</TableCell>
                         <TableCell>{asset.category}</TableCell>
                         <TableCell>{asset.type}</TableCell>
-                        <TableCell>{asset.department}</TableCell>
-                        <TableCell>{formatCurrency(parseFloat(asset.price.toString()))}</TableCell>
+                        <TableCell>{asset.department || '-'}</TableCell>
+                        <TableCell>{formatCurrency(Number(asset.price))}</TableCell>
                         <TableCell>{getStatusBadge(asset.status)}</TableCell>
-                        <TableCell>{getConditionBadge(asset.condition || 'Unknown')}</TableCell>
+                        <TableCell>{getConditionBadge(asset.condition)}</TableCell>
                         <TableCell className="text-right">
                           <div className="flex justify-end space-x-2">
                             <Button
@@ -285,6 +289,9 @@ const Assets = () => {
           </CardContent>
         </Card>
       </div>
+      
+      {/* Asset Form Modal */}
+      <AssetFormModal />
     </AppLayout>
   );
 };
