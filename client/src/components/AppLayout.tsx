@@ -94,7 +94,7 @@ const AppLayout = ({ children }: AppLayoutProps) => {
     return (
       <div className="flex flex-col min-h-screen bg-background">
         {/* Mobile Header */}
-        <header className="bg-primary text-primary-foreground px-4 py-2 flex items-center justify-between shadow-md">
+        <header className="header-gradient px-4 py-2 flex items-center justify-between shadow-md">
           <div className="flex items-center space-x-2">
             <Button
               variant="ghost"
@@ -138,7 +138,7 @@ const AppLayout = ({ children }: AppLayoutProps) => {
             onClick={(e) => e.stopPropagation()}
           >
             <div className="flex flex-col h-full">
-              <div className="bg-primary text-primary-foreground p-4 flex items-center justify-between">
+              <div className="header-gradient p-4 flex items-center justify-between">
                 <h1 className="text-xl font-bold">PLT ASSET</h1>
                 <Button
                   variant="ghost"
@@ -203,12 +203,12 @@ const AppLayout = ({ children }: AppLayoutProps) => {
         {/* Logo and Collapse Button */}
         <div
           className={cn(
-            "h-16 flex items-center px-4 border-b",
+            "h-16 flex items-center px-4 border-b header-gradient",
             sidebarOpen ? "justify-between" : "justify-center"
           )}
         >
           {sidebarOpen ? (
-            <h1 className="text-xl font-bold text-foreground">PLT ASSET</h1>
+            <h1 className="text-xl font-bold text-white">PLT ASSET</h1>
           ) : null}
           <Button
             variant="ghost"
@@ -283,18 +283,18 @@ const AppLayout = ({ children }: AppLayoutProps) => {
       {/* Main Content */}
       <div className="flex-1 flex flex-col">
         {/* Header */}
-        <header className="h-16 border-b border-border bg-background flex items-center justify-between px-6">
+        <header className="h-16 border-b border-border header-gradient flex items-center justify-between px-6">
           <div>
-            <h1 className="text-xl font-medium">
+            <h1 className="text-xl font-medium text-white">
               {menuItems.find((item) => item.path === location)?.title || "Dashboard"}
             </h1>
           </div>
           <div className="flex items-center space-x-4">
-            <Button variant="outline" size="sm">
+            <Button variant="outline" size="sm" className="bg-white/80 hover:bg-white">
               <Users className="h-4 w-4 mr-2" />
               <span>Admin</span>
             </Button>
-            <Button variant="ghost" size="icon">
+            <Button variant="ghost" size="icon" className="text-white hover:bg-white/20">
               <Settings className="h-5 w-5" />
             </Button>
           </div>
