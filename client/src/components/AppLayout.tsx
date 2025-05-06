@@ -152,23 +152,22 @@ const AppLayout = ({ children }: AppLayoutProps) => {
               <div className="flex-1 overflow-y-auto py-4">
                 <nav className="flex flex-col px-4 space-y-1">
                   {menuItems.map((item) => (
-                    <Link
+                    <div 
                       key={item.path}
-                      href={item.path}
-                      onClick={toggleMobileMenu}
+                      onClick={() => {
+                        window.location.href = item.path;
+                        toggleMobileMenu();
+                      }}
+                      className={cn(
+                        "flex items-center space-x-3 px-3 py-2 rounded-md text-sm font-medium cursor-pointer",
+                        location === item.path
+                          ? "bg-primary/10 text-primary"
+                          : "hover:bg-muted"
+                      )}
                     >
-                      <a
-                        className={cn(
-                          "flex items-center space-x-3 px-3 py-2 rounded-md text-sm font-medium",
-                          location === item.path
-                            ? "bg-primary/10 text-primary"
-                            : "hover:bg-muted"
-                        )}
-                      >
-                        {item.icon}
-                        <span>{item.title}</span>
-                      </a>
-                    </Link>
+                      {item.icon}
+                      <span>{item.title}</span>
+                    </div>
                   ))}
                 </nav>
               </div>
@@ -230,20 +229,19 @@ const AppLayout = ({ children }: AppLayoutProps) => {
           <ul className="space-y-2 px-4">
             {menuItems.map((item) => (
               <li key={item.path}>
-                <Link href={item.path}>
-                  <a
-                    className={cn(
-                      "flex items-center rounded-md px-3 py-2 text-sm font-medium transition-colors",
-                      location === item.path
-                        ? "bg-primary/10 text-primary"
-                        : "text-muted-foreground hover:bg-muted hover:text-foreground",
-                      !sidebarOpen && "justify-center"
-                    )}
-                  >
-                    {item.icon}
-                    {sidebarOpen && <span className="ml-3">{item.title}</span>}
-                  </a>
-                </Link>
+                <div
+                  className={cn(
+                    "flex items-center rounded-md px-3 py-2 text-sm font-medium transition-colors cursor-pointer",
+                    location === item.path
+                      ? "bg-primary/10 text-primary"
+                      : "text-muted-foreground hover:bg-muted hover:text-foreground",
+                    !sidebarOpen && "justify-center"
+                  )}
+                  onClick={() => window.location.href = item.path}
+                >
+                  {item.icon}
+                  {sidebarOpen && <span className="ml-3">{item.title}</span>}
+                </div>
               </li>
             ))}
           </ul>

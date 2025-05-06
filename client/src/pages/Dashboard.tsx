@@ -17,23 +17,41 @@ const Dashboard = () => {
   
   const { data: assets, isLoading: loadingAssets } = useQuery({
     queryKey: ['/api/assets'],
-    onError: () => {
-      toast({
-        variant: "destructive",
-        title: "Error",
-        description: "Failed to load assets data",
-      });
+    queryFn: async () => {
+      try {
+        const response = await fetch('/api/assets');
+        if (!response.ok) {
+          throw new Error('Failed to fetch assets');
+        }
+        return await response.json();
+      } catch (error) {
+        toast({
+          variant: "destructive",
+          title: "Error",
+          description: "Failed to load assets data",
+        });
+        throw error;
+      }
     }
   });
   
   const { data: inventory, isLoading: loadingInventory } = useQuery({
     queryKey: ['/api/inventory'],
-    onError: () => {
-      toast({
-        variant: "destructive",
-        title: "Error",
-        description: "Failed to load inventory data",
-      });
+    queryFn: async () => {
+      try {
+        const response = await fetch('/api/inventory');
+        if (!response.ok) {
+          throw new Error('Failed to fetch inventory');
+        }
+        return await response.json();
+      } catch (error) {
+        toast({
+          variant: "destructive",
+          title: "Error",
+          description: "Failed to load inventory data",
+        });
+        throw error;
+      }
     }
   });
 

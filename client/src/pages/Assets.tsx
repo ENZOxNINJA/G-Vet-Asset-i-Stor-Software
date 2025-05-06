@@ -47,12 +47,21 @@ const Assets = () => {
 
   const { data: assets, isLoading } = useQuery({
     queryKey: ['/api/assets'],
-    onError: () => {
-      toast({
-        variant: "destructive",
-        title: "Error",
-        description: "Failed to load assets",
-      });
+    queryFn: async () => {
+      try {
+        const response = await fetch('/api/assets');
+        if (!response.ok) {
+          throw new Error('Failed to fetch assets');
+        }
+        return await response.json();
+      } catch (error) {
+        toast({
+          variant: "destructive",
+          title: "Error",
+          description: "Failed to load assets",
+        });
+        throw error;
+      }
     },
   });
 

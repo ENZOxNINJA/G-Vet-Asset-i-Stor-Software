@@ -22,12 +22,21 @@ const Suppliers = () => {
 
   const { data: suppliers, isLoading } = useQuery({
     queryKey: ['/api/suppliers'],
-    onError: () => {
-      toast({
-        variant: "destructive",
-        title: "Error",
-        description: "Failed to load suppliers",
-      });
+    queryFn: async () => {
+      try {
+        const response = await fetch('/api/suppliers');
+        if (!response.ok) {
+          throw new Error('Failed to fetch suppliers');
+        }
+        return await response.json();
+      } catch (error) {
+        toast({
+          variant: "destructive",
+          title: "Error",
+          description: "Failed to load suppliers",
+        });
+        throw error;
+      }
     },
   });
 
