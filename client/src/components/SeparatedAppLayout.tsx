@@ -208,7 +208,7 @@ const AppLayout = ({ children }: AppLayoutProps) => {
               <div className="flex items-center gap-2 px-3 py-2">
                 <Building2 className="h-4 w-4" />
                 <span className="text-sm font-semibold text-gray-900">KEW.PA Framework</span>
-                <Badge variant="secondary" className="bg-blue-100 text-blue-700 text-xs">
+                <Badge variant="secondary" className="bg-primary/10 text-primary text-xs">
                   Asset Management
                 </Badge>
               </div>
@@ -219,7 +219,7 @@ const AppLayout = ({ children }: AppLayoutProps) => {
                       variant={isActive(item.path) ? "secondary" : "ghost"}
                       className={cn(
                         "w-full justify-start gap-3 h-auto py-3",
-                        isActive(item.path) && "bg-blue-100 text-blue-700"
+                        isActive(item.path) && "bg-primary/10 text-primary"
                       )}
                     >
                       {item.icon}
@@ -240,7 +240,7 @@ const AppLayout = ({ children }: AppLayoutProps) => {
               <div className="flex items-center gap-2 px-3 py-2">
                 <Warehouse className="h-4 w-4" />
                 <span className="text-sm font-semibold text-gray-900">KEW.PS Framework</span>
-                <Badge variant="secondary" className="bg-green-100 text-green-700 text-xs">
+                <Badge variant="secondary" className="bg-secondary/10 text-secondary text-xs">
                   Store Management
                 </Badge>
               </div>
@@ -251,7 +251,7 @@ const AppLayout = ({ children }: AppLayoutProps) => {
                       variant={isActive(item.path) ? "secondary" : "ghost"}
                       className={cn(
                         "w-full justify-start gap-3 h-auto py-3",
-                        isActive(item.path) && "bg-green-100 text-green-700"
+                        isActive(item.path) && "bg-secondary/10 text-secondary"
                       )}
                     >
                       {item.icon}
@@ -289,7 +289,7 @@ const AppLayout = ({ children }: AppLayoutProps) => {
             <Menu className="h-4 w-4" />
           </Button>
           <div className="flex items-center gap-2">
-            <Building2 className="h-5 w-5 text-blue-600" />
+            <Building2 className="h-5 w-5 text-primary" />
             <span className="font-semibold">KEW System</span>
           </div>
           <Button

@@ -88,9 +88,9 @@ const KEWPSDashboard = () => {
       <div className="container mx-auto p-6 max-w-7xl">
         <div className="mb-6">
           <div className="flex items-center gap-3 mb-2">
-            <Warehouse className="h-8 w-8 text-green-600" />
+            <Warehouse className="h-8 w-8 text-secondary" />
             <h1 className="text-3xl font-bold">KEW.PS Store Management</h1>
-            <Badge className="bg-green-100 text-green-700">Kewangan Pengurusan Stor</Badge>
+            <Badge className="bg-secondary/10 text-secondary">Kewangan Pengurusan Stor</Badge>
           </div>
           <p className="text-muted-foreground text-lg">
             Malaysian Government Store and Inventory Management Framework
