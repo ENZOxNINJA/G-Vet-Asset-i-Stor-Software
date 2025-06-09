@@ -12,6 +12,8 @@ import Dashboard from "@/pages/Dashboard";
 import Assets from "@/pages/Assets";
 import AssetRegistration from "@/pages/AssetRegistration";
 import AssetRegistrationKEWPA from "@/pages/AssetRegistrationKEWPA";
+import AssetInspection from "@/pages/AssetInspection";
+import AssetMaintenance from "@/pages/AssetMaintenance";
 import AssetVerification from "@/pages/AssetVerification";
 import AssetMovement from "@/pages/AssetMovement";
 import AssetSearch from "@/pages/AssetSearch";
@@ -28,6 +30,8 @@ function Router() {
       <Route path="/assets" component={Assets} />
       <Route path="/asset-registration" component={AssetRegistration} />
       <Route path="/asset-registration-kewpa" component={AssetRegistrationKEWPA} />
+      <Route path="/asset-inspection" component={AssetInspection} />
+      <Route path="/asset-maintenance" component={AssetMaintenance} />
       <Route path="/asset-verification" component={AssetVerification} />
       <Route path="/asset-movement" component={AssetMovement} />
       <Route path="/asset-search" component={AssetSearch} />

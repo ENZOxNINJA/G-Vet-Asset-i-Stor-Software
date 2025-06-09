@@ -3,7 +3,9 @@ import {
   assets, type Asset, type InsertAsset, type UpdateAsset,
   assetMovements, type AssetMovement, type InsertMovement, type UpdateMovement,
   suppliers, type Supplier, type InsertSupplier, type UpdateSupplier,
-  inventoryItems, type InventoryItem, type InsertInventoryItem, type UpdateInventoryItem
+  inventoryItems, type InventoryItem, type InsertInventoryItem, type UpdateInventoryItem,
+  assetInspections, type AssetInspection, type InsertAssetInspection,
+  assetMaintenanceRecords, type AssetMaintenanceRecord, type InsertAssetMaintenanceRecord
 } from "@shared/schema";
 import { db } from "./db";
 import { eq, desc, and, or, like, gte, lte } from "drizzle-orm";
@@ -46,6 +48,18 @@ export interface IStorage {
   createMovement(movement: InsertMovement): Promise<AssetMovement>;
   updateMovement(id: number, movement: UpdateMovement): Promise<AssetMovement | undefined>;
   deleteMovement(id: number): Promise<boolean>;
+
+  // Asset Inspection Operations (KEW.PA-11, KEW.PA-12, KEW.PA-13)
+  getAllInspections(): Promise<AssetInspection[]>;
+  getInspectionById(id: number): Promise<AssetInspection | undefined>;
+  createInspection(inspection: InsertAssetInspection): Promise<AssetInspection>;
+  updateInspection(id: number, inspection: Partial<InsertAssetInspection>): Promise<AssetInspection | undefined>;
+
+  // Asset Maintenance Operations (KEW.PA-14, KEW.PA-15, KEW.PA-16)
+  getAllMaintenanceRecords(): Promise<AssetMaintenanceRecord[]>;
+  getMaintenanceRecordById(id: number): Promise<AssetMaintenanceRecord | undefined>;
+  createMaintenanceRecord(record: InsertAssetMaintenanceRecord): Promise<AssetMaintenanceRecord>;
+  updateMaintenanceRecord(id: number, record: Partial<InsertAssetMaintenanceRecord>): Promise<AssetMaintenanceRecord | undefined>;
 }
 
 export class DatabaseStorage implements IStorage {
@@ -244,6 +258,92 @@ export class DatabaseStorage implements IStorage {
   async deleteMovement(id: number): Promise<boolean> {
     const result = await db.delete(assetMovements).where(eq(assetMovements.id, id));
     return result.rowCount !== null && result.rowCount > 0;
+  }
+
+  // Asset Inspection Operations (KEW.PA-11, KEW.PA-12, KEW.PA-13)
+  async getAllInspections(): Promise<AssetInspection[]> {
+    try {
+      return await db.select().from(assetInspections).orderBy(desc(assetInspections.createdAt));
+    } catch (error) {
+      console.error("Error fetching inspections:", error);
+      throw new Error("Failed to fetch inspections");
+    }
+  }
+
+  async getInspectionById(id: number): Promise<AssetInspection | undefined> {
+    try {
+      const result = await db.select().from(assetInspections).where(eq(assetInspections.id, id));
+      return result[0];
+    } catch (error) {
+      console.error("Error fetching inspection:", error);
+      throw new Error("Failed to fetch inspection");
+    }
+  }
+
+  async createInspection(inspection: InsertAssetInspection): Promise<AssetInspection> {
+    try {
+      const result = await db.insert(assetInspections).values(inspection).returning();
+      return result[0];
+    } catch (error) {
+      console.error("Error creating inspection:", error);
+      throw new Error("Failed to create inspection");
+    }
+  }
+
+  async updateInspection(id: number, inspection: Partial<InsertAssetInspection>): Promise<AssetInspection | undefined> {
+    try {
+      const result = await db.update(assetInspections)
+        .set(inspection)
+        .where(eq(assetInspections.id, id))
+        .returning();
+      return result[0];
+    } catch (error) {
+      console.error("Error updating inspection:", error);
+      throw new Error("Failed to update inspection");
+    }
+  }
+
+  // Asset Maintenance Operations (KEW.PA-14, KEW.PA-15, KEW.PA-16)
+  async getAllMaintenanceRecords(): Promise<AssetMaintenanceRecord[]> {
+    try {
+      return await db.select().from(assetMaintenanceRecords).orderBy(desc(assetMaintenanceRecords.createdAt));
+    } catch (error) {
+      console.error("Error fetching maintenance records:", error);
+      throw new Error("Failed to fetch maintenance records");
+    }
+  }
+
+  async getMaintenanceRecordById(id: number): Promise<AssetMaintenanceRecord | undefined> {
+    try {
+      const result = await db.select().from(assetMaintenanceRecords).where(eq(assetMaintenanceRecords.id, id));
+      return result[0];
+    } catch (error) {
+      console.error("Error fetching maintenance record:", error);
+      throw new Error("Failed to fetch maintenance record");
+    }
+  }
+
+  async createMaintenanceRecord(record: InsertAssetMaintenanceRecord): Promise<AssetMaintenanceRecord> {
+    try {
+      const result = await db.insert(assetMaintenanceRecords).values(record).returning();
+      return result[0];
+    } catch (error) {
+      console.error("Error creating maintenance record:", error);
+      throw new Error("Failed to create maintenance record");
+    }
+  }
+
+  async updateMaintenanceRecord(id: number, record: Partial<InsertAssetMaintenanceRecord>): Promise<AssetMaintenanceRecord | undefined> {
+    try {
+      const result = await db.update(assetMaintenanceRecords)
+        .set(record)
+        .where(eq(assetMaintenanceRecords.id, id))
+        .returning();
+      return result[0];
+    } catch (error) {
+      console.error("Error updating maintenance record:", error);
+      throw new Error("Failed to update maintenance record");
+    }
   }
 }
 

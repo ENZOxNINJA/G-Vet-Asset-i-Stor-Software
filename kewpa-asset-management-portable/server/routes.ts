@@ -624,6 +624,142 @@ export async function registerRoutes(app: Express): Promise<Server> {
     }
   });
 
+  // =========== Asset Inspection Routes (KEW.PA-11, KEW.PA-12, KEW.PA-13) ===========
+  
+  // Get all inspections
+  app.get("/api/inspections", async (_req: Request, res: Response) => {
+    try {
+      const inspections = await storage.getAllInspections();
+      res.json(inspections);
+    } catch (error) {
+      console.error("Error fetching inspections:", error);
+      res.status(500).json({ message: "Failed to fetch inspections" });
+    }
+  });
+
+  // Get inspection by ID
+  app.get("/api/inspections/:id", async (req: Request, res: Response) => {
+    try {
+      const id = parseInt(req.params.id, 10);
+      
+      if (isNaN(id)) {
+        return res.status(400).json({ message: "Invalid ID format" });
+      }
+      
+      const inspection = await storage.getInspectionById(id);
+      
+      if (!inspection) {
+        return res.status(404).json({ message: "Inspection not found" });
+      }
+      
+      res.json(inspection);
+    } catch (error) {
+      console.error("Error fetching inspection:", error);
+      res.status(500).json({ message: "Failed to fetch inspection" });
+    }
+  });
+
+  // Create new inspection
+  app.post("/api/inspections", async (req: Request, res: Response) => {
+    try {
+      const inspection = await storage.createInspection(req.body);
+      res.status(201).json(inspection);
+    } catch (error) {
+      console.error("Error creating inspection:", error);
+      res.status(500).json({ message: "Failed to create inspection" });
+    }
+  });
+
+  // Update inspection
+  app.patch("/api/inspections/:id", async (req: Request, res: Response) => {
+    try {
+      const id = parseInt(req.params.id, 10);
+      
+      if (isNaN(id)) {
+        return res.status(400).json({ message: "Invalid ID format" });
+      }
+      
+      const inspection = await storage.updateInspection(id, req.body);
+      
+      if (!inspection) {
+        return res.status(404).json({ message: "Inspection not found" });
+      }
+      
+      res.json(inspection);
+    } catch (error) {
+      console.error("Error updating inspection:", error);
+      res.status(500).json({ message: "Failed to update inspection" });
+    }
+  });
+
+  // =========== Asset Maintenance Routes (KEW.PA-14, KEW.PA-15, KEW.PA-16) ===========
+  
+  // Get all maintenance records
+  app.get("/api/maintenance", async (_req: Request, res: Response) => {
+    try {
+      const maintenanceRecords = await storage.getAllMaintenanceRecords();
+      res.json(maintenanceRecords);
+    } catch (error) {
+      console.error("Error fetching maintenance records:", error);
+      res.status(500).json({ message: "Failed to fetch maintenance records" });
+    }
+  });
+
+  // Get maintenance record by ID
+  app.get("/api/maintenance/:id", async (req: Request, res: Response) => {
+    try {
+      const id = parseInt(req.params.id, 10);
+      
+      if (isNaN(id)) {
+        return res.status(400).json({ message: "Invalid ID format" });
+      }
+      
+      const maintenance = await storage.getMaintenanceRecordById(id);
+      
+      if (!maintenance) {
+        return res.status(404).json({ message: "Maintenance record not found" });
+      }
+      
+      res.json(maintenance);
+    } catch (error) {
+      console.error("Error fetching maintenance record:", error);
+      res.status(500).json({ message: "Failed to fetch maintenance record" });
+    }
+  });
+
+  // Create new maintenance request
+  app.post("/api/maintenance", async (req: Request, res: Response) => {
+    try {
+      const maintenance = await storage.createMaintenanceRecord(req.body);
+      res.status(201).json(maintenance);
+    } catch (error) {
+      console.error("Error creating maintenance request:", error);
+      res.status(500).json({ message: "Failed to create maintenance request" });
+    }
+  });
+
+  // Update maintenance record
+  app.patch("/api/maintenance/:id", async (req: Request, res: Response) => {
+    try {
+      const id = parseInt(req.params.id, 10);
+      
+      if (isNaN(id)) {
+        return res.status(400).json({ message: "Invalid ID format" });
+      }
+      
+      const maintenance = await storage.updateMaintenanceRecord(id, req.body);
+      
+      if (!maintenance) {
+        return res.status(404).json({ message: "Maintenance record not found" });
+      }
+      
+      res.json(maintenance);
+    } catch (error) {
+      console.error("Error updating maintenance record:", error);
+      res.status(500).json({ message: "Failed to update maintenance record" });
+    }
+  });
+
   const httpServer = createServer(app);
   return httpServer;
 }

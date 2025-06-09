@@ -3,7 +3,9 @@ import {
   assets, type Asset, type InsertAsset, type UpdateAsset,
   assetMovements, type AssetMovement, type InsertMovement, type UpdateMovement,
   suppliers, type Supplier, type InsertSupplier, type UpdateSupplier,
-  inventoryItems, type InventoryItem, type InsertInventoryItem, type UpdateInventoryItem
+  inventoryItems, type InventoryItem, type InsertInventoryItem, type UpdateInventoryItem,
+  assetInspections, type AssetInspection, type InsertAssetInspection,
+  assetMaintenanceRecords, type AssetMaintenanceRecord, type InsertAssetMaintenanceRecord
 } from "@shared/schema";
 import { db } from "./db";
 import { eq, desc, and, or, like, gte, lte } from "drizzle-orm";
