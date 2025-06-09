@@ -18,8 +18,11 @@ import {
   Menu,
   X,
   Building2,
-  Warehouse
+  Warehouse,
+  Command
 } from "lucide-react";
+import QuickSearch from "@/components/QuickSearch";
+import { useQuickSearch } from "@/hooks/useQuickSearch";
 
 type AppLayoutProps = {
   children: ReactNode;
@@ -111,6 +114,7 @@ const kewpsNavigation = [
 const AppLayout = ({ children }: AppLayoutProps) => {
   const [location] = useLocation();
   const [sidebarOpen, setSidebarOpen] = useState(false);
+  const { isOpen, openSearch, closeSearch } = useQuickSearch();
 
   const isActive = (path: string) => {
     if (path === "/" && location === "/") return true;
@@ -288,7 +292,34 @@ const AppLayout = ({ children }: AppLayoutProps) => {
             <Building2 className="h-5 w-5 text-blue-600" />
             <span className="font-semibold">KEW System</span>
           </div>
-          <div />
+          <Button
+            variant="ghost"
+            size="sm"
+            onClick={openSearch}
+            className="flex items-center gap-2"
+          >
+            <Search className="h-4 w-4" />
+          </Button>
+        </div>
+
+        {/* Desktop header - Quick Search */}
+        <div className="hidden lg:flex h-16 items-center justify-between border-b bg-white px-6">
+          <div className="flex-1" />
+          <div className="flex items-center gap-4">
+            <Button
+              variant="outline"
+              onClick={openSearch}
+              className="flex items-center gap-2 min-w-64 justify-start text-muted-foreground"
+            >
+              <Search className="h-4 w-4" />
+              <span>Search everything...</span>
+              <div className="ml-auto flex items-center gap-1">
+                <kbd className="pointer-events-none inline-flex h-5 select-none items-center gap-1 rounded border bg-muted px-1.5 font-mono text-[10px] font-medium text-muted-foreground opacity-100">
+                  <Command className="h-3 w-3" />K
+                </kbd>
+              </div>
+            </Button>
+          </div>
         </div>
 
         {/* Page content */}
@@ -296,6 +327,9 @@ const AppLayout = ({ children }: AppLayoutProps) => {
           {children}
         </main>
       </div>
+
+      {/* Quick Search Modal */}
+      <QuickSearch isOpen={isOpen} onClose={closeSearch} />
     </div>
   );
 };

@@ -1,7 +1,8 @@
+import { useState, useEffect, useMemo } from "react";
 import { useQuery } from "@tanstack/react-query";
 import { useToast } from "@/hooks/use-toast";
 import { useAsset } from "@/contexts/AssetContext";
-import AppLayout from "@/components/AppLayout";
+import AppLayout from "@/components/SeparatedAppLayout";
 import { Button } from "@/components/ui/button";
 import { 
   Table, 
@@ -26,25 +27,26 @@ import {
   Loader2, 
   FileText,
   Pencil,
-  Trash2 
+  Trash2,
+  Eye,
+  Star
 } from "lucide-react";
-import { Input } from "@/components/ui/input";
 import { type Asset } from "@shared/schema";
-import { formatCurrency } from "@/lib/utils";
+import { formatCurrency, cn } from "@/lib/utils";
 import AssetFormModal from "@/components/AssetFormModal";
+import InstantFilter from "@/components/InstantFilter";
 
 const Assets = () => {
   const { toast } = useToast();
   const {
-    searchQuery,
-    setSearchQuery,
-    setIsFilterModalOpen,
-    filter,
     setCurrentAsset,
     setIsAssetFormOpen,
     setIsDeleteModalOpen,
     setAssetToDelete,
   } = useAsset();
+  
+  const [filteredAssets, setFilteredAssets] = useState<Asset[]>([]);
+  const [highlightedAssetId, setHighlightedAssetId] = useState<string | null>(null);
 
   const { data: assets, isLoading } = useQuery({
     queryKey: ['/api/assets'],
