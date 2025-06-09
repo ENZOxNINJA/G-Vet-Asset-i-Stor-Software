@@ -50,6 +50,12 @@ const generalNavigation = [
 
 const kewpaNavigation = [
   {
+    title: "KEW.PA Dashboard",
+    subtitle: "Asset Management Overview",
+    icon: <Building2 className="h-5 w-5" />,
+    path: "/kewpa",
+  },
+  {
     title: "Asset Registration",
     subtitle: "KEW.PA-1, 2, 3",
     icon: <Clipboard className="h-5 w-5" />,
@@ -89,9 +95,15 @@ const kewpaNavigation = [
 
 const kewpsNavigation = [
   {
-    title: "Store Management",
-    subtitle: "Complete KEW.PS System",
+    title: "KEW.PS Dashboard",
+    subtitle: "Store Management Overview",
     icon: <Warehouse className="h-5 w-5" />,
+    path: "/kewps",
+  },
+  {
+    title: "Store Operations",
+    subtitle: "Complete KEW.PS System",
+    icon: <Package className="h-5 w-5" />,
     path: "/store-management-kewps",
   },
 ];

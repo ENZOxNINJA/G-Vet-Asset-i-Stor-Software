@@ -11,6 +11,8 @@ import { AssetProvider } from "./contexts/AssetContext";
 import Dashboard from "@/pages/Dashboard";
 import Assets from "@/pages/Assets";
 import AssetRegistration from "@/pages/AssetRegistration";
+import KEWPADashboard from "@/pages/KEWPADashboard";
+import KEWPSDashboard from "@/pages/KEWPSDashboard";
 import AssetRegistrationKEWPA from "@/pages/AssetRegistrationKEWPA";
 import AssetInspection from "@/pages/AssetInspection";
 import AssetMaintenance from "@/pages/AssetMaintenance";
@@ -29,15 +31,20 @@ function Router() {
       <Route path="/" component={Dashboard} />
       <Route path="/inventory" component={Inventory} />
       <Route path="/assets" component={Assets} />
-      <Route path="/asset-registration" component={AssetRegistration} />
+      <Route path="/suppliers" component={Suppliers} />
+      
+      {/* KEW.PA Framework Routes */}
+      <Route path="/kewpa" component={KEWPADashboard} />
       <Route path="/asset-registration-kewpa" component={AssetRegistrationKEWPA} />
       <Route path="/asset-inspection" component={AssetInspection} />
       <Route path="/asset-maintenance" component={AssetMaintenance} />
       <Route path="/asset-verification" component={AssetVerification} />
       <Route path="/asset-movement" component={AssetMovement} />
       <Route path="/asset-search" component={AssetSearch} />
+      
+      {/* KEW.PS Framework Routes */}
+      <Route path="/kewps" component={KEWPSDashboard} />
       <Route path="/store-management-kewps" component={StoreManagementKEWPS} />
-      <Route path="/suppliers" component={Suppliers} />
       <Route component={NotFound} />
     </Switch>
   );
