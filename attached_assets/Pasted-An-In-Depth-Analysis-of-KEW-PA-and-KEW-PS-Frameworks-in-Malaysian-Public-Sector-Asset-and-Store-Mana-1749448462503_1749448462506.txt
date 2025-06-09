@@ -1,0 +1,504 @@
+An In-Depth Analysis of KEW.PA and KEW.PS Frameworks in Malaysian Public Sector Asset and Store Management
+I. Introduction to KEW.PA and KEW.PS
+A. Overview of Malaysian Government Asset and Store Management Frameworks
+The Malaysian government employs two primary procedural frameworks to ensure the systematic and accountable management of its physical resources. These are the Tatacara Pengurusan Aset Alih Kerajaan (TPA), which governs movable government assets and utilizes the KEW.PA series of forms, and the Tatacara Pengurusan Stor (TPS), which pertains to the management of government stores and inventory and utilizes the KEW.PS series of forms. These comprehensive frameworks are fundamental to public sector accountability, providing a standardized methodology for the lifecycle management of assets and stores. Their implementation is crucial for ensuring that public resources are acquired, utilized, maintained, and disposed of efficiently, transparently, and in accordance with established national guidelines.   
+
+B. Governing Authority: Perbendaharaan Malaysia (Malaysian Treasury)
+The central governing authority responsible for the issuance, oversight, and enforcement of both the TPA and TPS is Perbendaharaan Malaysia (the Malaysian Treasury). This centralized authority ensures that a uniform set of standards and procedures for asset and store management is applied consistently across all federal ministries, departments, and agencies. The Malaysian Treasury's role is pivotal in maintaining the integrity of these systems, updating them as necessary, and ensuring compliance. This centralized control mechanism is critical for achieving national objectives related to public financial management, resource optimization, and accountability. The standardization imposed by the Treasury facilitates more straightforward auditing processes, enables comparative performance analysis between different government entities, and fosters a consistent approach to resource accountability, thereby minimizing discrepancies and the potential for misuse of public funds or property.   
+
+C. The Drive Towards Digitalization in Asset and Store Management
+The Malaysian government has evidently embarked on a significant initiative to digitize its asset and store management processes. This is demonstrated by the development and implementation of various IT systems designed to support the TPA and TPS frameworks. User manuals for systems such as G-Asset, iAset, the Sistem Pengurusan Stor (SPS), and the Fixed Assets Management System (FAMS) explicitly detail how KEW.PA and KEW.PS procedures are executed within a digital environment. These systems aim to translate the traditionally manual, paper-based KEW.PA and KEW.PS procedures into automated and streamlined workflows. The objectives behind this digital transformation include enhancing operational efficiency, improving the accuracy and timeliness of data, enabling real-time monitoring and reporting capabilities, and ultimately strengthening overall governance and control over public assets and stores. This strategic shift towards digitalization reflects a broader trend in public sector modernization, aiming to leverage technology to overcome the inherent limitations of manual processes, such as susceptibility to errors, operational delays, and a lack of immediate visibility into asset and store status. Furthermore, these digital platforms facilitate better data collection and analysis, which can inform strategic decision-making, enhance the auditability of transactions, and support more robust control mechanisms over government resources.   
+
+II. Tatacara Pengurusan Aset Alih Kerajaan (TPA) - The KEW.PA Framework
+A. Core Objectives and Justifications of TPA
+The Tatacara Pengurusan Aset Alih Kerajaan (TPA) provides a comprehensive set of procedures for managing Harta Modal (Capital Assets) and Aset Alih Bernilai Rendah (Low-Value Movable Assets) throughout their entire lifecycle. This lifecycle encompasses Penerimaan (Receipt), Pendaftaran (Registration), Penggunaan (Usage), Penyimpanan (Storage), Pemeriksaan (Inspection), Penyelenggaraan (Maintenance), Pindahan (Transfer), Pelupusan (Disposal), and Kehilangan dan Hapus Kira (Loss and Write-Off). The overarching goal of the TPA is to ensure that all government movable assets are managed in an accountable, efficient, and economically sound manner, maximizing their utility and value to the public sector.   
+
+The specific objectives of the TPA vary across the different stages of an asset's lifecycle:
+
+Penerimaan (Receipt): The primary objectives during the receipt stage are to ensure that every movable asset accepted by a government agency strictly adheres to the specifications stipulated in the procurement documents, to verify the actual quality and quantity of the assets against the order, and to confirm that the assets are received in good, complete, and safe condition for their intended use.   
+Pendaftaran (Registration): Asset registration aims to establish a comprehensive, accurate, and current database of all government movable assets. This database facilitates easy tracking and monitoring of assets, provides clear information on the current condition of each asset, and simplifies subsequent processes such as maintenance, disposal, and replacement planning.   
+Penggunaan, Penyimpanan, Pemeriksaan (Usage, Storage, Inspection): The objectives for these stages are to minimize wastage, reduce operational costs, ensure assets achieve their expected lifespan, prevent misuse or unauthorized use, and avoid loss or damage due to negligence or improper handling.   
+Penyelenggaraan (Maintenance): Maintenance procedures are designed to ensure that assets function smoothly and continuously as intended, are safe for users, and that their operational lifespan is preserved and, where possible, extended. Effective maintenance also aims to enhance asset capability, reduce the incidence of breakdowns and damage, achieve maximum durability in line with expenditure, generate savings for the government by avoiding costly repairs or premature replacements, ensure user safety, create a conducive and productive working environment, and uphold the image of the government through well-maintained public property.   
+Pelupusan (Disposal): The disposal process is guided by objectives such as ensuring that government agencies do not retain assets that are unusable, no longer needed, or uneconomical to maintain. It also aims to free up valuable storage or office space, generate revenue for the government through sales where feasible, and ensure that the chosen disposal methods are environmentally friendly and sustainable.   
+Kehilangan dan Hapus Kira (Loss and Write-Off): When assets are lost, the objectives of the write-off process are to accurately reconcile asset records, control and account for the financial losses incurred by the government, increase awareness and responsibility among public officials regarding the importance of asset security, and provide a basis for imposing surcharges or initiating disciplinary actions against negligent officers.   
+The TPA also outlines specific justifications for the disposal of movable assets. These include situations where an asset is deemed uneconomical to repair, has become obsolete due to technological advancements or changes in operational needs, is damaged beyond repair and unusable, has reached the end of its prescribed useful life, its operational capability is no longer at an optimal level, necessary spare parts are no longer available in the market, the original supplier or manufacturer no longer provides support services, the asset is no longer required by the department, or the quantity of the asset held exceeds current or foreseeable requirements.   
+
+Many of these TPA objectives and disposal justifications directly emphasize prudent financial management and robust accountability. For instance, the objective of "menjimatkan perbelanjaan Kerajaan" (saving Government expenditure) in maintenance and "menjana hasil" (generating revenue) in disposal highlight economic efficiency. Similarly, the aim to "mewujudkan pangkalan data yang lengkap" (create a complete database) for registration and "mengawal kerugian Kerajaan" (control Government losses) for loss and write-off underscores a strong accountability focus. The detailed justifications for disposal, such as an asset being uneconomical to repair, further reinforce this. This indicates that the TPA framework is not merely a set of administrative procedures but a critical instrument for enforcing fiscal discipline and ensuring the responsible stewardship of public funds invested in movable assets. Each step within the TPA is designed to ensure value for money and to hold public officials accountable for the assets under their care.
+
+B. Key Asset Classifications
+A fundamental aspect of the TPA is the classification of Aset Alih (Movable Assets) based on their acquisition value. Aset Alih are defined as assets or equipment that can be easily moved or transferred from one place to another, including those supplied as part of building or infrastructure projects. These are primarily categorized into:   
+
+Harta Modal (Capital Assets / Capitalized Movable Asset): These are movable assets with an original acquisition price of RM2,000 (Ringgit Malaysia Two Thousand) or more per unit.   
+Aset Alih Bernilai Rendah (Low-Value Movable Asset / Non-Capitalized Movable Asset): These are movable assets with an original acquisition price of less than RM2,000 (Ringgit Malaysia Two Thousand) per unit.   
+This financial threshold of RM2,000 is a critical demarcation point within the TPA. It dictates the specific registration forms to be used—KEW.PA-3 for Harta Modal and KEW.PA-4 for Aset Alih Bernilai Rendah—and often influences the intensity and rigor of subsequent management processes throughout the asset's lifecycle. The consistent application of this RM2,000 threshold is evident across various government asset management system manuals, such as those for G-Asset and iAset. These systems typically feature distinct workflows or data fields for "Harta Modal" versus "Aset Alih Bernilai Rendah." For example, the G-Asset system's "Modul Pengesahan Daftar Aset" (Asset Registration Confirmation Module) includes separate sub-modules for "Menunggu Pengesahan Harta Modal" (Awaiting Confirmation of Capital Assets) and "Menunggu Pengesahan Aset Bernilai Rendah" (Awaiting Confirmation of Low-Value Assets).   
+
+The implication of this classification is that assets designated as Harta Modal are generally subjected to more rigorous scrutiny, more detailed record-keeping (including the registration of components and accessories in Bahagian B of the KEW.PA-3 form), and potentially stricter controls throughout their operational life due to their higher financial value and capital nature. This tiered approach allows government agencies to concentrate more intensive management efforts and resources on higher-value assets, while adopting a more streamlined process for lower-value items.
+
+However, it is pertinent to consider the potential long-term effects of a fixed monetary threshold like RM2,000. If this threshold has remained static for a considerable period (the provided documents do not specify its date of inception or last review), the general effects of price inflation could lead to a phenomenon often termed "bracket creep." Over time, an increasing number of newly acquired assets might surpass this fixed value, thereby qualifying as Harta Modal even if their intrinsic nature or complexity has not changed significantly. For instance, an item that cost RM1,800 several years ago might now cost RM2,200 due to inflation, shifting it from the Aset Alih Bernilai Rendah category to Harta Modal. Without periodic review and recalibration of this threshold to account for economic changes, government agencies might face a progressively increasing administrative burden as a larger proportion of their new acquisitions fall into the more stringently managed Harta Modal category. This could potentially strain the resources allocated for asset registration and management unless the processes are exceptionally efficient or the threshold is adjusted.
+
+C. KEW.PA Forms and Procedures Across the Asset Lifecycle
+The TPA framework is operationalized through a series of standardized forms, designated with the prefix "KEW.PA." These forms document key events and information at each stage of an asset's life.
+
+1. Penerimaan (Receipt)
+
+KEW.PA-1 (Borang Penerimaan Aset Alih - Movable Asset Receipt Form)
+
+Purpose: This is the official form used to document and confirm the acceptance of movable assets by a government agency. It is completed after the assets have been received and thoroughly inspected to ensure they comply with the stipulated specifications, quantity, and quality standards.   
+Content: The KEW.PA-1 form captures essential details including the name and address of the supplier or giver, information from the Pesanan Kerajaan (Government Order) or contract, details from the Nota Hantaran (Delivery Order), transportation information, a description of the asset(s), quantities (ordered, delivered, and received), and requires the signatures of the designated Pegawai Penerima (Receiving Officer) and, if the asset is technical in nature, a Pegawai Teknikal (Technical Officer).   
+System Implementation: Asset management systems like G-Asset and iAset incorporate a "Modul Penerimaan" (Receipt Module). Within this module, users are guided to input all relevant reception details, such as L.O. number, D.O. number, supplier information, and specific details of the assets received. Upon completion and verification of this data, the system is capable of generating the KEW.PA-1 form. For instance, in the G-Asset system, after assets are added and details are recorded in the "Daftar Penerimaan" (Register Receipt) sub-module, an option or button to print the KEW.PA-1 becomes available.   
+Importance: The KEW.PA-1 form serves as the initial official record acknowledging the government's physical possession and acceptance of an asset. Its completion is a critical first step that triggers subsequent processes, including asset registration, financial recording, and the establishment of accountability for the newly acquired asset.
+KEW.PA-2 (Borang Penolakan Aset Alih - Movable Asset Rejection Form)
+
+Purpose: This form is utilized to formally document the rejection of any movable assets that, upon delivery and inspection, are found to be damaged, fail to meet the agreed-upon specifications, or have discrepancies in quantity.   
+Content: The KEW.PA-2 form includes details similar to those on the KEW.PA-1, such as supplier and order information. Crucially, it also requires a clear statement of the reasons for rejection and the specific quantities of assets being rejected.   
+System Implementation: In systems like G-Asset and iAset, the "Modul Penerimaan" facilitates the recording of rejected assets. If, during the data entry process for received goods, a quantity is entered into a field such as "Kuantiti Ditolak" (Quantity Rejected) in G-Asset , the system can then generate the KEW.PA-2 form. G-Asset also features a "Senarai Penolakan" (Rejection List) sub-module from which KEW.PA-2 can be printed, providing a consolidated view of all rejected items.   
+Importance: The KEW.PA-2 form is vital for protecting the government's interests. It provides official, contemporaneous documentation for refusing non-compliant or damaged goods, thereby forming a solid basis for any subsequent claims, returns to the supplier, or requests for replacement.
+The procedures for asset receipt, as defined in TPA AM 2.2 and implemented in systems like G-Asset and iAset, place considerable emphasis on thorough inspection and verification at the point of delivery. The involvement of technically qualified officers for the inspection of technical assets is specifically mandated. This initial scrutiny is critical because accepting faulty, incorrect, or incomplete assets through an improperly completed KEW.PA-1 can lead to significant downstream problems. These may include difficulties in accurate registration, increased future maintenance costs, inability to use the asset as intended, and complex or disputed disposal processes later in the asset's life. The KEW.PA-2 form provides the formal mechanism to prevent such non-compliant assets from entering the government's inventory. Therefore, the robust and diligent implementation of KEW.PA-1 and KEW.PA-2 procedures, supported by system-enforced checks (such as mandatory fields for key information in the G-Asset and iAset receipt modules), is crucial for effective lifecycle asset management and the avoidance of unnecessary costs or operational disruptions.   
+
+2. Pendaftaran (Registration)
+
+This stage is fundamental for establishing an official record of every asset owned by the government. The TPA mandates a systematic approach to registration, ensuring that each asset is uniquely identifiable and its key details are captured.
+
+KEW.PA-3 (Daftar Harta Modal - Capital Asset Register)
+
+Purpose: This is the primary register for all Harta Modal (Capital Assets), i.e., assets with an acquisition cost of RM2,000 or more per unit. It serves as the definitive record for each capital asset throughout its lifecycle.   
+Content: KEW.PA-3 is typically divided into two parts:
+Bahagian A: Contains comprehensive details about the main asset, including its No. Siri Pendaftaran (Serial Registration Number), No. Kod Nasional (National Code Number), Kategori (Category), Sub-kategori (Sub-category), Jenis/Jenama/Model (Type/Brand/Model), Buatan (Make/Origin), details of purchase (supplier, L.O. number, invoice date, price), warranty information, placement details (location, responsible officer, date), and records of inspection, maintenance, transfer, disposal, or write-off.   
+Bahagian B: Used to record details of components or accessories that are supplied with or added to the main capital asset. This includes their own No. Siri Pendaftaran (if applicable, often derived from the main asset's number), type/brand/model, cost, warranty period, and whether they are original, added, upgraded, or replaced.   
+System Implementation: Systems like G-Asset and iAset automate the creation and maintenance of KEW.PA-3 records. When an asset is identified as Harta Modal during the registration process (either through the Penerimaan module or direct registration), the system prompts for the necessary information to populate the KEW.PA-3 fields. For example, G-Asset's "Modul Daftar Aset" allows for the direct registration of assets, and its "Modul Pengesahan Daftar Aset" facilitates the final confirmation and allows for the printing of KEW.PA-3. The system also manages the generation of related forms like KEW.PA-3A (Part A) and KEW.PA-3B (Part B).   
+Importance: KEW.PA-3 provides a detailed historical record for each capital asset, crucial for financial accounting (including depreciation), maintenance planning, tracking, and audit purposes.
+KEW.PA-4 (Daftar Aset Alih Bernilai Rendah - Low-Value Movable Asset Register)
+
+Purpose: This register is used for all Aset Alih Bernilai Rendah (Low-Value Movable Assets), i.e., assets with an acquisition cost below RM2,000 per unit.   
+Content: Similar to KEW.PA-3 in structure, with Bahagian A for the main asset details and Bahagian B for components/accessories. However, the level of detail or scrutiny might be less intensive in practice for some fields compared to Harta Modal.   
+System Implementation: Asset management systems handle KEW.PA-4 registration in a manner analogous to KEW.PA-3. The system differentiates based on the "Kelas Aset" (Asset Class) selected during registration. G-Asset and iAset allow for the registration and confirmation of low-value assets, leading to the generation of KEW.PA-4 and its associated parts (KEW.PA-4A, KEW.PA-4B).   
+Importance: While for lower value items, maintaining a register ensures accountability and control over these assets, which, in aggregate, can represent significant value.
+KEW.PA-5 (Senarai Daftar Harta Modal - List of Capital Asset Registers)
+
+Purpose: This form is an annual summary list of all Harta Modal registered by a PTJ (Pusat Tanggungjawab - Responsibility Centre). It provides an overview of the capital asset holdings for a given year.   
+System Implementation: Systems like G-Asset and iAset can generate KEW.PA-5 reports based on the confirmed KEW.PA-3 data for the selected year and funding source. The "Modul Laporan" in these systems typically includes an option to produce KEW.PA-5.   
+Importance: Facilitates annual reporting, reconciliation, and provides a high-level view for management and audit.
+KEW.PA-6 (Senarai Daftar Aset Alih Bernilai Rendah - List of Low-Value Movable Asset Registers)
+
+Purpose: Similar to KEW.PA-5, this is an annual summary list, but for all Aset Alih Bernilai Rendah registered by a PTJ.   
+System Implementation: Generated by asset management systems from the confirmed KEW.PA-4 data, typically found within the reporting modules.   
+Importance: Provides an annual overview of low-value asset holdings.
+KEW.PA-7 (Senarai Aset Alih Kerajaan - List of Government Movable Assets at Location)
+
+Purpose: This form lists all movable assets (both Harta Modal and Aset Alih Bernilai Rendah) located at a specific physical location within an agency (e.g., a particular room, office, or section). It links assets to their physical placement and responsible officer.   
+Content: Includes details like the location, name of the responsible officer, and a list of assets with their No. Siri Pendaftaran and description. It is to be displayed at the location and updated regularly.   
+System Implementation: Systems like G-Asset and iAset facilitate the generation of KEW.PA-7 through their "Modul Penempatan" (Placement Module). After assets are assigned to locations and officers, the system can produce this list. For example, G-Asset's "Carian Penempatan" sub-module allows users to search by placement officer or location and then print KEW.PA-7.   
+Importance: KEW.PA-7 is crucial for physical asset verification, accountability at the user/location level, and managing asset movements.
+KEW.PA-8 (Laporan Kedudukan Semasa Aset Alih - Report on the Current Status of Movable Assets)
+
+Purpose: This is an annual report submitted by PTJs summarizing the overall status of their movable asset holdings, including quantities and values. It is used for higher-level aggregation and reporting to the Treasury.   
+System Implementation: The "Modul Laporan" in systems like G-Asset and iAset allows for the generation of KEW.PA-8, enabling agencies to compile this report based on the system's database.   
+Importance: Provides a consolidated view of asset holdings for an entire agency or ministry, essential for national asset accounting and oversight.
+A critical element underpinning the entire TPA registration process is the No. Siri Pendaftaran (Asset Serial Registration Number). The TPA mandates a specific, structured format for this number, which typically incorporates codes representing the Ministry, Department/PTJ, Sector/Division/Branch, asset type (H for Harta Modal, R for Aset Alih Bernilai Rendah), the year of receipt, and a sequential number for that year. This standardized numbering system is indispensable for uniquely identifying each of the millions of assets distributed across diverse government agencies. It serves as the primary key that links the physical asset to its digital record within systems like G-Asset and iAset, and consequently, to all associated KEW.PA forms and records of lifecycle events. System manuals, such as G-Asset's "Daftar Aset" section, show "No Siri Pendaftaran" as a fundamental data field, often automatically generated by the system based on these predefined rules. The consistent and accurate application of the No. Siri Pendaftaran is, therefore, the linchpin for effective asset tracking, comprehensive auditing, maintaining a reliable maintenance history, and managing the eventual disposal of assets. Any errors or inconsistencies in this number can severely compromise the efficiency and accountability of the asset management system. The digital systems play a vital role in enforcing this standardization and ensuring the integrity of the registration numbers.   
+
+3. Penggunaan, Penyimpanan dan Pemeriksaan (Usage, Storage, and Inspection)
+
+This phase covers the operational life of the asset, including how it is used, where it is kept, and how its existence and condition are periodically verified.
+
+KEW.PA-9 (Borang Permohonan Pergerakan/Pinjaman Aset Alih - Movable Asset Movement/Loan Application Form)
+
+Purpose: Used by officers or departments to formally request the temporary movement or loan of an asset from its registered location or custodian for official purposes.   
+Content: Includes details of the applicant, purpose of movement/loan, duration, destination, and specifics of the asset(s) requested. It requires approval from an authorized officer.   
+System Implementation: Systems like G-Asset and iAset have "Modul Pergerakan" (Movement Module) that manage these requests. Users can submit applications online, and approving officers can review and approve/reject them. The system can then generate KEW.PA-9. For instance, G-Asset allows users to apply for asset loans, and the approving officer can print KEW.PA-9 from the "Kelulusan Pergerakan" sub-module.   
+Importance: Controls the temporary movement of assets, ensuring accountability and tracking even when assets are not at their primary location.
+KEW.PA-10 (Borang Aduan Kerosakan Aset Alih - Movable Asset Damage Complaint Form)
+
+Purpose: Used to formally report any damage or malfunction of a government movable asset, initiating the process for its repair or other maintenance action.   
+Content: Details of the asset, nature of the damage, location, reporting officer, and date of complaint.
+System Implementation: The "Modul Penyelenggaraan" (Maintenance Module) in G-Asset and iAset allows users to register damage complaints. After searching for the asset, users can "DAFTAR PERMOHONAN SELENGGARAAN" (Register Maintenance Application), and the system can generate KEW.PA-10.   
+Importance: Standardizes the reporting of asset damage, ensuring that maintenance needs are officially recorded and addressed.
+KEW.PA-11 (Laporan Pemeriksaan Aset Alih - Movable Asset Inspection Report)
+
+Purpose: Used by appointed Pegawai Pemeriksa (Inspection Officers) to record the findings of physical asset inspections. This includes verifying the asset's existence, condition, location, and the accuracy of its registration details.   
+Content: Lists assets inspected, their registered details, actual condition found, location verification, and any discrepancies or remarks by the inspectors.
+System Implementation: The "Modul Pemeriksaan" (Inspection Module) in G-Asset and iAset supports the annual inspection process. After inspection tasks are registered, officers assigned, and assets selected, the system allows for updating inspection findings. Upon completion, KEW.PA-11 can be generated.   
+Importance: Forms the basis for verifying the accuracy of asset registers and identifying issues like unrecorded assets, missing assets, or assets in poor condition.
+KEW.PA-12 (Laporan Pemeriksaan Aset Alih - Movable Asset Inspection Report - Summary)
+
+Purpose: This form summarizes the outcomes of asset inspections conducted within a PTJ for a specific period (e.g., quarterly or annually). It is used for reporting inspection coverage and findings to higher authorities.   
+Content: Typically includes statistics on the number of assets inspected versus the total, assets found in good condition, damaged, unlocated, etc.
+System Implementation: Generated from the "Modul Laporan" in G-Asset and iAset, consolidating data from individual KEW.PA-11 records. The G-Asset manual refers to this as "Laporan Pemeriksaan Aset" within its reporting module.   
+Importance: Provides management with an overview of the state of assets and the effectiveness of the inspection process.
+KEW.PA-13 (Sijil Tahunan Pemeriksaan Aset Alih - Annual Certificate of Movable Asset Inspection)
+
+Purpose: A certificate issued by the Head of Department to confirm that the annual physical inspection of movable assets has been completed for the year in accordance
+Content: A formal declaration of inspection completion.
+System Implementation: The "Modul Laporan" in iAset allows for the generation of KEW.PA-13 after inspection processes are concluded.   
+Importance: Serves as an official attestation of compliance with the annual asset inspection requirement.
+4. Penyelenggaraan (Maintenance)
+
+This stage focuses on actions taken to keep assets in good working order, including preventive and corrective maintenance.
+
+KEW.PA-14 (Daftar Penyelenggaraan Harta Modal - Capital Asset Maintenance Register)
+
+Purpose: To record all maintenance activities (both preventive and corrective) carried out on a specific Harta Modal. It provides a history of maintenance work and associated costs.   
+Content: Details of the asset, date of maintenance, type of maintenance, description of work done, cost of maintenance, and details of the service provider.
+System Implementation: The "Modul Penyelenggaraan" in G-Asset and iAset allows for recording maintenance details. The "Senarai KEW.PA-14" sub-module in G-Asset specifically lists assets requiring scheduled maintenance and allows for the generation of the KEW.PA-14 report. iAset's "Penyelenggaraan Berjadual" sub-module also facilitates the generation of KEW.PA-14.   
+Importance: Essential for tracking maintenance history, costs, identifying trends in asset failures, and making decisions about repair versus replacement.
+KEW.PA-15 (Daftar Penyelenggaraan Aset Alih Bernilai Rendah - Low-Value Movable Asset Maintenance Register)
+
+Purpose: Similar to KEW.PA-14, but for recording maintenance activities performed on Aset Alih Bernilai Rendah.
+Content: Analogous to KEW.PA-14, tailored for low-value assets.
+System Implementation: While not always explicitly detailed with the same prominence as KEW.PA-14, the maintenance modules in G-Asset and iAset would typically allow for recording maintenance for all asset types. iAset's "Cetakan Penyelenggaraan" mentions printing KEW.PA-15.   
+Importance: Helps track maintenance efforts even for lower-value items, which can be numerous.
+KEW.PA-16 (Laporan Penyelenggaraan Aset Alih - Movable Asset Maintenance Report)
+
+Purpose: An annual report summarizing all maintenance activities and costs for movable assets within a PTJ.   
+Content: Aggregated data on maintenance performed, types of maintenance, costs incurred, etc.
+System Implementation: Generated from the "Modul Laporan" in G-Asset and iAset, compiling data from individual maintenance records (KEW.PA-14 and KEW.PA-15).   
+Importance: Provides an overview of maintenance expenditure and activities for management review and budgeting.
+5. Pindahan (Transfer)
+
+This stage deals with the permanent transfer of asset ownership or accountability from one PTJ to another.
+
+KEW.PA-17 (Borang Pindahan Aset Alih - Movable Asset Transfer Form)
+
+Purpose: To formally document the transfer of movable assets between different government PTJs, ensuring that records are updated in both the sending and receiving entities.   
+Content: Details of the sending and receiving PTJs, description of the asset(s) being transferred, No. Siri Pendaftaran, reason for transfer, and authorizing signatures from both parties.
+System Implementation: The "Modul Pindahan Aset" (Asset Transfer Module) in G-Asset and iAset manages the transfer process. This includes registering transfer tasks, obtaining approvals, and recording reception by the new PTJ. iAset's "Penerimaan Selesai" sub-module allows printing of KEW.PA-17.   
+Importance: Ensures clear accountability and accurate record-keeping when assets change hands between government entities.
+KEW.PA-18 (Laporan Pindahan Aset Alih - Movable Asset Transfer Report)
+
+Purpose: An annual report summarizing all asset transfers (both received and sent out) by a PTJ.
+Content: Details of assets transferred, dates, and the PTJs involved.
+System Implementation: Generated from the "Modul Laporan" in G-Asset and iAset, based on completed transfer transactions.   
+Importance: Provides an annual overview of asset mobility between PTJs.
+6. Pelupusan (Disposal)
+
+This stage involves the formal process of removing assets from service and from the government's inventory due to various reasons like obsolescence, damage, or being surplus to requirements.
+
+KEW.PA-19 (Perakuan Pelupusan (PEP) Aset Alih Kerajaan - Government Movable Asset Disposal Certificate)
+
+Purpose: A technical certification required for certain types of assets (mechanical, technical, electrical, electronic, computers above a certain value) confirming their condition and suitability for disposal. It is often prepared by technical experts or agencies like JKR (Public Works Department).   
+Content: Asset details, technical assessment of condition, reasons why repair is not economical or why disposal is recommended, and certification by qualified technical personnel.
+System Implementation: iAset has a dedicated "Modul Pengurusan PEP" (PEP Management Module) which manages the application, preparation, and approval of KEW.PA-19. This module allows for setting PEP parameters, applying for PEP, and generating the KEW.PA-19 form. G-Asset also supports PEP processes within its disposal module.   
+Importance: Provides an independent technical justification for disposing of valuable or complex assets, ensuring decisions are not arbitrary.
+KEW.PA-20 (Surat Lantikan Lembaga Pemeriksa Pelupusan Aset Alih - Appointment Letter for Movable Asset Disposal Inspection Board)
+
+Purpose: Formal letter to appoint officers to the Lembaga Pemeriksa Pelupusan (LPP - Disposal Inspection Board), which is tasked with physically inspecting assets proposed for disposal and recommending the method of disposal.   
+Content: Names and positions of appointed officers, terms of reference, and duration of appointment.
+System Implementation: The disposal modules in systems like iAset manage the appointment of LPP members as part of the disposal workflow.   
+Importance: Ensures that a formal and independent body examines assets before disposal.
+KEW.PA-21 (Borang Laporan Lembaga Pemeriksa Pelupusan Aset Alih - Movable Asset Disposal Inspection Board Report Form)
+
+Purpose: The form used by the LPP to record their findings after inspecting assets proposed for disposal. They provide recommendations on the disposal method (e.g., sale, scrap, destruction) and justification.   
+Content: List of assets inspected, their condition, current value, LPP's recommendation for disposal method, and justification for the recommendation.
+System Implementation: The LPP's findings are recorded in the disposal modules of systems like iAset. The system may then generate or allow for the upload of the completed KEW.PA-21.   
+Importance: This is a key document in the disposal approval process, providing expert assessment and recommendations to the approving authority.
+KEW.PA-22 (Sijil Penyaksian Pemusnahan Aset Alih - Certificate of Witnessing of Movable Asset Destruction)
+
+Purpose: A certificate signed by witnesses to confirm that an asset approved for disposal by destruction has actually been destroyed according to the approved method.   
+Content: Details of the asset destroyed, method of destruction, date, location, and signatures of at least two witnesses.
+System Implementation: The disposal modules in asset management systems will record that destruction has occurred and may allow for the uploading of the signed KEW.PA-22 as proof.   
+Importance: Provides an audit trail and accountability for assets disposed of through destruction, especially important for sensitive or hazardous items.
+KEW.PA-23 (Sijil Pelupusan Aset Alih - Movable Asset Disposal Certificate)
+
+Purpose: A final certificate issued after the disposal action has been completed, confirming that the asset has been disposed of according to the approved method and that records have been updated.   
+Content: Details of the asset, approved disposal method, date of disposal, and confirmation of record updates.
+System Implementation: Generated by systems like iAset upon completion of the disposal process and submission of necessary supporting documents (e.g., sales receipt, KEW.PA-22).   
+Importance: Officially closes the loop on the disposal process for an asset.
+KEW.PA-24 to KEW.PA-31: These forms relate to specific disposal methods like tender, quotation, and auction.
+
+KEW.PA-24/25/26: Tender documents (Notice, Form, Schedule).
+KEW.PA-27/28/29: Quotation documents (Notice, Form, Schedule).
+KEW.PA-30/31: Auction documents (Notice, List of Assets).
+System Implementation: While the core asset management systems (G-Asset, iAset) manage the approval and recording of disposal, the detailed administration of tenders, quotations, or auctions might involve separate procurement systems or manual processes, with outcomes (e.g., sales details) fed back into the asset system to complete KEW.PA-23. iAset's disposal module, for instance, details steps for "Kaedah Pelupusan - JUALAN" and generating KEW.PA-30 and KEW.PA-31.   
+Importance: Ensure transparency and fairness in disposal through sale.
+KEW.PA-32 (Laporan Tahunan Pelupusan Aset Alih Kerajaan - Annual Report on Disposal of Government Movable Assets)
+
+Purpose: An annual report summarizing all asset disposal activities undertaken by a PTJ or Ministry.   
+Content: Aggregated data on assets disposed of, methods used, revenue generated, etc.
+System Implementation: Generated from the "Modul Laporan" in G-Asset and iAset, compiling data from all completed disposal actions.   
+Importance: Provides an annual overview of disposal activities for management and Treasury reporting.
+7. Kehilangan dan Hapus Kira (Loss and Write-Off)
+
+This stage addresses situations where assets are lost due to various reasons and need to be formally removed from the asset register.
+
+KEW.PA-33 (Laporan Awal Kehilangan Aset Alih - Preliminary Report of Movable Asset Loss)
+
+Purpose: An initial report prepared immediately upon discovery of an asset loss, providing preliminary details to initiate an investigation.   
+Content: Details of the lost asset, circumstances of the loss, date, location, and initial actions taken.
+System Implementation: The "Modul Kehilangan dan Hapuskira" in G-Asset and iAset allows for the registration of a loss. The system then facilitates the download of a KEW.PA-33 template, which is filled out and uploaded back.   
+Importance: Triggers the formal loss investigation process.
+KEW.PA-34 (Surat Perlantikan Jawatankuasa Penyiasat Kehilangan Aset Alih - Appointment Letter for Movable Asset Loss Investigation Committee)
+
+Purpose: Formal letter to appoint members to an investigation committee tasked with determining the cause and responsibility for an asset loss.   
+Content: Names and positions of committee members, terms of reference.
+System Implementation: After registering a loss in G-Asset or iAset, the system allows for the appointment of an investigation committee, and KEW.PA-34 can be printed.   
+Importance: Ensures a formal and impartial investigation into asset losses.
+KEW.PA-35 (Laporan Akhir Kehilangan Aset Alih - Final Report of Movable Asset Loss)
+
+Purpose: The comprehensive report submitted by the Jawatankuasa Penyiasat, detailing their findings, conclusions, and recommendations regarding the asset loss, including any proposed surcharge or disciplinary action.   
+Content: Full details of the investigation, evidence gathered, analysis of cause, identification of responsible parties (if any), and recommendations.
+System Implementation: The investigation committee updates and uploads the completed KEW.PA-35 into the system (G-Asset, iAset).   
+Importance: Forms the basis for the decision to write off the asset and take any further actions.
+KEW.PA-36 (Sijil Hapus Kira Aset Alih - Movable Asset Write-Off Certificate)
+
+Purpose: A certificate issued after approval has been granted to write off a lost asset from the official records.   
+Content: Details of the asset written off and the approval reference.
+System Implementation: Generated by G-Asset or iAset after the loss confirmation and write-off approval process is completed by the "Urusetia Kehilangan" (Loss Secretariat).   
+Importance: Officially documents the removal of the lost asset from the inventory.
+KEW.PA-37 (Laporan Tahunan Hapus Kira Aset Alih Kerajaan - Annual Report on Write-Off of Government Movable Assets)
+
+Purpose: An annual report summarizing all asset write-off activities within a PTJ or Ministry.   
+Content: Aggregated data on assets written off, reasons for loss, values, etc.
+System Implementation: Generated from the "Modul Laporan" in G-Asset and iAset, compiling data from all completed write-off actions.   
+Importance: Provides an annual overview of asset losses and write-offs for management and Treasury reporting.
+D. Implementation of KEW.PA in Asset Management Systems
+The KEW.PA procedures are implemented through various dedicated asset management IT systems within the Malaysian public sector. These systems aim to digitize and streamline the TPA processes.
+
+G-Asset System :   
+
+Overview: The G-Asset system is a comprehensive asset management solution designed to align with the TPA principles. It covers the full lifecycle of movable assets, featuring distinct modules for Penerimaan (Receipt), Pendaftaran Aset (Asset Registration), Pengesahan Daftar Aset (Asset Registration Confirmation), Carian (Search), Penempatan (Placement), Pergerakan (Movement), Pindahan Aset (Asset Transfer), Penyelenggaraan (Maintenance), Pemeriksaan (Inspection), Pelupusan (Disposal), Kehilangan & Hapuskira (Loss & Write-Off), Laporan (Reports), and Susut Nilai (Depreciation).   
+KEW.PA Form Generation: The system is explicitly designed to support the generation of, or manage the data for, numerous KEW.PA forms. As detailed in the preceding sections, this includes forms such as KEW.PA-1, KEW.PA-2, KEW.PA-3, KEW.PA-4, KEW.PA-7, KEW.PA-9, KEW.PA-10, KEW.PA-11, KEW.PA-14, KEW.PA-32, KEW.PA-33, KEW.PA-36, and KEW.PA-37, among others. These forms are typically generated at the completion of relevant processes within each module.
+Admin Module: A critical component of G-Asset is its "Modul Admin" (Admin Module). This module is responsible for establishing the foundational data structures necessary for the correct application of TPA procedures within the system. This includes setting up Maklumat Cawangan (Branch Information), Maklumat Bahagian/Jabatan (Division/Department Information), Maklumat Kakitangan (Staff Information), Maklumat Lokasi (Location Information), and Modul Pengurusan Kod (Code Management Module). The Admin Module also manages user roles and access rights, defining responsibilities for various officers involved in asset management, such as Pegawai Penerima (Receiving Officer), Pegawai Pengesah (Confirming Officer), Pegawai Penempatan (Placement Officer), etc.. This initial setup is crucial for ensuring that asset transactions are correctly attributed and managed according to the organizational structure and TPA roles.   
+iAset System (Selangor) :   
+
+Overview: The iAset system, implemented by the Selangor state government, mirrors G-Asset in its comprehensive scope, covering the full asset lifecycle from receipt to loss and write-off. It is also designed in accordance with TPA guidelines. A notable feature mentioned in its manual is a dedicated "Modul Pengurusan PEP" (PEP Management Module), highlighting a specific focus on the Perakuan Pelupusan (Disposal Certificate) process.   
+KEW.PA Form Generation: iAset supports a wide array of KEW.PA forms. The system often provides specific menu items or buttons for their generation or for initiating processes that directly lead to their creation. For example, the KEW.PA-19 (Perakuan Pelupusan) form is generated from the "Pengurusan PEP" module. Other forms like KEW.PA-1, KEW.PA-2, KEW.PA-3, KEW.PA-4, KEW.PA-7, etc., are similarly integrated into the respective lifecycle modules.   
+FAMS (Fixed Assets Management System - UTHM) :   
+
+Overview: FAMS is a Fixed Assets Management System utilized by Universiti Tun Hussein Onn Malaysia (UTHM). The provided user manual for FAMS appears to reference an earlier version of the TPA, as indicated by the KEW.PA form numbers it mentions (e.g., the manual was prepared around 2014).   
+KEW.PA Form Generation: The FAMS manual refers to older KEW.PA form numbers for purposes that are now covered by updated forms. For instance, it mentions "KAD DAFTAR HARTA MODAL (KEW.PA-2)" which corresponds to the current KEW.PA-3, and "KAD DAFTAR INVENTORI (KEW.PA-3)" which corresponds to the current KEW.PA-4. It also lists specific reports like "LAPORAN BEND KEW PA-4: SENARAI DAFTAR HARTA MODAL" and "LAPORAN BEND KEW PA-5: SENARAI DAFTAR INVENTORI," which align with the current KEW.PA-5 and KEW.PA-6 respectively. This indicates that FAMS, at the time of the manual's creation, was aligned with the TPA principles but used an earlier nomenclature for the forms.   
+The existence of multiple systems like G-Asset, iAset, and FAMS, all designed to implement the TPA, points to both standardization and the potential for customization. While core TPA procedures and the objectives of KEW.PA forms are standardized nationally by the Malaysian Treasury, the IT system implementations can be tailored by different vendors or adapted to meet the specific needs of different types of government entities (e.g., federal versus state agencies, or specialized institutions like universities). Furthermore, the TPA framework itself is subject to evolution, with form numbers, procedures, and financial thresholds potentially being updated over time. This is evidenced by the discrepancies in form numbering noted in the older FAMS manual compared to the more current G-Asset and iAset manuals. Consequently, users and auditors must be cognizant that while the underlying principles of TPA and the purpose of KEW.PA forms remain consistent, the exact system interface, module organization, and even form numbering might vary depending on the specific system and the currency of the TPA circulars being referenced. It is crucial for agencies to use the latest versions of TPA circulars and ensure their IT systems are updated to reflect any changes, thereby maintaining compliance and leveraging the most current best practices in public asset management.
+
+III. Tatacara Pengurusan Stor (TPS) - The KEW.PS Framework
+A. Core Objectives of TPS
+The Tatacara Pengurusan Stor (TPS) provides the procedural framework for managing government stores and inventory. The Sistem Pengurusan Stor (SPS) is the IT system designed to implement these procedures. The primary aim of the TPS, as executed through the SPS, is to assist users in the comprehensive management of 'Stok' (Stock/Inventory). This encompasses all stages of the inventory lifecycle, including Penerimaan (Receipt), Penyimpanan (Storage), Pengeluaran (Issuance), Pemeriksaan (Inspection), Pelupusan (Disposal), and Kehilangan dan Hapus Kira (Loss and Write-Off). The TPS is essential for ensuring that government agencies maintain adequate supplies for their operational needs while minimizing waste, preventing loss or pilferage, and avoiding excessive holding costs associated with overstocking.   
+
+The lifecycle stages and management objectives outlined for TPS (Penerimaan, Penyimpanan, Pengeluaran, Pelupusan, etc.) closely parallel those established for TPA in asset management. This congruence suggests a unified governance philosophy from Perbendaharaan Malaysia regarding the management of public resources, whether they are long-term assets or consumable stores. The fundamental principles of accountability, control over acquisition and issuance, the necessity for regular inspection, and the requirement for proper disposal or write-off procedures are consistently applied across both frameworks. This consistency allows for a shared understanding of control principles and management responsibilities, even though the specific items being managed and the detailed procedural steps may differ between assets and stores.
+
+B. Definition and Management of 'Stok' (Stock/Inventory)
+Within the context of TPS and the SPS, 'Stok' refers to the range of inventory items or goods held by government stores. These can include a wide variety of items, from common office supplies and stationery to specialized technical components and operational materials. The management of 'Stok' involves several key processes:   
+
+Pendaftaran Stok (Stock Registration): New stock items are formally registered in the SPS. This includes assigning unique stock codes (often based on a central classification like the Pusat Rujukan Maklumat SPPA), providing detailed descriptions, and specifying units of measurement.   
+Penentuan Paras Stok (Stock Level Determination): For each stock item, optimal levels are defined. These typically include Paras Minimum (Minimum Level – e.g., 1 month's usage), Paras Menokok (Reorder Level – e.g., 2 months' usage), and Paras Maksimum (Maximum Level – e.g., 3 months' usage). These levels are crucial for automated reordering and preventing stockouts or overstocking.   
+Pengurusan Stok Bertarikh Luput (Expired Stock Management): Procedures are in place to manage stock items with expiry dates, ensuring that older stock is used first (FIFO principle) and that expired stock is identified for appropriate action (e.g., disposal). The KEW.PS-6 form is specifically used for listing and monitoring such stock.   
+Pengelasan Stok (Stock Classification): Stock items may be classified into groups (e.g., Kumpulan A for high-value/fast-moving items, Kumpulan B for others) using forms like KEW.PS-5 to determine the intensity of control and monitoring required.   
+The management of 'Stok' under TPS is characterized by a need for granular control, particularly for consumable items. Unlike fixed assets, which are often discrete and individually identifiable, 'stok' frequently involves large quantities of fungible goods that are consumed in daily operations. The emphasis of TPS is therefore on ensuring operational readiness by maintaining the availability of necessary supplies when and where they are needed. This must be balanced against the costs of overstocking (which ties up funds and requires storage space) and the risks of understocking (which can lead to operational disruptions). The detailed tracking of quantities, values, movements, and control levels within the SPS, along with specific functionalities like managing expiring stock, reflects the dynamic and transaction-intensive nature of inventory management. This contrasts with TPA's focus, which is more on the lifecycle management of individual, durable assets.
+
+C. KEW.PS Forms and Procedures Across the Store Management Lifecycle
+The TPS is operationalized through a series of standardized forms, designated with the prefix "KEW.PS." These forms document key activities and information throughout the inventory management cycle.
+
+1. Penerimaan (Receipt)
+
+KEW.PS-1 (Borang Terimaan Barang-Barang - BTB / Goods Receipt Form)
+
+Purpose: This form is used to formally record the receipt of goods or stock into the government store. It is completed after the received items have been verified against the purchase order, delivery order, and physical inspection for quantity and quality.   
+Content: KEW.PS-1 captures details of the supplier, purchase order/contract references, delivery note information, transport details, item codes, descriptions of goods, units of measurement, quantities (ordered, noted on delivery order, and actually received), unit price, total price, and requires authorizing signatures from the Receiving Officer and, if applicable, a Technical Officer.   
+System Implementation (SPS): The "Terimaan dari Pembekal" (Receipt from Supplier) sub-module within the SPS is designed to manage this process. Users input details from the Delivery Order (D.O) and Local Order (L.O), record the quantities received, and any discrepancies. Upon confirmation, the SPS can generate the KEW.PS-1 form.   
+Importance: KEW.PS-1 is the foundational document that acknowledges the store's acceptance of stock. It serves as the basis for updating inventory records, initiating payment processes to suppliers, and establishing accountability for the newly received goods.
+KEW.PS-2 (Borang Penolakan Barang-Barang - BPB / Goods Rejection Form)
+
+Purpose: This form is used to officially document the rejection of any stock that, upon inspection at the point of receipt, is found to be non-compliant with the order specifications, damaged, or has discrepancies in quantity.   
+Content: The KEW.PS-2 form includes information similar to KEW.PS-1 regarding the supplier and order details. Critically, it also requires a clear statement of the reasons for rejection and the specific quantities of stock being rejected. It includes sections for the Receiving Officer's signature and an acknowledgment from the supplier or their agent.   
+System Implementation (SPS): If stock is rejected during the "Terimaan dari Pembekal" process in the SPS, the system would facilitate the recording of this rejection, and the KEW.PS-2 form would be generated to provide official notification to the supplier. While the SPS manual  primarily details successful receipts for KEW.PS-1 generation, the principle of handling rejections aligns with the TPA's KEW.PA-2 for assets, indicating a structured process for managing non-conforming deliveries.   
+Importance: KEW.PS-2 is essential for managing supplier relations and protecting the government's interests. It provides formal documentation for refusing non-compliant stock, which is crucial for any subsequent dispute resolution, returns, or claims for replacement.
+2. Penyimpanan dan Pendaftaran Stok (Storage and Stock Registration)
+
+This stage involves the proper storage of received stock and the maintenance of accurate inventory records.
+
+KEW.PS-3 (Daftar Stok - Stock Register / Stock Card)
+
+Purpose: This is the primary and most crucial record for each individual stock item held in the store. It functions as a perpetual inventory record, tracking all movements (inflows and outflows) and maintaining a running balance of the stock on hand.   
+Content: KEW.PS-3 is typically divided into:
+Bahagian A (Part A): Contains static information about the stock item, such as No. Kad (Card No.), Nama Stor (Store Name), Perihal Stok (Stock Description), No. Kod (Code No.), Unit Pengukuran (Unit of Measurement), Kumpulan (Group - A or B based on KEW.PS-5), Pergerakan (Movement status - Active/Inactive), Lokasi Penyimpanan Stok (Stock Storage Location - detailed by section, row, rack, level, bin), and Paras Stok (Stock Levels - Maximum, Reorder, Minimum).   
+Bahagian B (Part B): Records all transactional data for the stock item. This includes columns for Tarikh (Date), No. Rujukan Transaksi (Transaction Reference No. - e.g., PK, BTB, BPSS, BPSI), Terima Daripada/Keluar Kepada (Received From/Issued To), Terimaan (Receipts - quantity, unit price, total value), Keluaran (Issues - quantity, total value), and Baki (Balance - quantity, total value), along with the name of the store officer responsible for the entry.   
+System Implementation (SPS): The SPS heavily relies on the KEW.PS-3 concept. The system automatically updates the equivalent of the KEW.PS-3 (often referred to as the Kad Stok or stock record) in real-time following every transaction, such as receipts from suppliers (KEW.PS-1), issues to users (KEW.PS-8), inter-store transfers (KEW.PS-7), adjustments (KEW.PS-15), disposals (KEW.PS-20), and write-offs. The SPS manual shows that the system even uses color-coding to highlight different types of transactions on the digital KEW.PS-3 display (e.g., pink for returns, yellow for adjustments, green for disposals, brown for write-offs).   
+Importance: An accurate and consistently updated KEW.PS-3 is fundamental for effective inventory control. It provides the data necessary for reordering decisions, financial accounting and valuation of inventory, tracking stock movement, conducting physical stock verifications, and ensuring overall auditability of store operations.
+KEW.PS-4 (Senarai Daftar Stok - List of Stock Registers)
+
+Purpose: This form provides a summary list of all stock items (i.e., all KEW.PS-3 cards) maintained by the store. It gives an overview of the range of items stocked and their current status.   
+Content: Includes columns for a serial number, card number (referring to KEW.PS-3), item code, stock description, current balance value (RM), and stock status (e.g., Active, Inactive, Card Cancelled). It also typically includes a grand total for the current balance value of all stock.   
+System Implementation (SPS): The SPS can generate reports equivalent to KEW.PS-4, providing a listing of all stock items managed within the system, along with their current quantities and values, derived from the aggregated KEW.PS-3 data.   
+Importance: Useful for overall inventory analysis, financial reporting, and as a control document for ensuring all stock items are accounted for in the detailed registers.
+KEW.PS-5 (Borang Penentuan Kumpulan Stok - Stock Group Determination Form)
+
+Purpose: This form is used to classify stock items into different control groups, typically Group A (representing a smaller percentage of items that account for a larger percentage of total value or usage) and Group B (the remainder). This classification helps in applying differentiated control measures (e.g., more frequent review for Group A items).   
+Content: Lists stock items with their code, description, total purchase value over a defined period (e.g., past two years), average purchase value, percentage contribution to total value, and the assigned stock group (A or B). The TPS often suggests a split like 30% of items by value in Group A and 70% in Group B.   
+System Implementation (SPS): While the SPS manual  does not explicitly detail the generation of KEW.PS-5, the system's reporting capabilities could be used to extract the necessary data (purchase values, item lists) to facilitate this classification manually or through custom reports. The "Kumpulan" field in KEW.PS-3 indicates that this classification is an integral part of stock data.   
+Importance: Enables the application of Pareto analysis (ABC analysis) principles to inventory management, allowing store managers to focus more intensive control efforts on high-value or critical stock items.
+KEW.PS-6 (Senarai Stok Bertarikh Luput - List of Expired Stock / Stock with Expiry Dates)
+
+Purpose: This form is specifically designed to list and monitor stock items that have expiry dates. It helps in managing such stock to ensure that items nearing expiry are prioritized for issuance or appropriate action is taken for expired items.   
+Content: Includes columns for serial number, stock description, item code, stock location, quantity received, expiry date, and the remaining stock quantity at various intervals leading up to the expiry date (e.g., 6 months before, 5 months before, etc.), which needs to be updated regularly by the Store Officer.   
+System Implementation (SPS): The SPS likely includes fields for expiry dates during stock registration or receipt. The system could then generate reports similar to KEW.PS-6 to alert store personnel about items approaching their expiry dates, facilitating proactive management to minimize wastage.
+Importance: Crucial for managing perishable goods, pharmaceuticals, chemicals, or any items with a limited shelf life, thereby reducing losses due to expiry.
+3. Pengeluaran (Issuance)
+
+This stage covers the processes for issuing stock from the store to end-users or other stores.
+
+KEW.PS-7 (Borang Permohonan Stok (Antara Stor) - Stock Requisition Form (Between Stores))
+
+Purpose: This form is used when one government store needs to request and obtain stock from another government store (inter-store transfer).   
+Content: Contains sections to be completed by both the requesting store and the issuing store. It includes details such as item code, stock description, quantity requested, remarks, quantity received by the requester, unit of measurement, available balance at the issuing store, quantity approved for issuance, unit price, total price, quantity actually issued, packaging requirements, and signatures of the applicant, receiving officer, approving officer, and issuing officer.   
+System Implementation (SPS): The SPS has a dedicated workflow for "Permohonan Stok diantara Stor" (Stock Request Between Stores). This involves the requesting store officer creating an order ("Pesan Stok"), the issuing store's approving officer approving the request, the issuing store officer processing the issuance (generating KEW.PS-7), and the receiving store officer confirming receipt and processing the items into their inventory. The SPS generates the KEW.PS-7 form as part of this workflow.   
+Importance: Standardizes and controls the movement of stock between different government storage facilities, ensuring proper authorization and record-keeping for such transfers.
+KEW.PS-8 (Borang Permohonan Stok (Individu Kepada Stor) - Stock Requisition Form (Individual to Store))
+
+Purpose: This form is used by individual government officers or end-users to request stock items from their designated store for official use.   
+Content: Includes sections for the applicant's details, the approving officer's decision, and acknowledgment of receipt by the applicant. Key fields cover item code, stock description, quantity requested, remarks by applicant, available balance in store, quantity approved, remarks by approver, quantity received by applicant, and relevant signatures.   
+System Implementation (SPS): The SPS facilitates this process through its "Mohon Stok" (Request Stock) feature for end-users and "Proses Pengeluaran - KEW.PS-8" (Issuance Process - KEW.PS-8) for store officers. End-users submit requests, which are then reviewed and approved by an authorized officer. The store officer then processes the issuance based on the approved request, and the system can generate the KEW.PS-8 form.   
+Importance: Provides a formal and auditable trail for the issuance of stock to end-users, helping to control consumption and ensure that stock is used for official purposes.
+KEW.PS-9 (Borang Pembungkusan Stok - BPS / Stock Packaging Form)
+
+Purpose: This form is used when stock needs to be packaged for dispatch, particularly for inter-store transfers or deliveries to remote locations. It ensures that items are correctly packaged and accounted for before shipment.   
+Content: Includes columns for serial number, requisition number (referencing KEW.PS-7), item code, stock description, quantity packaged, details of the package (e.g., type, dimensions), and delivery information. It requires signatures from the inspecting officer, packaging officer, and the officer receiving the packaged goods for dispatch.   
+System Implementation (SPS): The SPS manual  mentions "Senarai Perlu Pembungkusan" (List Requiring Packaging) on its main dashboard, suggesting that the system tracks items awaiting packaging. The KEW.PS-9 form would be used in conjunction with this process.   
+Importance: Ensures that stock is properly prepared for shipment, minimizing damage during transit and confirming the contents of packages.
+4. Pemeriksaan, Verifikasi dan Pelarasan Stok (Stock Inspection, Verification, and Adjustment)
+
+These processes are vital for maintaining the accuracy of inventory records and the physical integrity of the stock.
+
+KEW.PS-10 (Borang Verifikasi Stor Tahun ………… - Annual Store Verification Form)
+
+Purpose: Used by appointed Pegawai Pemverifikasi (Verification Officers) during the annual stocktaking or store verification exercise to compare physical stock counts with the balances recorded in the KEW.PS-3 (Stock Register).   
+Content: Lists stock items with their code and description. Columns are provided for Kuantiti Stok (Stock Quantity) as per KEW.PS-3, Kuantiti Stok Fizikal (Physical Stock Quantity), Perbezaan (+/-) (Difference), Status Stok (Stock Status - e.g., good, damaged, obsolete), and Catatan (Remarks). It requires signatures from the Verification Officers and confirmation by the Pegawai Aset (Asset Officer, often synonymous with Store Officer in this context).   
+System Implementation (SPS): The SPS has a "Verifikasi Stor" (Store Verification) module. This allows for the registration of verification tasks, appointment of verification officers, selection of stock items for verification, and recording of physical counts and conditions. The system can then generate reports based on these findings, aligning with KEW.PS-10.   
+Importance: A key control measure to identify discrepancies between records and physical stock, which may indicate issues like theft, damage, unrecorded transactions, or errors in record-keeping.
+KEW.PS-11 (Borang Penilaian Prestasi Pengurusan Stor - Store Management Performance Evaluation Form)
+
+Purpose: This form is used to assess the overall performance of a government store based on various criteria related to efficient and effective store management practices.   
+Content: Contains a checklist or a set of parameters against which the store's operations are evaluated. This may include aspects like record accuracy, storage conditions, stock turnover, adherence to procedures, security measures, etc. It often involves a scoring system to arrive at a performance rating (e.g., Cemerlang, Baik, Memuaskan).   
+System Implementation (SPS): The "Pengesahan Verifikasi" (Verification Confirmation) sub-module in SPS, used by the Ketua Jabatan (Head of Department), involves reviewing and confirming the verification findings. The system allows for the generation of KEW.PS-11 as part of this confirmation process.   
+Importance: Provides a structured way to evaluate the efficiency and effectiveness of store operations, identify areas for improvement, and promote best practices in store management.
+KEW.PS-12 (Sijil Verifikasi Stor Bagi Tahun ………… - Store Verification Certificate for the Year …………)
+
+Purpose: A certificate issued by the Head of Department to formally attest that the annual store verification for a particular store has been completed and to state the performance score achieved.   
+Content: A formal declaration of the completion of store verification, the name of the store, the year, and the percentage scores achieved for both the execution of the verification and the store's performance evaluation.   
+System Implementation (SPS): After the Head of Department confirms the verification report (KEW.PS-11) in the SPS, the system can generate the KEW.PS-12 certificate.   
+Importance: Serves as official confirmation that the mandatory annual store verification has been conducted and provides a summary of the store's performance rating.
+KEW.PS-13 (Laporan Verifikasi Stor Tahun ………… - Store Verification Report for the Year …………)
+
+Purpose: This is a summary report, often at a higher level (e.g., Ministry or central agency), consolidating the results of store verifications from multiple stores or PTJs.   
+Content: Aggregated data on the number of stores verified, overall performance scores, common issues identified, and recommendations for improvement across the organization.   
+System Implementation (SPS): The SPS reporting module can be used to compile data from individual store verifications to generate consolidated reports like KEW.PS-13 for oversight and strategic planning.
+Importance: Provides an organizational overview of the state of store management and compliance with verification procedures.
+KEW.PS-15 (Borang Pelarasan Stok - Stock Adjustment Form)
+
+Purpose: Used to formally record adjustments made to stock balances in the KEW.PS-3 (Stock Register) when discrepancies are found that cannot be attributed to normal transactions (e.g., errors in initial counts, minor damages not warranting full disposal). Requires approval from the Head of Department.   
+Content: Details of the stock item (code, description), date of discovery of discrepancy, balance as per stock card, physical balance, the difference (quantity and value), justification for the adjustment, and approval from the Head of Department.   
+System Implementation (SPS): The SPS includes a "Pelarasan" (Adjustment) module. Store officers can apply for adjustments, which are then sent to the Head of Department for approval. Once approved, the system updates the stock records (KEW.PS-3 equivalent), and the transaction is often highlighted (e.g., in yellow in SPS).   
+Importance: Ensures that stock records remain accurate by providing a controlled mechanism for correcting justifiable discrepancies.
+5. Pelupusan Stok (Stock Disposal)
+
+This stage deals with the formal process of removing unusable, obsolete, surplus, or expired stock from the store's inventory.
+
+KEW.PS-19 (Surat Lantikan Sebagai Lembaga Pemeriksa Pelupusan Stok Kerajaan - Appointment Letter as Government Stock Disposal Inspection Board Member)
+
+Purpose: A formal letter issued by an authorized officer (e.g., Pegawai Pengawal) to appoint individuals to the Lembaga Pemeriksa Pelupusan (LPP - Stock Disposal Inspection Board). The LPP is responsible for examining stock proposed for disposal and recommending the most appropriate disposal method.   
+Content: Specifies the names and positions of the appointed LPP members (Chairman and Member), the duration of their appointment (not exceeding two years), and their terms of reference, which include conducting inspections and submitting a report using KEW.PS-20.   
+System Implementation (SPS): The "Pelupusan" (Disposal) module in SPS facilitates the appointment of LPP members. The system allows for selecting officers to serve on the LPP as part of initiating a disposal process.   
+Importance: Ensures that a formal and independent body inspects stock before any disposal action is taken, adding a layer of control and objectivity to the process.
+KEW.PS-20 (Borang Pelupusan Stok - Stock Disposal Form)
+
+Purpose: This is the primary form used by the LPP to record their findings and recommendations after inspecting stock items proposed for disposal. It serves as the basis for seeking approval for disposal from the relevant Kuasa Melulus (Approving Authority).   
+Content: Lists each stock item proposed for disposal with details such as item code, description, date of receipt, storage period, unit of measurement, quantity, original acquisition value (unit and total). Crucially, it includes sections for the LPP to clearly state the condition of the stock, recommend a specific method of disposal (e.g., sale, destruction, transfer), provide justification for their recommendation, and for the Kuasa Melulus to record their decision. Signatures of the LPP members and the Kuasa Melulus are required.   
+System Implementation (SPS): Within the "Pelupusan" module of SPS, after the LPP is appointed and stock items are selected for disposal, the system would capture the LPP's findings and recommendations. The KEW.PS-20 form can then be generated from the system or the completed manual form can be uploaded. The system tracks the approval status from the Kuasa Melulus.   
+Importance: This is a critical document in the disposal process, providing a formal assessment and recommendation that guides the approving authority's decision. It ensures that disposals are justified and appropriate methods are considered.
+KEW.PS-21 (Sijil Penyaksian Pemusnahan Stok - Stock Destruction Witness Certificate)
+
+Purpose: This certificate is used when the approved method of disposal is destruction. It serves as formal proof, signed by at least two witnesses, that the specified stock items have indeed been destroyed in the approved manner.   
+Content: Details of the stock items destroyed (description, quantity), the method of destruction used, the date and location of destruction, and the names, positions, and signatures of the witnessing officers.   
+System Implementation (SPS): After a disposal by destruction is carried out, the signed KEW.PS-21 would be uploaded into the SPS as evidence of completion. The system would then update the status of the disposal task.
+Importance: Provides an essential audit trail and accountability for stock items that are disposed of through destruction, particularly important for items that might have security implications or hazardous materials.
+KEW.PS-22 (Sijil Pelupusan Stok - Stock Disposal Certificate)
+
+Purpose: This is a final certificate issued by the Head of Department after the approved disposal action for stock items has been completed. It confirms that the disposal was carried out according to the approved method and that all relevant records have been updated.   
+Content: References the approval for disposal, lists the stock items disposed of, the method of disposal used (e.g., sale, scheduled waste, scrap sale, trade-in, gift, destruction), and is signed by the Head of Department.   
+System Implementation (SPS): Upon completion of the disposal process in the SPS (including uploading any necessary supporting documents like sales receipts or KEW.PS-21), the system would allow for the generation or recording of the KEW.PS-22, marking the formal closure of the disposal action for those items.
+Importance: Officially closes the disposal process for specific stock items and confirms that all procedural requirements have been met.
+KEW.PS-23 to KEW.PS-30: These forms are specific to various methods of disposal by sale, such as tender, quotation, and auction.
+
+KEW.PS-23 (Kenyataan Tawaran Tender Pelupusan Stok - Tender Offer Notice for Stock Disposal)    
+KEW.PS-24 (Borang Tender Pelupusan Stok - Stock Disposal Tender Form)    
+KEW.PS-25 (Jadual Tender Pelupusan Stok - Stock Disposal Tender Schedule)    
+KEW.PS-26 (Kenyataan Tawaran Sebut Harga Pelupusan Stok - Quotation Offer Notice for Stock Disposal)    
+KEW.PS-27 (Borang Sebut Harga Pelupusan Stok - Stock Disposal Quotation Form)    
+KEW.PS-28 (Jadual Sebut Harga Pelupusan Stok - Stock Disposal Quotation Schedule)    
+KEW.PS-29 (Kenyataan Jualan Lelong Stok - Stock Auction Sale Notice)    
+KEW.PS-30 (Senarai Stok Yang Dilelong - List of Stock to be Auctioned)    
+System Implementation (SPS): While the SPS manages the approval and recording of the disposal decision, the detailed administration of public sales methods like tender, quotation, or auction might involve separate procurement platforms or manual processes. The outcomes of these sales (e.g., successful bidder, sale price) would then be entered back into the SPS to complete the disposal record and facilitate the generation of KEW.PS-22.
+Importance: These forms ensure that disposal through sale is conducted in a transparent, fair, and competitive manner, aiming to maximize revenue for the government.
+KEW.PS-31 (Laporan Pelupusan Stok Bagi Tahun ………… - Stock Disposal Report for the Year …………)
+
+Purpose: An annual report that summarizes all stock disposal activities undertaken by a PTJ or Ministry during a specific year.   
+Content: Provides aggregated data on the stock items disposed of, the methods of disposal used, the original acquisition value of the disposed items, any proceeds from sales, and costs associated with disposal.   
+System Implementation (SPS): The SPS reporting module can compile data from all completed disposal actions throughout the year to generate the KEW.PS-31 report.
+Importance: Offers an annual overview of stock disposal activities, which is essential for management review, financial reporting, and reporting to central agencies like the Treasury.
+6. Kehilangan dan Hapuskira Stok (Stock Loss and Write-Off)
+
+This stage addresses situations where stock items are lost due to various reasons (e.g., theft, damage, misplacement) and need to be formally investigated and removed from the inventory records.
+
+KEW.PS-32 (Laporan Awal Kehilangan Stok - Preliminary Stock Loss Report)
+
+Purpose: An initial report prepared immediately upon the discovery of a stock loss. It provides preliminary details about the loss to initiate a formal investigation.   
+Content: Includes details of the lost stock item(s) (description, quantity, value), the circumstances surrounding the loss (how, when, where), the date of discovery, the name of the officer last responsible for the stock, and any initial actions taken. It may also include a police report reference if applicable.   
+System Implementation (SPS): The "Hapus Kira" (Write-Off) module in SPS allows users to register a new loss incident. The system may then prompt for the information required for KEW.PS-32 or provide a template for completion and subsequent upload.   
+Importance: This form triggers the formal investigation process into the stock loss, ensuring that all losses are promptly reported and looked into.
+KEW.PS-33 (Surat Pelantikan Jawatankuasa Penyiasat Kehilangan Stok - Appointment Letter for Stock Loss Investigation Committee)
+
+Purpose: A formal letter issued by an authorized officer to appoint members to a Jawatankuasa Penyiasat (Investigation Committee). This committee is tasked with thoroughly investigating the circumstances of the stock loss, determining the cause, and identifying any responsible parties.   
+Content: Specifies the names and positions of the appointed committee members, their terms of reference for the investigation, and the timeframe for submitting their final report (KEW.PS-34).   
+System Implementation (SPS): As part of the "Hapus Kira" workflow in SPS, after a loss is registered, the system facilitates the recording of the appointed investigation committee members.   
+Importance: Ensures that a formal, impartial, and properly constituted body conducts the investigation into stock losses.
+KEW.PS-34 (Laporan Akhir Kehilangan Stok - Final Stock Loss Report)
+
+Purpose: This is the comprehensive report submitted by the Jawatankuasa Penyiasat upon completion of their investigation into the stock loss. It details their findings, conclusions, and recommendations, including any proposals for surcharge or disciplinary action against negligent officers.   
+Content: Provides a full account of the lost stock, details of how the loss occurred, findings from police investigations (if any), information about officers involved or responsible, assessment of compliance with store management procedures and security measures, a summary of the investigation process, and clear recommendations for further action (e.g., write-off, surcharge, disciplinary measures).   
+System Implementation (SPS): The completed KEW.PS-34, along with supporting documents, is submitted to the Urus Setia Kehilangan dan Hapus Kira (Loss and Write-Off Secretariat) and its details or the document itself would be recorded in the SPS. The system tracks the progress of the case based on this report.   
+Importance: This report is the primary basis upon which the decision to write off the lost stock is made. It also determines whether further administrative or disciplinary actions are warranted.
+KEW.PS-35 (Sijil Hapuskira Stok - Stock Write-Off Certificate)
+
+Purpose: A certificate issued after formal approval has been granted by the Kuasa Melulus (Approving Authority) to write off the lost stock from the official inventory records.   
+Content: Details the stock items that have been written off (item code, description, quantity) and references the approval for the write-off.   
+System Implementation (SPS): Once the write-off is approved in the "Kelulusan Hapus Kira" (Write-Off Approval) sub-module of SPS, the system updates the stock records (KEW.PS-3 equivalent, often highlighted in a specific color like brown) and can generate or record the issuance of KEW.PS-35.   
+Importance: Officially documents the removal of the lost stock from the store's accountable inventory, ensuring that records are reconciled.
+KEW.PS-36 (Laporan Kehilangan Dan Hapuskira Stok Bagi Tahun ………… - Stock Loss and Write-Off Report for the Year …………)
+
+Purpose: An annual report that summarizes all incidents of stock loss and subsequent write-offs that occurred within a PTJ or Ministry during a specific year.   
+Content: Provides aggregated data on the number of loss cases, the total original acquisition value and current value of the lost stock, the number of cases where surcharge was imposed, the total value of surcharges, and the number of cases where disciplinary action was taken.   
+System Implementation (SPS): The SPS reporting module can compile data from all completed loss and write-off cases throughout the year to generate the KEW.PS-36 report.
+Importance: Offers an annual overview of stock losses and write-offs, which is crucial for management review, identifying trends or systemic weaknesses, financial reporting, and reporting to central agencies.
+D. Implementation of KEW.PS in Store Management Systems
+The primary system detailed for the implementation of KEW.PS procedures is the Sistem Pengurusan Stor (SPS).
+
+Sistem Pengurusan Stor (SPS) :   
+Overview: The SPS is the designated IT system for managing government stores in accordance with the TPS. It provides a comprehensive suite of modules designed to cover the entire store management lifecycle, from the initial setup of store details and user roles by the Pentadbir SPS (SPS Administrator) to the final stages of stock disposal or write-off. Key functional areas include Pentadbir SPS (SPS Administrator functions like store registration, officer appointments), Penyimpanan (Storage - defining storage locations), Pusat Kawalan (Control Center - managing stock codes), Bekalan & Kawalan (Supply & Control - stock registration, card activation, procurement registration), Penerimaan (Receipt), Pengesahan Terimaan (Receipt Confirmation), Permohonan Stok (Stock Requisition - by end-users and between stores), Kelulusan (Approval), Proses Pengeluaran (Issuance Process - for KEW.PS-8 and KEW.PS-7), Pemulangan Semula (Returns), Pelarasan (Adjustments), Ambil Alih Stor (Store Takeover), Pelupusan (Disposal), Lantikan Urusetia Kelulusan (Appointment of Approval Secretariat), Kelulusan Pelupusan (Disposal Approval), Hapus Kira (Write-Off), Verifikasi Stor (Store Verification), and Laporan Stor (Store Reports).   
+KEW.PS Form Integration: The SPS is intrinsically linked with the KEW.PS forms. Many of these forms are either directly generated by the system at various process stages, or the data required to complete them manually is managed and tracked within the system. For example:
+KEW.PS-1 (Borang Terimaan Barang-Barang) is generated after a successful receipt from a supplier is processed in the "Terimaan dari Pembekal" sub-module.   
+KEW.PS-3 (Daftar Stok/Kad Stok) is the core stock record that the SPS updates with every transaction. The system provides a digital view of this, often with color-coding for different transaction types (e.g., issues, receipts, adjustments).   
+KEW.PS-7 (Borang Permohonan Stok (Antara Stor)) and KEW.PS-8 (Borang Permohonan Stok (Individu Kepada Stor)) are generated as part of the stock requisition and issuance workflows within the SPS.   
+KEW.PS-10, KEW.PS-11, and KEW.PS-12 related to store verification are generated after the verification and confirmation processes are completed in the "Verifikasi Stor" and "Pengesahan Verifikasi" modules.   
+KEW.PS-20 (Borang Pelupusan Stok) is central to the "Pelupusan" module, where details of stock for disposal are recorded and processed for approval.   
+Forms related to loss and write-off, such as KEW.PS-32, KEW.PS-34, and KEW.PS-35, are managed within the "Hapus Kira" module and its associated approval workflows.   
+Workflow Automation: The SPS automates many of the procedural steps outlined in the TPS. For instance, stock requisitions are routed electronically for approval, inventory levels are updated automatically after transactions, and notifications can be generated for tasks requiring action (e.g., pending approvals, items for verification). This automation aims to improve efficiency, reduce manual errors, and enhance control over store operations.
+Role-Based Access: The SPS employs role-based access control, ensuring that users can only perform functions relevant to their designated roles (e.g., Pegawai Stor, Pegawai Pelulus, Ketua Jabatan, Pentadbir SPS). This is evident in the manual's description of different users performing specific steps in various procedures.   
+The detailed integration of KEW.PS forms and procedures into the SPS demonstrates a clear commitment by the Malaysian government to standardize and modernize its store management practices. The system provides a platform for enforcing compliance with the TPS, improving data accuracy, and enabling better oversight of government inventory.
+
+IV. Comparative Analysis and Interrelation
+While KEW.PA and KEW.PS are distinct frameworks catering to different types of government holdings (movable assets vs. store inventory), they share common principles rooted in public accountability and resource management. Both systems emphasize clear procedures for acquisition (Penerimaan), registration/recording, maintenance/storage, inspection/verification, and eventual disposal or write-off. The Malaysian Treasury's oversight ensures a degree of uniformity in the governance approach.
+
+The digital systems (G-Asset, iAset for KEW.PA; SPS for KEW.PS) play a crucial role in operationalizing these complex procedures. They provide platforms for:
+
+Standardized Data Entry: Ensuring all required information for each KEW.PA/PS form is captured.
+Workflow Management: Automating the routing of forms and requests for approval.
+Record Keeping: Maintaining a centralized and up-to-date database.
+Reporting: Generating standardized KEW.PA/PS reports for management and audit.
+A key interrelation can be seen in how assets (managed under KEW.PA) might consume items from stores (managed under KEW.PS) for their maintenance or operation. For example, spare parts (Stok) from a store might be used to repair a vehicle (Harta Modal). While the provided documents focus on the separate management of assets and stores, in practice, integrated systems or well-defined interfaces between asset management and store management systems would be beneficial for a holistic view of resource consumption. For example, the cost of 'Stok' used in maintaining an 'Aset Alih' should ideally be traceable to that asset's maintenance record (KEW.PA-14/15).
+
+The evolution of these forms, as hinted by the older FAMS manual  using different KEW.PA numbers, suggests that these frameworks are not static. They are periodically reviewed and updated by the Treasury to reflect changing needs, technological advancements, and best practices in public sector management. This necessitates that the supporting IT systems also remain agile and adaptable to incorporate such revisions.   
+
+V. Conclusions
+The KEW.PA and KEW.PS frameworks represent a comprehensive and structured approach by the Malaysian government to manage its movable assets and stores. Governed by Perbendaharaan Malaysia, these frameworks, through their detailed procedures and standardized forms, aim to ensure accountability, efficiency, and optimal utilization of public resources.
+
+The distinction between Harta Modal and Aset Alih Bernilai Rendah under KEW.PA, based on the RM2,000 threshold, allows for a tiered approach to asset management, focusing more intensive controls on higher-value items. Similarly, the KEW.PS framework provides granular control over diverse stock items, crucial for operational readiness and minimizing wastage.
+
+The widespread implementation of these procedures through dedicated IT systems like G-Asset, iAset, and SPS signifies a strong commitment to modernizing public sector resource management. These systems enhance efficiency, data accuracy, and reporting capabilities, translating complex manual processes into streamlined digital workflows. However, the existence of multiple systems and the evolution of form nomenclature over time highlight the need for continuous alignment and updates to ensure consistency and compliance with the latest Treasury circulars.
+
+Ultimately, the robust application of KEW.PA and KEW.PS procedures, supported by effective IT systems, is fundamental to good governance in the Malaysian public sector. They provide the necessary tools for prudent financial management, transparent operations, and the responsible stewardship of taxpayer-funded assets and inventory. The continuous emphasis on detailed record-keeping, formal approvals, regular inspections, and controlled disposal and write-off processes across both frameworks underscores the government's commitment to maintaining high standards of public accountability.

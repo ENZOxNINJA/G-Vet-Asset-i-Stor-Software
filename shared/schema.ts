@@ -296,6 +296,215 @@ export const assetLoanRequestItems = pgTable("asset_loan_request_items", {
   notes: text("notes"),
 });
 
+// Asset Inspection Forms (KEW.PA-11, KEW.PA-12, KEW.PA-13)
+export const assetInspections = pgTable("asset_inspections", {
+  id: serial("id").primaryKey(),
+  inspectionYear: text("inspection_year").notNull(),
+  inspectionType: text("inspection_type").notNull(), // annual, quarterly, spot
+  department: text("department").notNull(),
+  division: text("division"),
+  
+  // Inspection assignment
+  inspectorName: text("inspector_name").notNull(),
+  inspectorPosition: text("inspector_position").notNull(),
+  assignedDate: date("assigned_date").notNull(),
+  
+  // Inspection results
+  totalAssetsRegistered: integer("total_assets_registered").default(0),
+  totalAssetsInspected: integer("total_assets_inspected").default(0),
+  assetsFoundGood: integer("assets_found_good").default(0),
+  assetsFoundDamaged: integer("assets_found_damaged").default(0),
+  assetsNotFound: integer("assets_not_found").default(0),
+  assetsFoundUnregistered: integer("assets_found_unregistered").default(0),
+  
+  // Completion and certification
+  inspectionStartDate: date("inspection_start_date"),
+  inspectionEndDate: date("inspection_end_date"),
+  status: text("status").notNull().default("assigned"), // assigned, in-progress, completed, certified
+  performanceScore: decimal("performance_score", { precision: 5, scale: 2 }),
+  remarks: text("remarks"),
+  
+  // Certification details
+  certifiedBy: text("certified_by"),
+  certifiedDate: date("certified_date"),
+  certificateNumber: text("certificate_number"),
+  
+  createdAt: timestamp("created_at").defaultNow(),
+});
+
+// Asset Inspection Items (detailed findings per asset)
+export const assetInspectionItems = pgTable("asset_inspection_items", {
+  id: serial("id").primaryKey(),
+  inspectionId: integer("inspection_id").notNull(),
+  assetId: integer("asset_id"),
+  registrationNumber: text("registration_number"),
+  
+  // Expected details (from records)
+  expectedLocation: text("expected_location"),
+  expectedCondition: text("expected_condition"),
+  expectedCustodian: text("expected_custodian"),
+  
+  // Actual findings
+  actualLocation: text("actual_location"),
+  actualCondition: text("actual_condition"),
+  actualCustodian: text("actual_custodian"),
+  assetFound: boolean("asset_found").default(true),
+  
+  // Discrepancies and actions
+  discrepancies: text("discrepancies"),
+  recommendedAction: text("recommended_action"),
+  inspectorRemarks: text("inspector_remarks"),
+  
+  inspectedDate: date("inspected_date"),
+  inspectedBy: text("inspected_by"),
+});
+
+// Asset Maintenance Forms (KEW.PA-14, KEW.PA-15, KEW.PA-16)
+export const assetMaintenanceRecords = pgTable("asset_maintenance_records", {
+  id: serial("id").primaryKey(),
+  assetId: integer("asset_id").notNull(),
+  maintenanceType: text("maintenance_type").notNull(), // preventive, corrective, emergency
+  
+  // Request details
+  requestedBy: text("requested_by").notNull(),
+  requestedDate: date("requested_date").notNull(),
+  problemDescription: text("problem_description"),
+  urgencyLevel: text("urgency_level").default("normal"), // urgent, normal, low
+  
+  // Approval and assignment
+  approvedBy: text("approved_by"),
+  approvedDate: date("approved_date"),
+  assignedTo: text("assigned_to"), // internal staff or external contractor
+  assignedDate: date("assigned_date"),
+  
+  // Work details
+  workStartDate: date("work_start_date"),
+  workEndDate: date("work_end_date"),
+  workDescription: text("work_description"),
+  partsUsed: text("parts_used"),
+  
+  // Cost information
+  laborCost: decimal("labor_cost", { precision: 10, scale: 2 }).default("0"),
+  partsCost: decimal("parts_cost", { precision: 10, scale: 2 }).default("0"),
+  totalCost: decimal("total_cost", { precision: 10, scale: 2 }).default("0"),
+  
+  // Service provider details (if external)
+  serviceProvider: text("service_provider"),
+  serviceProviderContact: text("service_provider_contact"),
+  invoiceNumber: text("invoice_number"),
+  
+  // Completion and verification
+  workCompleted: boolean("work_completed").default(false),
+  verifiedBy: text("verified_by"),
+  verifiedDate: date("verified_date"),
+  userSatisfaction: text("user_satisfaction"), // excellent, good, satisfactory, poor
+  
+  // Follow-up
+  warrantyPeriod: text("warranty_period"),
+  nextMaintenanceDue: date("next_maintenance_due"),
+  
+  status: text("status").notNull().default("requested"), // requested, approved, assigned, in-progress, completed, verified
+  notes: text("notes"),
+  createdAt: timestamp("created_at").defaultNow(),
+});
+
+// Asset Transfer Forms (KEW.PA-17, KEW.PA-18)
+export const assetTransfers = pgTable("asset_transfers", {
+  id: serial("id").primaryKey(),
+  transferType: text("transfer_type").notNull(), // permanent, temporary, loan
+  
+  // Asset details
+  assetId: integer("asset_id").notNull(),
+  registrationNumber: text("registration_number").notNull(),
+  
+  // Source information
+  fromDepartment: text("from_department").notNull(),
+  fromDivision: text("from_division"),
+  fromLocation: text("from_location").notNull(),
+  fromCustodian: text("from_custodian").notNull(),
+  fromCustodianPosition: text("from_custodian_position"),
+  
+  // Destination information
+  toDepartment: text("to_department").notNull(),
+  toDivision: text("to_division"),
+  toLocation: text("to_location").notNull(),
+  toCustodian: text("to_custodian").notNull(),
+  toCustodianPosition: text("to_custodian_position"),
+  
+  // Transfer details
+  transferReason: text("transfer_reason").notNull(),
+  transferDate: date("transfer_date").notNull(),
+  expectedReturnDate: date("expected_return_date"), // for temporary transfers
+  actualReturnDate: date("actual_return_date"),
+  
+  // Authorization
+  authorizedBy: text("authorized_by").notNull(),
+  authorizationDate: date("authorization_date").notNull(),
+  authorizationReference: text("authorization_reference"),
+  
+  // Handover process
+  handedOverBy: text("handed_over_by"),
+  handoverDate: date("handover_date"),
+  receivedBy: text("received_by"),
+  receiveDate: date("receive_date"),
+  
+  // Condition verification
+  conditionAtTransfer: text("condition_at_transfer"),
+  conditionAtReturn: text("condition_at_return"), // for temporary transfers
+  
+  status: text("status").notNull().default("requested"), // requested, approved, in-transit, completed, returned
+  notes: text("notes"),
+  createdAt: timestamp("created_at").defaultNow(),
+});
+
+// Asset Disposal Forms (KEW.PA-19 to KEW.PA-23)
+export const assetDisposals = pgTable("asset_disposals", {
+  id: serial("id").primaryKey(),
+  assetId: integer("asset_id").notNull(),
+  registrationNumber: text("registration_number").notNull(),
+  
+  // Disposal justification
+  disposalReason: text("disposal_reason").notNull(), // obsolete, damaged, uneconomical, surplus
+  disposalJustification: text("disposal_justification").notNull(),
+  
+  // Technical assessment (KEW.PA-19 - PEP)
+  requiresTechnicalAssessment: boolean("requires_technical_assessment").default(false),
+  technicalAssessmentBy: text("technical_assessment_by"),
+  technicalAssessmentDate: date("technical_assessment_date"),
+  technicalRecommendation: text("technical_recommendation"),
+  pepCertificateNumber: text("pep_certificate_number"),
+  
+  // Disposal board (KEW.PA-20, KEW.PA-21)
+  disposalBoardAppointed: boolean("disposal_board_appointed").default(false),
+  disposalBoardMembers: text("disposal_board_members"), // JSON array of member details
+  boardInspectionDate: date("board_inspection_date"),
+  boardRecommendation: text("board_recommendation"),
+  recommendedDisposalMethod: text("recommended_disposal_method"), // sale, scrap, destruction, donation
+  estimatedValue: decimal("estimated_value", { precision: 10, scale: 2 }),
+  
+  // Approval process
+  approvedBy: text("approved_by"),
+  approvalDate: date("approval_date"),
+  approvalReference: text("approval_reference"),
+  
+  // Disposal execution
+  disposalMethod: text("disposal_method"),
+  disposalDate: date("disposal_date"),
+  disposalLocation: text("disposal_location"),
+  purchaserName: text("purchaser_name"), // if sold
+  salePrice: decimal("sale_price", { precision: 10, scale: 2 }), // if sold
+  
+  // Verification (KEW.PA-22, KEW.PA-23)
+  witnessedBy: text("witnessed_by"), // JSON array of witnesses
+  disposalCertificateNumber: text("disposal_certificate_number"),
+  verifiedBy: text("verified_by"),
+  verificationDate: date("verification_date"),
+  
+  status: text("status").notNull().default("proposed"), // proposed, assessed, approved, executed, completed
+  notes: text("notes"),
+  createdAt: timestamp("created_at").defaultNow(),
+});
+
 // Schema exports for new KEW.PA forms
 export const insertAssetReceptionSchema = createInsertSchema(assetReceptions)
   .omit({ id: true, createdAt: true });
@@ -336,6 +545,37 @@ export type InsertAssetLoanRequest = z.infer<typeof insertAssetLoanRequestSchema
 export type AssetLoanRequest = typeof assetLoanRequests.$inferSelect;
 export type InsertAssetLoanRequestItem = z.infer<typeof insertAssetLoanRequestItemSchema>;
 export type AssetLoanRequestItem = typeof assetLoanRequestItems.$inferSelect;
+
+// Schema exports for enhanced KEW.PA compliance forms
+export const insertAssetInspectionSchema = createInsertSchema(assetInspections)
+  .omit({ id: true, createdAt: true });
+
+export const insertAssetInspectionItemSchema = createInsertSchema(assetInspectionItems)
+  .omit({ id: true });
+
+export const insertAssetMaintenanceRecordSchema = createInsertSchema(assetMaintenanceRecords)
+  .omit({ id: true, createdAt: true });
+
+export const insertAssetTransferSchema = createInsertSchema(assetTransfers)
+  .omit({ id: true, createdAt: true });
+
+export const insertAssetDisposalSchema = createInsertSchema(assetDisposals)
+  .omit({ id: true, createdAt: true });
+
+// Type exports for enhanced compliance
+export type InsertAssetInspection = z.infer<typeof insertAssetInspectionSchema>;
+export type AssetInspection = typeof assetInspections.$inferSelect;
+export type InsertAssetInspectionItem = z.infer<typeof insertAssetInspectionItemSchema>;
+export type AssetInspectionItem = typeof assetInspectionItems.$inferSelect;
+
+export type InsertAssetMaintenanceRecord = z.infer<typeof insertAssetMaintenanceRecordSchema>;
+export type AssetMaintenanceRecord = typeof assetMaintenanceRecords.$inferSelect;
+
+export type InsertAssetTransfer = z.infer<typeof insertAssetTransferSchema>;
+export type AssetTransfer = typeof assetTransfers.$inferSelect;
+
+export type InsertAssetDisposal = z.infer<typeof insertAssetDisposalSchema>;
+export type AssetDisposal = typeof assetDisposals.$inferSelect;
 
 // Suppliers
 export const suppliers = pgTable("suppliers", {
