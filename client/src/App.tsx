@@ -17,6 +17,7 @@ import AssetMaintenance from "@/pages/AssetMaintenance";
 import AssetVerification from "@/pages/AssetVerification";
 import AssetMovement from "@/pages/AssetMovement";
 import AssetSearch from "@/pages/AssetSearch";
+import StoreManagementKEWPS from "@/pages/StoreManagementKEWPS";
 import Suppliers from "@/pages/Suppliers";
 import FilterModal from "@/components/FilterModal";
 import DeleteConfirmationModal from "@/components/DeleteConfirmationModal";
@@ -35,6 +36,7 @@ function Router() {
       <Route path="/asset-verification" component={AssetVerification} />
       <Route path="/asset-movement" component={AssetMovement} />
       <Route path="/asset-search" component={AssetSearch} />
+      <Route path="/store-management-kewps" component={StoreManagementKEWPS} />
       <Route path="/suppliers" component={Suppliers} />
       <Route component={NotFound} />
     </Switch>
