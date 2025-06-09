@@ -51,6 +51,16 @@ const menuItems = [
     path: "/asset-registration-kewpa",
   },
   {
+    title: "Inspection",
+    icon: <Search className="h-5 w-5" />,
+    path: "/asset-inspection",
+  },
+  {
+    title: "Maintenance",
+    icon: <Settings className="h-5 w-5" />,
+    path: "/asset-maintenance",
+  },
+  {
     title: "Verification",
     icon: <CheckSquare className="h-5 w-5" />,
     path: "/asset-verification",
