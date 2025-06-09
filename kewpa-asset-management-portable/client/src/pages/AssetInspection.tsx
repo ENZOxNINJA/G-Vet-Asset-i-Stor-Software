@@ -11,7 +11,7 @@ import { Badge } from "@/components/ui/badge";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
 import { apiRequest, queryClient } from "@/lib/queryClient";
-import AppLayout from "@/components/AppLayout";
+import AppLayout from "@/components/SeparatedAppLayout";
 import { 
   ClipboardCheck, 
   Search, 

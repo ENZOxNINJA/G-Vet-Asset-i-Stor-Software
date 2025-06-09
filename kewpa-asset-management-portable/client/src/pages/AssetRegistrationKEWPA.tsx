@@ -15,7 +15,7 @@ import { apiRequest, queryClient } from "@/lib/queryClient";
 import { assetFormSchema } from "@shared/schema";
 import { Calendar, FileText, Package, User, Building, Truck } from "lucide-react";
 import { format } from "date-fns";
-import AppLayout from "@/components/AppLayout";
+import AppLayout from "@/components/SeparatedAppLayout";
 
 // KEW.PA Asset Categories based on Malaysian Government standards
 const assetCategories = [
