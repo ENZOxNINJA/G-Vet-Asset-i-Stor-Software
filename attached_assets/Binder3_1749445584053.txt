@@ -1,0 +1,1654 @@
+KEW.PA-1
+
+No. Rujukan: 001/2018
+
+BORANG PENERIMAAN ASET ALIH
+
+
+Nama dan Alamat Pembekal/
+Agen Penghantaran/ Pemberi
+
+   Jenis PenerimaanPesanan Kerajaan (PK)/ Kontrak/ Surat Kelulusan
+Nota Hantaran (DO)
+
+Maklumat Pengangkutan
+Nombor Rujukan
+Tarikh
+Nombor Rujukan
+TarikhSyarikat Daya Maju s/b No.1 Jalan SS3, 13000
+S.Alam SelangorPembelianLO00000731715/06/2018AC00720/06/2018Lori Isuzu WWV685
+
+No. Kod
+
+Keterangan Aset AlihKuantiti
+
+CatatanDipesan (PK)Nota Hantaran (DO)
+Diterima5610170300000000Meja Tulis Kayu 2 Warna202020
+
+..................TT....................... (Tandatangan Pegawai Penerima) Nama: Roslan b. Aziz
+Jawatan: Pembantu Tadbir Jabatan: Perbendaharaan Malaysia Tarikh: 21/06/2018
+
+.................................................. (*Tandatangan Pegawai Teknikal) Nama:
+Jawatan: Jabatan: Tarikh:
+* Jika Perlu.
+(WAJIB CETAK)	KEW.PA-2
+No. Rujukan:  0001/2018
+BORANG PENOLAKAN ASET ALIH
+
+
+Nama dan Alamat Pembekal/ Agen Penghantaran/ Pemberi Pesanan Kerajaan (PK)/ Kontrak/ Surat KelulusanNota Hantaran (DO) dan Tarikh
+
+  Maklumat Pengangkutan
+
+No. Ruj. PenerimaanNombor Rujukan
+TarikhNombor Rujukan
+TarikhSAI S/B
+No.22, Jln. Bunga Raya, 36000 KLLO00002531405/07/2018A7542310/07/2018Lori Isuzu WWV685
+WP4521
+
+No. Kod
+
+Keterangan Aset AlihKuantiti
+
+Sebab-Sebab Penolakan
+
+Catatan
+Dipesan (PK)Nota Hantaran (DO)
+Diterima
+DitolakKurang/ Lebih
+(+/-)
+5610170300000
+000
+
+Meja Tulis Kayu 2 Warna
+
+2020
+
+15
+
+3
+
+2
+
+Kaki meja patahDalam DO 20 unit yang	dihantar hanya 18 unit sahajaPegawai PenerimaAkuan Terima Pembekal/ Agen Penghantaran
+
+
+............TT............................ Nama: Kamal b. Azlee Jawatan: Pembantu Tadbir Tarikh: 11/07/2018
+Cap Jabatan:Disahkan Aset Alih ini diterima untuk tindakan atas sebab-sebab berikut:-
+
+? Kuantiti Ditolak
+? Kuantiti Kurang
+? Kuantiti Lebih
+
+.....................................................
+Nama:
+Tarikh:
+Cap Syarikat:
+Pekeliling Perbendaharaan Malaysia	AM 2.3 Lampiran A
+
+
+KEW.PA-3
+(No. Siri Pendaftaran:	)
+
+
+
+Kementerian/ Jabatan: Bahagian/ Cawangan:
+
+DAFTAR HARTA MODAL BAHAGIAN A
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+PENEMPATANLokasiTarikhNama Pegawai
+PEMERIKSAANTarikhStatus AsetNama Pemeriksa
+USIA GUNA DAN NILAI SEMASATarikhUsia GunaNilai Semasa (RM)Nama Pegawai
+PINDAHAN/ PELUPUSAN/ HAPUS KIRAPerkaraRujukan KelulusanTarikh KelulusanNama Pegawai*Nota Tandatangan Ketua Jabatan boleh ditandatangani oleh Ketua Jabatan/ Bahagian/ Seksyen/ Unit.
+
+M.S. 17/30
+
+Pekeliling Perbendaharaan Malaysia	AM 2.3 Lampiran A
+
+
+
+KEW.PA-3
+DAFTAR HARTA MODAL
+
+BUTIR-BUTIR ASAL/ PENAMBAHAN/ NAIK TARAF/ PENGGANTIAN BAHAGIAN B
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+-
+
+
+M.S. 18/30
+
+
+PENJELASAN TERPERINCI MAKLUMATDAFTAR HARTA MODAL(Satu (1) daftar untuk satu (1) unit Harta Modal)Daftar Harta Modal mempunyai dua (2) bahagian iaitu:-Bahagian A	:Harta Modal dan Komponen yang dibekalkan.Butir-butir	penempatan,	pemeriksaan,	pindahan/ pelupusan/ hapus kira dan tandatangan.Bahagian B	:Komponen/ Aksesori yang dibekalkan.Butir-butir	asal,	penambahan,	naik	taraf	dan
+penggantian.BAHAGIAN A1.No. Siri Pendaftaran: Sila rujuk Panduan Standard Pembentukan No.Siri Pendaftaran Aset Alih Kerajaan Bagi Agensi Kerajaan Persekutuan di Lampiran E.2.No Kod Nasional:	No. Kod Nasional3.Kategori:	Contoh: Peralatan dan Kelengkapan ICT4.Sub-kategori:	Contoh: Komputer5.Jenis/ Jenama/:Contoh: Desktop/ HPL1506Model6.Buatan:Nyatakan buatan tempatan atau luar negara. Sekiranya buatan luar negara nyatakan nama negara berkenaan.7.Jenis dan:Jenis enjin seperti diesel, petrol, gas asli dan sebagainya.No. EnjinNo. Enjin seperti 4G54-KN8579.8.No. Casis/ Siri Pembuat:Bagi kenderaan isikan no. casis dan bagi Harta Modal yang lain isikan no. siri pembuat.9.No. Pendaftaran:Bagi kenderaan isikan no. pendaftaran, contoh: WYT 3721.
+
+10.Harga:Harga asal Harta Modal yang dibeli. Bagi aset yang tidakPerolehan Asaldibeli, anggaran harga hendaklah dibuat mengikut harga pasaran semasa oleh Pegawai Aset.11.Tarikh Perolehan/:Tarikh Harta Modal diperoleh atau disewa beli (tarikh Pesanan Kerajaan/Kontrak/Sebut Harga).12.Tarikh DiterimaTarikh diterima adalah tarikh pengesahan penerimaan/ tarikh terima aset daripada Pembekal/ PTJ Pembeli/ Pemberi.13.No.Pesanan	Rasmi Kerajaan/ Kontrak:Catatkan nombor dan tarikh Pesanan Rasmi Kerajaan/ Kontrak untuk pembelian Harta Modal yang berkenaan.14.Tempoh Jaminan:Catatkan tempoh jaminan oleh pembekal.15.Nama	dan	Alamat Pembekal:Nama dan alamat pembekal atau jika diperoleh dengan cara pindahan atau hadiah, sila nyatakan nama dan alamat pemberi.16.Spesifikasi:Spesifikasi bagi Harta Modal. Contoh: spesifikasi bagi komputer riba adalah Intel Core Duo Processor, 160 HDD dan sebagainya.17.Tandatangan,:Tandatangan Ketua Jabatan/ Bahagian/ Seksyen/ UnitNama, Jawatanyang mengesahkan butir-butir maklumat dan Harta ModalTarikh dan capberkenaan ada semasa didaftarkan.18.Penempatan:Lokasi Harta Modal, tarikh ditempatkan dan nama pengguna/ penyelia di lokasi itu. Setiap pindahan lokasi perlu direkodkan.19.Pemeriksaan:Pegawai Pemeriksa hendaklah menyatakan tarikh, status aset sama ada sedang digunakan atau tidak digunakan dan nama selepas pemeriksaan dijalankan.20.Usia Guna dan Nilai SemasaPegawai Aset hendaklah membuat pengemaskinian usia guna dan nilai semasa pada setiap akhir tahun mengikut garis panduan yang ditetapkan oleh Jabatan Akauntan
+Negara Malaysia (JANM).
+
+
+21.Pindahan/ Pelupusan/ Hapus kira:Maklumat pindahan, pelupusan atau hapus kira dicatatkan selepas tindakan dilaksanakan dengan menyatakan perkara tindakan yang diambil, nombor rujukan surat kelulusan, tarikh kelulusan dan nama pegawai yang mengemas kini daftar.BAHAGIAN B1.Nombor	Siri Pendaftaran Komponen:Nombor siri pendaftaran bagi komponen/ aksesori asal, penambahan, naik taraf atau penggantian.2.Jenis/Jenama/Model:Jenis, jenama dan model bagi komponen/ aksesori asal,penambahan, penggantian atau naik taraf.3.Kos (RM):Harga asal, penambahan, penggantian atau naik taraf.4.Tempoh Jaminan:Catatkan tempoh jaminan.5.Asal/ Tambah/ Naik Taraf/ Penggantian:Status komponen/ aksesori.6.Tarikh	Dipasang/ Dikeluarkan/ Dilupus:Tarikh komponen/ aksesori dipasang, dikeluarkan atau dilupus.
+7.
+Catatan
+:
+Ruangan maklumat tambahan jika perlu.8.Nama Pegawai:Nama pegawai yang mendaftar komponen/ aksesori asal, penambahan, naik taraf atau penggantian.
+Nota: Ruangan PENEMPATAN/ PEMERIKSAAN/ PINDAHAN/ PELUPUSAN/ HAPUS KIRA hendaklah dijadikan sebagai lampiran jika ruangan sedia ada tidak mencukupi.
+
+KEW.PA-4
+(No. Siri Pendaftaran:	)
+
+DAFTAR ASET ALIH BERNILAI RENDAH
+
+Kementerian/ Jabatan :
+Bahagian	:
+BAHAGIAN A
+Kod NasionalKeterangan AsetKategoriSub KategoriJenis/ Jenama/ ModelBuatanHarga Perolehan Asal (RM)Jenis Dan No. EnjinTarikh PerolehanTarikh DiterimaNo Casis/ Siri PembuatNo. Pesanan Rasmi Kerajaan/
+KontrakNo Pendaftaran (Bagi Kenderaan)Tempoh JaminanNama Pembekal Dan Alamat:Spesifikasi/ Catatan:Nama Ketua Jabatan : Jawatan	:
+Tarikh	:
+PENEMPATANLokasiTarikhNama Pegawai
+PEMERIKSAANTarikhStatus AsetNama Pemeriksa
+USIA GUNA DAN NILAI SEMASATarikhUsia GunaNilai Semasa (RM)Nama Pegawai
+PINDAHAN/ PELUPUSAN/ HAPUS KIRAPerkaraRujukan KelulusanTarikh KelulusanNama Pegawai
+Pekeliling Perbendaharaan Malaysia	AM 2.3 Lampiran B
+
+
+
+
+ASET ALIH BERNILAI RENDAH
+
+BUTIR-BUTIR ASAL/ PENAMBAHAN/ NAIK TARAF/ PENGGANTIAN BAHAGIAN B
+
+PENJELASAN TERPERINCI MAKLUMATDAFTAR ASET ALIH BERNILAI RENDAH(Satu (1) daftar untuk satu (1) unit Aset Alih Bernilai Rendah, dicetak jika perlu)
+Daftar Aset Alih Bernilai Rendah mempunyai dua (2) bahagian iaitu:-Bahagian A	:Aset Alih Bernilai Rendah yang dibekalkan.Butir-butir	penempatan,	pemeriksaan,	pindahan pelupusan/ hapus kira dan tandatangan.Bahagian B	:Komponen/ Aksesori yang dibekalkan.
+Butir-butir	asal,	penambahan,	naik	taraf	dan penggantian.BAHAGIAN A1.No. Siri Pendaftaran: Sila rujuk Panduan Standard Pembentukan No.Siri Pendaftaran Aset Alih Kerajaan Bagi Agensi Kerajaan Persekutuan di Lampiran E.2.No Kod Nasional:	No. Kod Nasional3.Keterangan Aset:	Contoh : Meja Mesyuarat Penjuru3.Kategori:	Contoh: Perabot4.Sub-kategori:	Contoh: Meja5.Jenis/ Jenama/:Contoh: Meja Mesyuarat PenjuruModel6.Buatan:Nyatakan buatan tempatan atau luar negara. Sekiranya buatan luar negara nyatakan nama negara berkenaan.7.Jenis dan:Jenis enjin seperti diesel, petrol, gas asli dan sebagainya.No. EnjinNo. Enjin seperti 4G54-KN8579.8.No. Casis/ Siri Pembuat:Bagi kenderaan isikan no. casis dan bagi Aset Alih Bernilai Rendah yang lain isikan no. siri pembuat.
+9.No. Pendaftaran:Bagi kenderaan isikan no. pendaftaran, contoh: WYT 3721.10.Harga	Perolehan Asal:Harga asal Aset Alih Bernilai Rendah yang dibeli. Bagi aset yang tidak dibeli, anggaran harga hendaklah dibuat mengikut harga pasaran semasa oleh Pegawai Aset.11.Tarikh Perolehan:Tarikh perolehan Aset Alih Bernilai Rendah dibeli (tarikh Pesanan Kerajaan/Kontrak/Sebut Harga).12.Tarikh DiterimaTarikh diterima adalah tarikh pengesahan penerimaan/ tarikh terima aset daripada PTJ Pembeli/ Pemberi.13.No.Pesanan	Rasmi Kerajaan/ Kontrak:Catatkan nombor Pesanan Rasmi Kerajaan/ Kontrak untuk pembelian Aset Alih Bernilai Rendah yang berkenaan.14.Tempoh Jaminan:Catatkan tempoh jaminan oleh pembekal.15.Nama	dan	Alamat Pembekal:Nama dan alamat pembekal atau jika diperoleh dengan cara pindahan dan hadiah, sila nyatakan nama dan alamat pemberi.16.Spesifikasi/ Catatan:Spesifikasi bagi Aset Alih Bernilai Rendah. Contoh: spesifikasi bagi komputer riba adalah Intel Core Duo Processor, 160 HDD dan sebagainya.17.Nama	Ketua Jabatan, Jawatan Tarikh dan Cap:Nama Ketua Jabatan/ Bahagian/ Seksyen/ Unit yang mengesahkan butir-butir maklumat dan Aset Alih Bernilai Rendah berkenaan ada semasa didaftarkan.18.Penempatan:Lokasi Aset Alih Bernilai Rendah, tarikh ditempatkan dan Nama Pegawai oleh pengguna/ penyelia di lokasi itu. Setiap perubahan perlu dikemaskini.19.Pemeriksaan:Pegawai Pemeriksa hendaklah menyatakan tarikh, status aset sama ada sedang digunakan atau tidak digunakan
+dan nama selepas pemeriksaan dijalankan.
+20.Usia Guna dan Nilai SemasaPegawai Aset hendaklah membuat pengemaskinian nilai semasa pada setiap akhir tahun mengikut garis panduan yang ditetapkan oleh Jabatan Akauntan Negara Malaysia (JANM).20.Pindahan/ Pelupusan/ Hapus Kira:Maklumat pindahan, pelupusan atau hapus kira dicatatkan selepas tindakan dilaksanakan dengan menyatakan perkara tindakan yang diambil, nombor rujukan surat kelulusan, tarikh kelulusan dan nama pegawai yang mengemas kini daftar.BAHAGIAN B1.Nombor	Siri Pendaftaran Komponen:Nombor siri pendaftaran bagi komponen/ aksesori asal, penambahan, naik taraf atau penggantian.2.Jenis/Jenama/Model:Jenis, jenama dan model bagi komponen/ aksesori asal,penambahan, naik taraf atau penggantian.3.Kos (RM):Harga asal, penambahan, naik taraf atau penggantian.4.Tempoh Jaminan:Catatkan tempoh jaminan.5.Asal/ Tambah/ Naik Taraf/ Penggantian:Status komponen/ aksesori.6.Tarikh	Dipasang/ Dikeluarkan/ Dilupus:Tarikh komponen/ aksesori dipasang, dikeluarkan atau dilupus.7.Catatan:Ruangan maklumat tambahan jika perlu.8.Nama Pegawai:Nama pegawai yang mendaftar komponen/ aksesori asal, penambahan, naik taraf atau penggantian.
+Nota: Ruangan PENEMPATAN/ PEMERIKSAAN/ PINDAHAN/ PELUPUSAN/ HAPUS KIRA hendaklah dijadikan sebagai lampiran jika ruangan sedia ada tidak mencukupi.
+
+KEW.PA-5
+SENARAI DAFTAR HARTA MODAL
+
+
+
+BIL.
+ NOMBOR SIRI PENDAFTARAN
+KETERANGAN ASET
+CARA ASET DIPEROLEHI
+TARIKH TERIMA
+HARGA PEROLEHAN ASAL
+(RM)
+NILAI SEMASA (RM)
+STATUS ASET (PINDAHAN/ PELUPUSAN/ HAPUS KIRA)JUMLAHJUMLAH KESELURUHAN*
+*NOTA: Laporan ini melaporkan kedudukan keseluruhan Aset Alih yang dipegang oleh agensi merangkumi penerimaan serta maklumat pindahan, pelupusan dan hapus kira yang telah dikemaskini.
+
+
+
+
+
+
+
+
+
+M.S. 27/30
+
+KEW.PA-6
+SENARAI DAFTAR ASET ALIH BERNILAI RENDAH
+
+
+
+
+
+BIL.
+ NOMBOR SIRI PENDAFTARAN
+KETERANGAN ASET
+CARA ASET DIPEROLEHI
+TARIKH TERIMA
+HARGA PEROLEHAN ASAL
+(RM)
+NILAI SEMASA (RM)
+STATUS ASET (PINDAHAN/ PELUPUSAN/ HAPUS KIRA)JUMLAHJUMLAH KESELURUHAN*
+*NOTA: Laporan ini melaporkan kedudukan keseluruhan Aset Alih yang dipegang oleh agensi merangkumi penerimaan serta maklumat pindahan, pelupusan dan hapus kira yang telah dikemaskini.
+
+
+
+
+
+M.S. 28/30
+
+Pekeliling Perbendaharaan Malaysia	AM 2.3 Lampiran E
+
+
+KEW.PA-7
+
+
+SENARAI ASET ALIH
+
+BAHAGIAN : 	 LOKASI	: 	
+
+
+BILNO SIRI
+PENDAFTARAN
+KETERANGAN ASET
+KUANTITI
+(a) Disediakan oleh :	(b) Disahkan oleh :
+
+
+..............................................	.......................................... Tandatangan		Tandatangan
+
+
+Nama : 	 Jawatan : 	 Tarikh : 	
+
+Nama : 		 Jawatan :	 Tarikh  : 		
+
+
+
+
+Nota:	a) Disediakan oleh Pegawai Aset atau wakilnya (contoh:Pembantu Tadbir Aset/lain-lain jawatan)
+b) Pegawai yang mengesahkan ialah pegawai yang bertanggungjawab ke atas Aset Alih berkenaan. Contohnya:-
+i) Lokasi bilik Setiausaha Bahagian - disahkan oleh Setiausaha Bahagian.
+ii) Lokasi bilik mesyuarat - disahkan oleh pegawai yang menguruskan bilik mesyuarat
+c) Dikemas kini apabila terdapat perubahan kuantiti, lokasi atau pegawai bertanggungjawab
+
+
+
+
+
+
+M.S. 29/30
+
+Pekeliling Perbendaharaan Malaysia	AM 2.3 Lampiran F
+
+
+
+
+
+
+
+
+KEW.PA-8
+
+LAPORAN KEDUDUKAN SEMASA ASET ALIH
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+NOTA: Laporan ini melaporkan kedudukan keseluruhan Aset Alih yang dipegang oleh agensi merangkumi penerimaan serta maklumat pindahan, pelupusan dan hapus kira yang telah dikemaskini.
+
+
+
+
+
+
+
+
+M.S. 30/30
+
+KEW.PA-9
+
+No. Permohonan : ..........
+
+BORANG PERMOHONAN PERGERAKAN/ PINJAMAN ASET ALIH
+
+Nama Pemohon :Abdul Majid bin HashimTujuan :TaklimatJawatan :JK(O)3Tempat Digunakan:Bilik MesyuaratBahagian :Bahagian Pengurusan Teknologi MaklumatNama Pengeluar:
+
+
+
+Bil.
+  No. Siri Pendaftaran
+Keterangan AsetTarikh
+(Lulus/ Tidak Lulus)Tarikh
+
+CatatanDipinjamDijangka Pulang
+Dipulangkan
+Diterima
+
+........................................ (Tandatangan Peminjam)
+
+........................................ (Tandatangan Pelulus)Nama	:Nama	:Jawatan :Jawatan :Tarikh	:Tarikh	:
+
+
+........................................ (Tandatangan Pemulang)
+
+
+........................................ (Tandatangan Penerima)Nama	:Nama	:Jawatan :Jawatan :Tarikh	:Tarikh	:
+
+
+
+
+M.S. 11/15
+
+KEW.PA-10
+
+BORANG ADUAN KEROSAKAN ASET ALIH
+
+Bahagian I (Untuk diisi oleh Pengadu)1.Jenis Aset:2.Nombor Siri Pendaftaran Aset/	: Komponen3.Pengguna Terakhir:4.Tarikh Kerosakan:5.Perihal Kerosakan:6.Nama Dan Jawatan:7.Tarikh	:
+
+Bahagian II (Untuk diisi oleh Pegawai Aset/ Pegawai Teknikal)8.
+
+9.
+
+10.Jumlah Kos Penyelenggaraan Terdahulu: Anggaran Kos Penyelenggaraan :
+Syor Dan Ulasan	:11.Nama Dan Jawatan:12.Tarikh:Bahagian III (Keputusan Ketua Jabatan/ Bahagian/ Seksyen/ Unit)Diluluskan/ Tidak Diluluskan*Ulasan: ........................................................................................................................................
+
+
+
+.................................................
+Tandatangan
+
+Nama: ....................................... Jawatan:..................................... Tarikh:........................................
+Nota: * Potong mana yang tidak berkenaan.
+
+
+
+M.S. 12/15
+
+Pekeliling Perbendaharaan Malaysia	AM 2.4 Lampiran C
+
+
+
+
+
+BORANG PEMERIKSAAN ASET ALIH
+(Diisi oleh Pegawai Pemeriksa)
+
+Kementerian/Jabatan/ PTJ: .......................................................................................
+Bahagian	: ........................................................................................
+
+
+                   KEW.PA-11 No. Rujukan:..........................
+
+
+
+
+Bil
+  No. Siri Pendaftaran
+
+Jenis AsetLokasiStatus Aset
+
+CatatanMengikut Rekod
+Sebenar
+A
+B
+C
+D
+E
+
+
+.................................... (Tandatangan)
+.................................... (Nama Pegawai Pemeriksa 1 )
+..................................... (Jawatan)
+...................................... (Tarikh Pemeriksaan)
+
+.................................... (Tandatangan)
+.................................... (Nama Pegawai Pemeriksa 2)
+..................................... (Jawatan)
+...................................... (Tarikh Pemeriksaan)
+
+
+
+
+
+M.S. 13/15
+
+KEW.PA-12
+LAPORAN PEMERIKSAAN ASET ALIH
+BAGI TAHUN .................
+
+KEMENTERIAN/ JABATAN/ PTJ/ BAHAGIAN:
+
+
+
+TAHUN SEMASAKUANTITI ASETPERATUSAN ASET DIPERIKSA (%)
+KUANTITI ASET
+KESELURUHAN
+DIPERIKSA  TIDAK DIPERIKSA
+A
+B
+C
+D
+E
+FSuku Tahun PertamaSuku Tahun KeduaSuku Tahun KetigaSuku Tahun KeempatJUMLAH KESELURUHAN
+
+
+
+PETUNJUK: Status Aset Semasa Pemeriksaan
+
+A:Sedang Digunakan,B:Tidak Digunakan,C:Rosak,D:Sedang Diselenggara,E:Pinjaman F:Hilang
+
+
+
+LAPORAN PEMERIKSAAN ASET ALIH BAGI TAHUN 2018
+
+KEMENTERIAN/ JABATAN/ PTJ/ BAHAGIAN: PERBENDAHARAAN MALAYSIA
+
+
+
+TAHUN SEMASAKUANTITI ASETPERATUSAN ASET DIPERIKSA (%)
+KUANTITI ASET
+KESELURUHAN
+DIPERIKSA  TIDAK DIPERIKSA
+A
+B
+C
+D
+E
+FSuku Tahun Pertama1000100
+(a)90010%50000500Suku Tahun Kedua900
+(c)500
+(b)30067%
+((a+b)/c)10018920112Suku Tahun Ketiga110020030072%15137695Suku Tahun Keempat12004000100%2111315169JUMLAH KESELURUHAN1200683229418616
+
+
+PETUNJUK: Status Aset Semasa Pemeriksaan
+
+A:Sedang Digunakan,B:Tidak Digunakan,C:Rosak,D:Sedang Diselenggara,E:Pinjaman F:Hilang
+
+Pekeliling Perbendaharaan Malaysia	AM 2.4 Lampiran E
+
+
+
+                                                        KEW.PA-13 SIJIL TAHUNAN PEMERIKSAAN ASET ALIH BAGI TAHUN...........
+
+
+
+
+Adalah	disahkan	bahawa	Aset	Alih	di
+
+
+(Jabatan/Bahagian/PTJ)
+telah diperiksa sebanyak 	peratus (%) pada tahun semasa.
+
+
+
+
+Tandatangan	:.................................................................. Nama Ketua Jabatan :.................................................................. Tarikh	:.................................................................. Cap Kementerian/Jabatan:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+M.S. 15/15
+
+
+
+
+
+KEW.PA-14
+
+SENARAI ASET ALIH KERAJAAN
+YANG MEMERLUKAN PENYELENGGARAAN BERJADUAL
+
+Kementerian : Jabatan/ Bahagian :
+
+Bil.No. Siri Pendaftaran AsetJenis/Jenama/ModelLokasi AsetTempoh Penyelenggaraan/ Jarak Perjalanan
+KEW.PA-15
+REKOD PENYELENGGARAAN ASET ALIH
+
+
+Sub Kategori	:	No. Siri Pendaftaran  :
+Jenis	:	Lokasi	:
+
+  (a) Tarikh(b) Jenis
+Penyelenggaraan(c)
+Butir-butir Kerja(d)
+No. Pesanan Kerajaan/ No. Kontrak
+dan Tarikh      (e) Nama Syarikat/
+Jabatan Yang Menyelenggara(f) Kos (RM)    (g) Nama dan Jawatan
+Nota	:	a) Tarikh pembaikan/ penyelenggaraan yang telah dilakukan bagi Aset Alih berkenaan.
+b) Jenis Penyelenggaraan
+Penyelenggaraan Pencegahan atau Penyelenggaraan Pembaikan
+c) Butir-butir kerja
+Keterangan mengenai kerja-kerja pembaikan termasuk alat ganti yang dibeli.
+d) No. Pesanan Kerajaan/ No. Kontrak dan Tarikh
+No. Rujukan Pesanan Kerajaan/ Nombor Kontrak berserta tarikh.
+e) Nama Syarikat/Jabatan yang menyelenggara
+Nama syarikat atau Jabatan yang melaksanakan kerja-kerja penyelenggaraan.
+f) Kos
+Kos alat ganti atau kos pembaikan atau kedua-duanya sekali.
+g) Nama dan Jawatan
+Pegawai yang mengesahkan penyelenggaraan telah dilaksanakan.
+
+
+
+
+
+KEW.PA-16
+LAPORAN PENYELENGGARAAN ASET ALIH
+BAGI TAHUN ...............
+
+
+
+Kementerian/Jabatan
+/PTJPenyelenggaraan PencegahanPenyelenggaraan PembaikanJumlah PenyelenggaraanKuantiti Aset
+DiselenggaraJumlah Kos Penyelenggaraan
+(RM)Kuantiti Aset
+DiselenggaraJumlah Kos Penyelenggaraan
+(RM)Jumlah Kuantiti
+Aset DiselenggaraJumlah Kos Penyelenggaraan
+(RM)JUMLAH
+KESELURUHAN
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+M.S. 9/9
+
+Pekeliling Perbendaharaan Malaysia	AM 2.6 Lampiran A
+
+
+KEW.PA-17
+No. Permohonan : ..........
+
+BORANG PINDAHAN ASET ALIH
+
+
+
+
+Bil.
+Keterangan Aset
+  No. Siri PendaftaranNo. Siri Pembuat/
+No. Pendaftaran Kenderaan
+Usia Guna Aset
+Catatan
+
+
+
+........................................ (Tandatangan Pemohon)
+Nama : Jawatan : Tarikh  :
+
+........................................ (Tandatangan Pelulus
+Nama : Jawatan : Tarikh  :Dengan ini saya menyerahkan aset yang dinyatakan di atas.
+
+
+
+........................................ (Tandatangan Penyerah)
+Nama : Jawatan : Tarikh  :Dengan ini saya menerima aset yang dinyatakan di atas.
+
+
+
+........................................ (Tandatangan Penerima)
+Nama : Jawatan : Tarikh  :
+
+
+
+
+
+
+
+
+
+
+M.S. 5/6
+
+Pekeliling Perbendaharaan Malaysia	AM 2.6 Lampiran B
+
+
+KEW.PA-18
+LAPORAN PINDAHAN ASET ALIH BAGI TAHUN ..............
+
+
+
+
+
+KEMENTERIAN/ JABATANTERIMAANPENGELUARAN JUMLAH KUANTITI
+PINDAHANJUMLAH NILAI SEMASA
+(RM) JUMLAH KUANTITI
+PINDAHANJUMLAH NILAI SEMASA
+(RM)JUMLAH
+KESELURUHAN
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+M.S. 6/6
+
+
+KEW.PA-19KERAJAAN MALAYSIAPERAKUAN PELUPUSAN (PEP)ASET ALIH KERAJAANKementerian atau Jabatan :Alamat:
+No. Siri Pendaftaran Aset
+:Jumlah jarak perjalanan(km)/ : Tempoh penggunaan(jam)
+No. Kodifikasi Nasional
+:Tahap Prestasi Semasa Aset : (%)
+Jenis, Jenama dan Model
+:Jumlah Kos Penyelenggaraan: TerdahuluNo. Chassis/Siri Pembuat:Nilai Semasa:No. Enjin:Anggaran Kos Penyelenggaraan Semasa
+:No. Pendaftaran (kenderaan):Anggaran Nilai Selepas Diperbaiki
+:Tarikh Perolehan:Anggaran Tempoh Usia Guna: Selepas DiperbaikiNilai Perolehan Asal:LAPORAN PEMERIKSAANButir-butir penambahbaikan yang perlu:-1. ...................................................................................................2. ....................................................................................................................3. ...................................................................................................Disahkan bahawa Aset Alih tersebut telah diperiksa dan laporannya seperti berikut:-
+1. ..................................................................................................2. ..................................................................................................3. ...................................................................................................
+
+..........................................
+
+.......................................(Tandatangan)(Tandatangan)Nama :Nama :Jawatan :Jawatan :Tarikh :Tarikh :Cap :Cap :
+Nota : Semua maklumat hendaklah diisi dengan lengkap.
+
+
+
+
+
+
+
+Kepada:
+..............................
+..............................
+(Gelaran Jawatan Pegawai yang dilantik)
+
+
+No. Rujukan: Tarikh:
+
+KEW.PA-20
+
+
+
+LANTIKAN SEBAGAI LEMBAGA PEMERIKSA PELUPUSAN ASET ALIH KERAJAAN
+
+Adalah dimaklumkan bahawa Tuan/ Puan dilantik sebagai Pengerusi/ Ahli Lembaga Pemeriksa untuk memeriksa Aset Alih yang dicadangkan untuk dilupuskan bagi tempoh selama .................. (tahun) mulai dari .................. hingga ................... .
+
+2.	Laporan pemeriksaan hendaklah disediakan dengan menggunakan Borang Pelupusan Aset Alih (KEW.PA-21) dan dikemukakan kepada Urus Setia Pelupusan Jabatan dalam tempoh dua (2) minggu selepas pemeriksaan dijalankan.
+
+.............................................. (Tandatangan)
+Nama:....................................... Jawatan:.................................... Cap:
+
+Pekeliling Perbendaharaan Malaysia	AM 2.7 Lampiran C
+
+
+KEW.PA-21
+
+BORANG PELUPUSAN ASET ALIH
+
+KEMENTERIAN/ JABATAN:
+
+
+
+    NO. SIRI PENDAFTARAN
+KETERANGAN ASET
+   TARIKH PEROLEHAN USIA GUNA ASETHARGA PEROLEHAN ASAL
+(RM)NILAI SEMASA (RM)NYATAKAN KEADAAN ASETSYOR KAEDAH PELUPUSAN
+JUSTIFIKASI
+KEPUTUSAN KUASA MELULUS
+
+CATATANJUMLAH KESELURUHAN
+
+
+
+Pegawai Pemeriksa 1:
+
+
+
+
+........................................................
+
+Nama:
+Jawatan:
+Jabatan:
+Tarikh Lantikan: Tarikh Pemeriksaan:Pegawai Pemeriksa 2:
+
+
+
+
+........................................................
+
+Nama:
+Jawatan:
+Jabatan:
+Tarikh Lantikan: Tarikh Pemeriksaan:Kuasa Melulus:
+
+
+
+
+Tandatangan:
+
+Nama:
+Jawatan:
+Tarikh:
+Nama Kementerian/ : Jabatan
+Nota: Jika lebih daripada 2 orang ahli Lembaga Pemeriksa ruangan boleh ditambah.
+
+Pekeliling Perbendaharaan Malaysia	AM 2.7 Lampiran D
+
+
+KEW.PA-22
+
+
+
+
+SIJIL PENYAKSIAN PEMUSNAHAN ASET ALIH
+
+
+Disahkan	Aset	Alih	di	Kementerian/	Jabatan	telah
+dimusnahkan.
+
+
+Jenis Aset	:......................................... Kuantiti	:.........................................
+Secara	:.................................................
+Tarikh	:.........................................
+Tempat	:..........................................
+
+
+
+
+
+
+
+......................................	.................................... Tandatangan		Tandatangan
+
+
+Nama: ......................... ...Nama: ...................................Jawatan: ..............................Jawatan: ...................................Nama Kementerian/ : ........................	Nama Kementerian/ : ............................ Jabatan	Jabatan
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+M.S. 40/55
+
+Pekeliling Perbendaharaan Malaysia	AM 2.7 Lampiran E
+
+KEW.PA-23
+
+
+SIJIL PELUPUSAN ASET ALIH
+
+
+Merujuk surat kelulusan No. Rujukan ..................... bertarikh ........................., saya mengesahkan tindakan pelupusan telah dilaksanakan mengikut kaedah berikut:-
+
+1. Jualan (Tender/ Sebut Harga/ Lelong)
+Bilangan item..........No.Resit	(salinan resit disertakan)
+
+
+2. Buangan Terjadual (E-Waste/ Sisa Pepejal)
+Bilangan item..........Ruj. Surat/No. Resit.	(Surat akuan/salinan resit disertakan)
+
+
+3. Jualan Sisa (Tender/ Sebut Harga/ Jualan Terus)
+Bilangan item...........No. Resit.	(salinan resit disertakan)
+
+
+4. Tukar Ganti/ Tukar Beli/ Tukar Barang/ Perkhidmatan
+Bilangan item	(Dokumen berkaitan disertakan)
+Aset/ Komponen berikut telah direkodkan.
+Bilangan item .........No. Rekod	(Salinan rekod dilampirkan)
+
+
+5. Hadiah/ Serahan.
+Bilangan item.......... dihadiahkan/ diserahkan kepada	(Surat Akuan
+Penerimaan disertakan)
+
+
+6. Musnah (Tanam/ Bakar/ Buang/ Tenggelam/ Letup/ Ledak/ Lebur)*. Bilangan item	(Sijil Penyaksian Pemusnahan disertakan)
+
+7. Kaedah-Kaedah Lain.
+Kaedah Pelupusan: .......................
+Bilangan item	(Dokumen berkaitan disertakan)
+
+
+
+*Tandatangan Ketua Jabatan	: .......................................
+Nama	: ..........................................
+Jawatan	: ..........................................
+Tarikh	: ..........................................
+Nama Kementerian/Jabatan	:
+
+Nota: * Tandatangan Ketua Jabatan boleh ditandatangani oleh Ketua Jabatan/Bahagian/Seksyen/Unit
+M.S. 41/55
+
+KEW.PA-24
+
+No. Tender:
+KENYATAAN TAWARAN TENDER PELUPUSAN ASET ALIH
+
+
+1. Tender adalah dipelawa kepada pihak yang layak/ berminat untuk membeli Aset Alih seperti berikut:-
+
+
+
+Bil.
+Keterangan Aset Alih*Nombor Pendaftaran KenderaanKuantiti
+Harga Simpanan1.2.3.
+* Nota : Bagi yang berkaitan sahaja.
+
+
+2. Aset	boleh	dilihat	pada		
+
+hingga 	
+
+di	antara
+
+jam	hingga	di	
+	.
+
+3. Tender akan ditutup pada 	jam 12.00 tengah hari.
+
+4. Tawaran boleh dibuat dengan menggunakan Borang Tender Pelupusan Aset Alih (KEW.PA-25) yang boleh diperoleh di alamat seperti di para 5. Tempoh sah laku tawaran adalah 90 hari bagi tender tempatan atau 120 hari bagi tender antarabangsa bermula dari tarikh tender ditutup.
+
+5. Semua tawaran dengan maklumat yang lengkap hendaklah menggunakan sampul berlakri dan di tanda dengan No. Tender 	 dan dihantar melalui pos atau dimasukkan ke dalam Peti Tender di alamat:
+
+
+
+
+
+
+
+
+6. SYARAT-SYARAT DAN PERATURAN TENDER
+
+6.1. Aset Alih akan dijual tertakluk kepada harga simpanan.
+
+6.2. Petender adalah dikehendaki menyertakan deposit tender sebanyak 10% daripada harga tawaran bagi setiap aset atau tertakluk kepada maksimum RM10,000. Deposit Tender hendaklah dalam bentuk Wang Pos/	Draf	Bank/	Jaminan	Bank	atas nama				(Kementerian atau Jabatan).
+
+6.3. Tawaran tanpa/kurang deposit tender tidak akan dipertimbangkan.
+
+6.4. Semua aset alih adalah dijual sebagaimana keadaannya semasa dilihat (as-is-where-is-basis).
+
+6.5. Jabatan ini tidak bertanggungjawab ke atas aset alih yang telah dijual.
+
+6.6. Semua perbelanjaan berkaitan pembelian aset alih seperti kos menanggal (dismantle), mengangkut, cukai duti import dan sebagainya hendaklah ditanggung oleh pembeli sendiri.
+
+6.7. Petender yang berjaya hendaklah membuat pembayaran penuh dalam tempoh 14 hari dari tarikh pemberitahuan keputusan. Jika bayaran penuh tidak dijelaskan dalam tempoh 14 hari, deposit tender tidak akan dikembalikan.
+
+6.8. Petender yang berjaya hendaklah mengambil aset dalam tempoh 7 hari selepas bayaran penuh dijelaskan. Jika gagal, bayaran yang telah dibuat tidak akan dikembalikan dan Jabatan berhak untuk melupuskan aset alih tersebut.
+
+
+Nota : Syarat-syarat tender boleh dipinda mengikut keperluan Kementerian/Jabatan.
+
+KEW PA-25
+
+
+BORANG TENDER PELUPUSAN ASET ALIH
+
+
+Nama Individu/ Syarikat:
+
+No. Kad Pengenalan/ Pendaftaran Syarikat: Alamat:
+
+
+
+
+Kepada:
+
+
+
+(Nama dan Alamat Kementerian atau Jabatan) Tuan,
+Tawaran Untuk Tender No. ............../........
+
+Merujuk kepada perkara di atas, saya/ syarikat berminat menyertai tender tersebut.
+
+2. Tawaran saya/ syarikat adalah seperti berikut:-
+
+
+Bil
+Keterangan Aset
+KuantitiHarga Tawaran (RM)Deposit Tender
+3. Bersama-sama ini disertakan deposit tender (sebanyak 10% daripada harga tawaran aset di atas atau RM10,000 mengikut mana yang terendah)  yang  bernilai  RM	(Ringgit  Malaysia
+	)  dalam  bentuk  Wang  Pos/  Draf  Bank/
+
+Jaminan	Bank,	No.		
+	(Kementerian atau Jabatan).
+
+atas	nama
+
+
+4. Saya/ syarikat memahami dan bersetuju dengan semua syarat-syarat yang ditetapkan.
+
+Sekian, terima kasih.
+
+
+
+Tandatangan : .......................................
+
+Tarikh	: ........................................
+
+Cap Syarikat :
+
+KEW.PA -26
+
+JADUAL TENDER PELUPUSAN ASET ALIH
+
+(Untuk dipamer di Papan Kenyataan)
+
+Bil.Kod PetenderHarga
+
+Nota :  Harga tawaran di atas adalah harga yang tercatat di dalam dokumen tender yang diterima sebelum diperiksa. Kerajaan adalah tidak terikat menerima mana-mana tender yang dijadualkan.
+
+
+
+
+
+(Tandatangan Pengerusi)
+
+Nama : .......................................... Jawatan : ........................................
+
+
+
+
+(Tandatangan Ahli)	(Tandatangan Ahli)
+
+Nama : ...................................	Nama : ................................... Jawatan : ...............................	Jawatan : .....................................
+
+
+Tarikh :	
+
+
+
+No. Sebut harga :
+
+
+
+
+KENYATAAN TAWARAN SEBUT HARGA PELUPUSAN ASET ALIH
+
+KEW.PA-27
+
+Kementerian atau Jabatan:
+
+
+
+
+
+1. Tawaran adalah dipelawa dari syarikat atau orang perseorangan yang berminat untuk membeli aset seperti berikut:
+
+
+Bil.
+Keterangan aset  *Nombor Pendaftaran
+KenderaanKuantiti
+Harga Simpanan1.2.3.
+* Nota : Bagi yang berkaitan sahaja.
+
+2. Aset boleh dilihat pada 	 dan/hingga 	 di antara jam
+	hingga 	di
+	.
+
+3. Tawaran sebut harga boleh dibuat dengan menggunakan Borang Sebut Harga Pelupusan Aset Alih Kerajaan (KEW.PA-28) yang boleh diperoleh di alamat seperti di para 4. Tawaran hendaklah sah bagi tempoh 90 hari.
+
+4. Semua tawaran dengan maklumat yang lengkap hendaklah menggunakan sampul surat berlakri dan di tanda No. Sebut harga 	/	 dan dihantar melalui pos atau dimasukkan ke dalam Peti Sebut harga di alamat:-
+
+
+
+
+
+5. Tarikh tutup sebut harga pada 	 jam 12.00 tengah hari. Sebut harga yang diterima lewat tidak akan dipertimbangkan.
+
+
+(Tandatangan Ketua Jabatan) Alamat:
+Tarikh:
+
+Cap:
+
+SYARAT DAN PERATURAN SEBUT HARGA
+
+1. Aset akan dijual tertakluk kepada harga simpanan.
+
+
+2. Penyebut harga adalah dikehendaki menyertakan deposit sebut harga sebanyak 5% daripada harga tawaran bagi setiap aset atau RM5,000 mengikut mana yang terendah. Deposit sebut harga hendaklah dalam bentuk  Wang  Pos  atau  Draf  Bank  sahaja  atas  nama
+	(Kementerian	atau Jabatan).
+
+3. Tawaran tanpa/ kurang deposit sebut harga tidak akan dipertimbangkan.
+
+
+4. Semua aset adalah dijual sebagaimana keadaannya semasa dilihat (as-is- where-is basis).
+
+5. Jabatan ini tidak bertanggungjawab ke atas aset yang telah dijual.
+
+
+6. Semua perbelanjaan berkaitan pembelian aset seperti kos menanggal (dismantle), mengangkut dan sebagainya hendaklah ditanggung oleh pembeli sendiri.
+
+7. Pembeli yang berjaya hendaklah membuat pembayaran penuh dalam tempoh satu (1) minggu dari tarikh pemberitahu keputusan. Jika bayaran tidak dijelaskan dalam tempoh tersebut, deposit sebut harga tidak akan dikembalikan.
+
+8. Pembeli yang berjaya hendaklah mengambil aset dalam tempoh 7 hari selepas bayaran penuh dijelaskan. Jika gagal, bayaran yang telah dibuat tidak akan dikembalikan dan Jabatan berhak untuk melupuskan aset tersebut.
+Nota : Syarat-syarat sebutharga boleh dipinda mengikut keperluan Kementerian/Jabatan.
+
+KEW. PA-28
+
+
+BORANG SEBUT HARGA PELUPUSAN ASET ALIH
+
+
+Nama Individu/ Syarikat	: No. Kad Pengenalan/ Pendaftaran Syarikat: Alamat:
+
+
+
+
+
+
+
+Kepada:
+
+
+
+
+
+
+(Nama dan Alamat Kementerian atau Jabatan)
+
+
+Tuan,
+
+Tawaran Untuk Sebut Harga No. ............../........
+
+
+Merujuk kepada perkara di atas, saya/ syarikat berminat menyertai sebut harga tersebut.
+2. Tawaran saya/ syarikat adalah seperti berikut:-
+
+BilKeterangan AsetKuantitiHarga Tawaran
+(RM)Deposit Sebut
+Harga
+
+
+3. Bersama-sama ini disertakan deposit sebut harga (sebanyak 5% daripada harga tawaran aset di atas atau RM5,000 mengikut mana yang terendah) yang bernilai RM	(Ringgit Malaysia 	) dalam bentuk
+Wang	Pos/	Draf	Bank,	No.			atas	nama
+	(Kementerian atau Jabatan).
+
+
+4. Saya/ syarikat memahami dan bersetuju dengan semua syarat-syarat yang ditetapkan.
+
+Sekian, terima kasih.
+
+
+
+
+Tandatangan	: ................................
+
+Tarikh	: ................................
+
+Cap Syarikat	: ................................
+
+
+
+
+KEW.PA-29
+
+JADUAL SEBUT HARGA PELUPUSAN ASET ALIH
+
+(Untuk Di pamer Di Papan Kenyataan)
+
+Bil.Kod Penyebut HargaHarga
+
+Nota : Harga tawaran di atas adalah harga yang tercatat di dalam dokumen sebut harga yang diterima sebelum diperiksa. Kerajaan adalah tidak terikat menerima mana-mana sebut harga yang dijadualkan.
+
+
+
+
+
+      (Tandatangan Pengerusi) Nama : ...................................... Jawatan : ......................................
+
+
+
+
+      (Tandatangan Ahli)		(Tandatangan Ahli) Nama : ..............................	Nama : ..............................
+Jawatan : ..........................	Jawatan : ..........................
+
+
+Tarikh :	
+
+KEW.PA-30
+
+KENYATAAN JUALAN LELONG ASET ALIH
+
+
+Dimaklumkan	bahawa	Kementerian/	Jabatan	akan
+mengadakan jualan lelong aset seperti berikut:-
+
+
+Tarikh:.................................................Masa:.................................................Tempat:.................................................
+2. Senarai aset yang akan dilelong adalah seperti di KEW.PA-31. Semua aset  boleh  dilihat  pada  tarikh  .......................  hingga	di
+alamat.................................................................................................di antara jam
+.................... hingga ....................
+
+
+3. Syarat dan peraturan lelong adalah seperti berikut:-
+(i) Aset akan dijual tertakluk kepada harga simpanan.
+(ii) Pembida yang berminat untuk menyertai lelongan, perlu mendaftar dengan Pegawai Pelelong dengan memberikan nama penuh, No. Kad Pengenalan dan alamat kepada Pegawai Pelelong semasa lelongan dilakukan serta membayar deposit sebanyak 5% daripada harga simpanan atau maksimum RM1,000.
+(iii) Penawar harga tertinggi adalah pembida yang berjaya dan jika ada apa-apa perselisihan yang berbangkit mengenai penawar yang tertinggi, aset berkenaan akan dilelong semula.
+(iv) Jabatan berhak mengubah susunan jualan tersebut di senarai KEW.PA-31 dan menarik balik mana-mana aset daripada senarai tersebut.
+(v) Semua aset adalah dilelong sebagaimana keadaannya semasa dilihat (as-is-where-is-basis).
+(vi) Jabatan ini tidak akan bertanggungjawab ke atas aset yang telah dijual.
+
+(vii) Semua perbelanjaan bagi mengangkut aset hendaklah ditanggung oleh pembida sendiri.
+(viii) Pembida yang berjaya hendaklah memberitahu nama penuh, no. Kad Pengenalan dan alamat kepada Pegawai Pelelong semasa jualan dilakukan.
+(ix) Pembayaran penuh hendaklah dibuat dalam tempoh tujuh (7) hari dari tarikh lelongan.
+(x) Pembida yang berjaya hendaklah mengambil aset dalam tempoh empat belas (14) hari dari tarikh lelong. Jika tidak, Jabatan berhak untuk melupuskannya.
+(xi) Segala bayaran hendaklah dijelaskan sepenuhnya sebelum aset boleh dikeluarkan dari premis Jabatan
+
+KEW.PA-31
+
+SENARAI ASET ALIH YANG DILELONG
+
+KEMENTERIAN/ JABATAN: 	
+
+
+
+Lot
+Jenis Aset
+KuantitiHarga Simpanan (RM)Deposit1.2.3.4.5.6.7.8.9.10.
+
+
+
+
+(Tandatangan Ketua Jabatan)
+
+Nama	:	......................................................................
+
+Jawatan	:	......................................................................
+
+Tarikh	:	......................................................................
+
+Cap Kementerian/ Jabatan :
+
+Pekeliling Perbendaharaan Malaysia	AM 2.7 Lampiran N
+
+
+KEW.PA-32
+
+
+
+
+
+Kementerian/ Jabatan:
+
+LAPORAN PELUPUSAN ASET ALIH BAGI TAHUN ..............
+
+
+
+
+KEMENTERIAN/ JABATAN
+ JUMLAH KUANTITINILAI PEROLEHAN ASAL
+(RM)JUMLAH NILAI PEROLEHAN ASAL ASET MENGIKUT KAEDAH
+(RM)
+JUMLAH NILAI SEMASA (RM)
+HASIL PELUPUSAN (RM)
+KOS PENGENDALIAN (RM)ABCDEFGHIJJUMLAH
+KESELURUHAN
+
+PETUNJUK:	A: JUALAN (TENDER, SEBUT HARGA, LELONG)
+B: BUANGAN TERJADUAL (E-WASTE DAN SISA PEPEJAL)
+C: JUALAN SISA (TENDER, SEBUT HARGA & JUALAN TERUS) D: TUKAR BARANG/PERKHIDMATAN
+E: TUKAR BELI F: TUKAR GANTI G: HADIAH
+H: SERAHAN
+ I: MUSNAH (TANAM, BAKAR, BUANG, TENGGELAM, LETUP, LEDAK DAN LEBUR) J: KAEDAH-KAEDAH LAIN
+
+M.S. 55/55
+
+KEW.PA-33
+LAPORAN AWAL KEHILANGAN ASET ALIH
+
+Nyatakan:-
+
+1. Keterangan Aset Alih yang hilang.
+
+(a) Jenis Aset Alih
+(b) Jenama dan Model
+(c) Kuantiti
+(d) Tarikh Perolehan
+(e) Harga Perolehan Asal
+(f) Anggaran Nilai Semasa
+
+2. Tempat sebenar di mana kehilangan berlaku.
+
+3. Tarikh kehilangan berlaku atau diketahui.
+
+4. Nyatakan cara bagaimana kehilangan berlaku lebih terperinci dan jelas termasuk pegawai-pegawai yang terlibat dan aset kali terakhir ditinggalkan di mana.
+
+5. Nama dan jawatan pegawai yang akhir sekali menyimpan/mengguna aset yang hilang.
+
+6. Nyatakan taraf jawatan pegawai (tetap/kontrak/sambilan).
+
+(a) Tetap (Tarikh pencen dinyatakan)
+(b) Kontrak (Salinan perjanjian)
+(c) Sambilan (Salinan surat pelantikan)
+
+7. Sama ada seseorang pegawai difikirkan prima facie bertanggungjawab ke atas kehilangan itu. Jika ada, nama dan jawatannya.
+
+8. Sama ada seseorang pegawai telah ditahan kerja.
+
+9. No. Rujukan dan Tarikh Laporan Polis (jika ada).
+
+10. Langkah-langkah sedia ada untuk mengelakkan kehilangan itu berlaku.
+
+11. Langkah-langkah segera yang diambil bagi mencegah berulangnya kejadian ini.
+
+12. Laporan hendaklah disertakan dengan dokumen sokongan dan gambar tempat kejadian.
+
+
+13. Catatan.
+
+
+................................
+   Tandatangan Ketua Jabatan Nama :
+Jawatan: Tarikh:
+Cap Jabatan:
+
+
+
+
+
+Kepada:
+..........................................
+..........................................
+
+
+No. Rujukan Fail: Tarikh:
+
+KEW.PA-34
+
+(Nama dan Jawatan Pegawai yang dilantik)
+
+PELANTIKAN JAWATANKUASA PENYIASAT KEHILANGAN ASET ALIH
+
+
+Adalah dimaklumkan bahawatuan/puandilantik sebagaiPengerusi/  AhliJawatankuasa	Penyiasatuntukmenyiasatkehilangan..........................................(namaaset)di.................................................................(Kementerian/Jabatan/PTJ)mulai dari tarikh surat ini. (No. Rujukan Laporan Awal	)
+
+
+2. Tuan/ Puan adalah diberi kuasa untuk menjalankan siasatan dengan mendapatkan maklumat mengenai kes kehilangan tersebut daripada mana-mana pegawai yang berkenaan. Bersama-sama ini disertakan Laporan Awal dan Senarai Tugas Jawatankuasa Penyiasat sebagai panduan.
+
+3. Laporan siasatan hendaklah menggunakan Laporan Akhir (KEW.PA-35) seperti		yang	dilampirkan.	Laporan	ini	mestilah	dikembalikan	sebelum
+...	(tarikh).
+
+
+Tandatangan	: ................................................................. Nama Pegawai Pengawal : ................................................................. Kementerian/Jabatan    : .................................................................
+
+KEW.PA-35
+
+LAPORAN AKHIR KEHILANGAN ASET ALIH
+
+Nyatakan:-
+
+1. Keterangan Aset Alih yang hilang.
+
+(a) Jenis Aset Alih
+(b) Jenama dan Model
+(c) Kuantiti
+(d) Tarikh Perolehan
+(e) Harga Perolehan Asal
+(f) Anggaran Nilai Semasa
+
+2. Perihal Kehilangan.
+
+(a) Tarikh diketahui
+(b) Tarikh sebenar berlaku
+(c) Tempat kejadian
+(d) Bagaimana kehilangan diketahui
+(e) Bagaimana kehilangan berlaku
+
+3. Sama ada Laporan Hasil Penyiasatan Polis telah diterima. Jika ada, sila sertakan.
+
+4. (a)	Nama pegawai yang:-
+
+(i) Secara langsung menjaga aset tersebut.
+(ii) Bertanggungjawab sebagai penyelia.
+(iii) Bertanggungjawab ke atas kehilangan itu.
+
+(b) Mengenai setiap pegawai di atas, nyatakan:-
+
+(i) Jawatan hakiki pada masa kehilangan.
+(ii) Tugasnya (sertakan senarai tugas).
+(iii) Taraf Jawatan (sama ada tetap/ dalam percubaan/ sementara/ kontrak).
+(iv) Sama ada ditahan kerja atau digantung kerja. Jika ada nyatakan tarikh kuat kuasa hukuman.
+(v) Tarikh bersara atau penamatan perkhidmatan.
+(vi) Sama ada pernah melakukan apa-apa kesalahan dan hukumannya. (Jika ada, berikan butir-butir ringkas dan rujukannya)
+(vii) Maklumat lain, jika ada.
+
+5. Nyatakan adakah Tatacara Pengurusan Aset Alih Kerajaan atau Arahan Keselamatan Kerajaan atau arahan lain termasuk langkah berjaga-jaga yang tidak dipatuhi atau diikuti. Jika ada nyatakan peraturan atau arahan tersebut.
+
+6. Apakah langkah-langkah yang telah diambil untuk mencegah berulangnya kejadian ini.
+
+7. Rumusan Siasatan.
+
+............................................................................................................................
+............................................................................................................................
+
+8. Nyatakan sama ada tindakan surcaj patut dikenakan atau tidak dengan memberikan justifikasi.
+
+(a) Syor Surcaj : ................................................................................
+Justifikasi : ................................................................................... Nama dan Jawatan Pegawai: ......................................................
+atau
+(b) Syor Tanpa Surcaj : .....................................................................
+Justifikasi : ................................................................................... Nama dan Jawatan Pegawai: ......................................................
+
+Tandatangan :	(Pengerusi)
+Nama	: .................................................. Jawatan  :  .................................................. Tarikh	:    ..................................................
+
+Tandatangan :	(Ahli)
+Nama	: .................................................. Jawatan  :  .................................................. Tarikh	:    ..................................................
+
+
+9. Ulasan dan Syor Pegawai Pengawal
+
+Ulasan: ................................................................................
+
+Syor: ....................................................................................
+
+
+Tandatangan	: .........................................
+Nama	: ..........................................
+Jawatan	: ..........................................
+Tarikh	: ..........................................
+Nama Kementerian/: ..........................................
+Jabatan
+
+KEW.PA-36
+
+
+SIJIL HAPUS KIRA ASET ALIH
+(diisi oleh Pegawai Aset)
+
+
+Merujuk surat kelulusan Bil ....................................... bertarikh ................... Aset Alih berikut telah dihapus kira dan Daftar Aset Alih berkenaan telah dikemas kini.
+
+
+
+BilNo. Siri PendaftaranJenis Aset Alih
+
+
+Tandatangan Ketua Jabatan	: ........................................................ Nama	: ........................................................
+Jawatan	: ........................................................
+Tarikh	 : ........................................................ Nama Kementerian/Jabatan	: ....................................................................
+
+Pekeliling Perbendaharaan Malaysia	AM 2.8 Lampiran E
+
+
+KEW.PA-37
+
+LAPORAN HAPUS KIRA ASET ALIH BAGI TAHUN ..............
+
+
+
+
+
+
+KEMENTERIAN/ JABATANTINDAKAN HAPUS KIRATINDAKAN SURCAJTINDAKAN
+TATATERTIB
+KUANTITI ASETNILAI PEROLEHAN ASAL
+(RM)NILAI SEMASA (RM)JUMLAH BILANGAN KESNILAI SURCAJ (RM)
+JUMLAH BILANGAN KES101000500310003    JUMLAH KESELURUHAN
+
+
+
+
+
+
+
+
+M.S. 22/22
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

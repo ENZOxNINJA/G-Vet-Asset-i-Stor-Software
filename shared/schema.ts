@@ -22,21 +22,58 @@ export const insertUserSchema = createInsertSchema(users).pick({
 export type InsertUser = z.infer<typeof insertUserSchema>;
 export type User = typeof users.$inferSelect;
 
-// Assets Schema (Based on G-ASSET system)
+// Assets Schema (Based on KEW.PA forms - Malaysian Government Asset Management)
 export const assets = pgTable("assets", {
   id: serial("id").primaryKey(),
+  // KEW.PA-3 Registration fields
+  registrationNumber: text("registration_number").notNull().unique(), // No. Siri Pendaftaran
+  nationalCode: text("national_code").notNull(), // No Kod Nasional
   assetTag: text("asset_tag").notNull().unique(),
-  name: text("name").notNull(),
+  name: text("name").notNull(), // Keterangan Aset
   description: text("description"),
-  category: text("category").notNull(),
-  type: text("type").notNull(), // e.g., Harta Modal, Aset Bernilai Rendah
-  price: decimal("price", { precision: 10, scale: 2 }).notNull(),
-  purchaseDate: date("purchase_date").notNull(),
-  supplier: text("supplier"),
+  category: text("category").notNull(), // Kategori
+  subCategory: text("sub_category"), // Sub-kategori
+  type: text("type").notNull(), // Jenis/Jenama/Model
+  brand: text("brand"), // Jenama
+  model: text("model"), // Model
+  origin: text("origin"), // Buatan (tempatan/luar negara)
+  engineType: text("engine_type"), // Jenis Dan No. Enjin
+  chassisNumber: text("chassis_number"), // No. Casis/Siri Pembuat
+  vehicleRegistration: text("vehicle_registration"), // No Pendaftaran (Bagi Kenderaan)
+  warrantyPeriod: text("warranty_period"), // Tempoh Jaminan
+  
+  // Financial information
+  originalPrice: decimal("original_price", { precision: 12, scale: 2 }).notNull(), // Harga Perolehan Asal
+  currentValue: decimal("current_value", { precision: 12, scale: 2 }), // Nilai Semasa
+  acquisitionMethod: text("acquisition_method").notNull(), // Cara Aset Diperolehi
+  
+  // Dates
+  acquisitionDate: date("acquisition_date").notNull(), // Tarikh Perolehan
+  receivedDate: date("received_date").notNull(), // Tarikh Diterima
+  
+  // Purchase/Contract details
+  purchaseOrderNumber: text("purchase_order_number"), // No. Pesanan Rasmi Kerajaan/Kontrak
+  deliveryOrderNumber: text("delivery_order_number"), // Nota Hantaran (DO)
+  
+  // Supplier information
+  supplierName: text("supplier_name"), // Nama Pembekal
+  supplierAddress: text("supplier_address"), // Alamat Pembekal
+  
+  // Location and management
   location: text("location"),
-  department: text("department"),
-  status: text("status").notNull().default("active"), // active, maintenance, disposed
+  department: text("department"), // Kementerian/Jabatan
+  division: text("division"), // Bahagian/Cawangan
+  
+  // Status and condition
+  status: text("status").notNull().default("active"), // active, maintenance, disposed, transferred
   condition: text("condition").default("good"), // good, fair, poor
+  assetType: text("asset_type").notNull().default("capital"), // capital (Harta Modal), low-value (Bernilai Rendah)
+  
+  // Additional specifications
+  specifications: text("specifications"), // Spesifikasi
+  notes: text("notes"), // Catatan
+  
+  // System fields
   createdAt: timestamp("created_at").defaultNow(),
   updatedAt: timestamp("updated_at").defaultNow(),
 });
@@ -79,6 +116,185 @@ export const updateMovementSchema = createInsertSchema(assetMovements)
 export type InsertMovement = z.infer<typeof insertMovementSchema>;
 export type UpdateMovement = z.infer<typeof updateMovementSchema>;
 export type AssetMovement = typeof assetMovements.$inferSelect;
+
+// Asset Reception (KEW.PA-1) - Asset Receiving Form
+export const assetReceptions = pgTable("asset_receptions", {
+  id: serial("id").primaryKey(),
+  referenceNumber: text("reference_number").notNull().unique(), // No. Rujukan
+  
+  // Supplier/Delivery details
+  supplierName: text("supplier_name").notNull(),
+  supplierAddress: text("supplier_address"),
+  deliveryAgent: text("delivery_agent"),
+  
+  // Order/Contract information
+  orderType: text("order_type").notNull(), // Pesanan Kerajaan/Kontrak/Surat Kelulusan
+  orderNumber: text("order_number"),
+  orderDate: date("order_date"),
+  deliveryOrderNumber: text("delivery_order_number"), // Nota Hantaran (DO)
+  deliveryDate: date("delivery_date"),
+  
+  // Transportation details
+  transportCompany: text("transport_company"),
+  vehicleNumber: text("vehicle_number"),
+  
+  // Reception details
+  receivedBy: text("received_by").notNull(), // Pegawai Penerima
+  receiverPosition: text("receiver_position"),
+  receiverDepartment: text("receiver_department"),
+  receivedDate: date("received_date").notNull(),
+  
+  // Technical officer (if required)
+  technicalOfficer: text("technical_officer"),
+  technicalPosition: text("technical_position"),
+  technicalDepartment: text("technical_department"),
+  
+  status: text("status").notNull().default("pending"), // pending, completed
+  notes: text("notes"),
+  createdAt: timestamp("created_at").defaultNow(),
+});
+
+// Asset Reception Items
+export const assetReceptionItems = pgTable("asset_reception_items", {
+  id: serial("id").primaryKey(),
+  receptionId: integer("reception_id").notNull(),
+  nationalCode: text("national_code").notNull(),
+  description: text("description").notNull(),
+  quantityOrdered: integer("quantity_ordered").notNull(),
+  quantityDelivered: integer("quantity_delivered").notNull(),
+  quantityReceived: integer("quantity_received").notNull(),
+  notes: text("notes"),
+});
+
+// Asset Rejection (KEW.PA-2) - Asset Rejection Form
+export const assetRejections = pgTable("asset_rejections", {
+  id: serial("id").primaryKey(),
+  referenceNumber: text("reference_number").notNull().unique(),
+  receptionReferenceNumber: text("reception_reference_number"), // Link to original reception
+  
+  // Supplier details
+  supplierName: text("supplier_name").notNull(),
+  supplierAddress: text("supplier_address"),
+  
+  // Order details
+  orderNumber: text("order_number"),
+  orderDate: date("order_date"),
+  deliveryOrderNumber: text("delivery_order_number"),
+  deliveryDate: date("delivery_date"),
+  
+  // Transportation
+  transportCompany: text("transport_company"),
+  vehicleNumber: text("vehicle_number"),
+  
+  // Rejection details
+  rejectedBy: text("rejected_by").notNull(),
+  rejectorPosition: text("rejector_position"),
+  rejectionDate: date("rejection_date").notNull(),
+  
+  // Supplier acknowledgment
+  supplierAcknowledgment: boolean("supplier_acknowledgment").default(false),
+  supplierName: text("supplier_representative"),
+  supplierSignDate: date("supplier_sign_date"),
+  
+  status: text("status").notNull().default("pending"), // pending, acknowledged
+  createdAt: timestamp("created_at").defaultNow(),
+});
+
+// Asset Rejection Items
+export const assetRejectionItems = pgTable("asset_rejection_items", {
+  id: serial("id").primaryKey(),
+  rejectionId: integer("rejection_id").notNull(),
+  nationalCode: text("national_code").notNull(),
+  description: text("description").notNull(),
+  quantityOrdered: integer("quantity_ordered").notNull(),
+  quantityDelivered: integer("quantity_delivered").notNull(),
+  quantityReceived: integer("quantity_received").notNull(),
+  quantityRejected: integer("quantity_rejected").notNull(),
+  quantityVariance: integer("quantity_variance"), // +/- difference
+  rejectionReason: text("rejection_reason").notNull(),
+  notes: text("notes"),
+});
+
+// Asset Damage Reports (KEW.PA-10) - Asset Damage Complaint Form
+export const assetDamageReports = pgTable("asset_damage_reports", {
+  id: serial("id").primaryKey(),
+  
+  // Section I - Complainant details
+  assetType: text("asset_type").notNull(),
+  assetRegistrationNumber: text("asset_registration_number"),
+  componentNumber: text("component_number"),
+  lastUser: text("last_user"),
+  damageDate: date("damage_date"),
+  damageDescription: text("damage_description").notNull(),
+  complainantName: text("complainant_name").notNull(),
+  complainantPosition: text("complainant_position").notNull(),
+  complaintDate: date("complaint_date").notNull(),
+  
+  // Section II - Asset Officer/Technical Officer assessment
+  previousMaintenanceCost: decimal("previous_maintenance_cost", { precision: 10, scale: 2 }),
+  estimatedRepairCost: decimal("estimated_repair_cost", { precision: 10, scale: 2 }),
+  recommendations: text("recommendations"),
+  assessorName: text("assessor_name"),
+  assessorPosition: text("assessor_position"),
+  assessmentDate: date("assessment_date"),
+  
+  // Section III - Department Head decision
+  decision: text("decision"), // approved, rejected
+  decisionComments: text("decision_comments"),
+  approverName: text("approver_name"),
+  approverPosition: text("approver_position"),
+  approvalDate: date("approval_date"),
+  
+  status: text("status").notNull().default("reported"), // reported, assessed, decided
+  createdAt: timestamp("created_at").defaultNow(),
+});
+
+// Asset Loan/Movement Requests (KEW.PA-9) - Asset Movement/Loan Application Form
+export const assetLoanRequests = pgTable("asset_loan_requests", {
+  id: serial("id").primaryKey(),
+  applicationNumber: text("application_number").notNull().unique(),
+  
+  // Applicant details
+  applicantName: text("applicant_name").notNull(),
+  applicantPosition: text("applicant_position").notNull(),
+  department: text("department").notNull(),
+  
+  // Loan details
+  purpose: text("purpose").notNull(),
+  usageLocation: text("usage_location").notNull(),
+  loanDate: date("loan_date"),
+  expectedReturnDate: date("expected_return_date"),
+  actualReturnDate: date("actual_return_date"),
+  
+  // Approval workflow
+  approverName: text("approver_name"),
+  approverPosition: text("approver_position"),
+  approvalDate: date("approval_date"),
+  approvalStatus: text("approval_status").default("pending"), // pending, approved, rejected
+  
+  // Return process
+  returnerName: text("returner_name"),
+  returnerPosition: text("returner_position"),
+  returnDate: date("return_date"),
+  receiverName: text("receiver_name"),
+  receiverPosition: text("receiver_position"),
+  receiveDate: date("receive_date"),
+  
+  status: text("status").notNull().default("requested"), // requested, approved, in-use, returned
+  notes: text("notes"),
+  createdAt: timestamp("created_at").defaultNow(),
+});
+
+// Asset Loan Request Items
+export const assetLoanRequestItems = pgTable("asset_loan_request_items", {
+  id: serial("id").primaryKey(),
+  loanRequestId: integer("loan_request_id").notNull(),
+  assetId: integer("asset_id").notNull(),
+  registrationNumber: text("registration_number").notNull(),
+  description: text("description").notNull(),
+  approvalStatus: text("approval_status").default("pending"), // pending, approved, rejected
+  notes: text("notes"),
+});
 
 // Suppliers
 export const suppliers = pgTable("suppliers", {

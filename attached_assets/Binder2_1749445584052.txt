@@ -1,0 +1,1708 @@
+Pekeliling Perbendaharaan Malaysia	AM 6.2 Lampiran A
+
+KEW.PS-1
+
+No. Rujukan BTB: .....................................
+
+BORANG TERIMAAN BARANG-BARANG (BTB)
+
+Nama dan Alamat Pembekal/
+Agen Penghantaran/ Pemberi
+
+    Jenis Penerimaan*Pesanan Kerajaan (PK)/ Kontrak/ Surat Kelulusan
+Nota Hantaran (DO)
+Maklumat Pengangkutan
+Nombor/ Rujukan
+Tarikh
+Nombor
+Tarikh
+
+
+
+No. Kod
+Perihal Barang- Barang
+    Unit PengukuranKuantitiHarga (RM)
+
+CatatanDipesan (PK)Nota Hantaran (DO)
+Diterima
+Seunit
+Jumlah
+
+
+
+..................................................
+
+..................................................(Tandatangan Pegawai Penerima)(*Tandatangan Pegawai Teknikal)Nama:Nama:Jawatan:Jawatan:Jabatan:Jabatan:Tarikh:Tarikh:* Jika Perlu.
+Pekeliling Perbendaharaan Malaysia	AM 6.2 Lampiran B
+
+
+KEW.PS-2
+No. Rujukan BPB: .....................................
+BORANG PENOLAKAN BARANG-BARANG (BPB)
+
+Nama dan Alamat Pembekal/ Agen PenghantaranNo. Pesanan Kerajaan (PK)/ Kontrak dan TarikhNo. Nota Hantaran (DO) dan Tarikh  Butir-Butir PengangkutanNo. Ruj. Penerimaan
+(No. Rujukan BTB)
+
+No. Kod
+
+Perihal BarangKuantiti
+
+Sebab-Sebab PenolakanHarga (RM)
+Dipesan (PK)Nota Hantaran (DO)
+Diterima
+DitolakKurang/ Lebih
+(+/-)
+Seunit
+Jumlah
+Pegawai PenerimaAkuan Terima Pembekal/ Agen Penghantaran
+
+
+.................................................
+Nama:
+Jawatan:
+Tarikh:
+Cap Jabatan:Disahkan barang-barang ini diterima untuk tindakan atas sebab-sebab berikut:
+? Kuantiti Ditolak
+? Kuantiti Kurang
+? Kuantiti Lebih.....................................................
+Nama:
+Tarikh:
+Cap Syarikat:
+
+
+
+
+
+Nama Stor		: Perihal Stok	:
+
+
+
+DAFTAR STOK
+
+
+
+BAHAGIAN A
+               
+KEW.PS-3 No.Kad:............................
+
+
+
+No. Kod
+Kumpulan
+Unit Pengukuran
+Pergerakan
+Lokasi Penyimpanan StokGudang/ SeksyenBarisRakTingkatPetakKod Lokasi Penuh
+PARAS STOKTAHUNMAKSIMUM
+(Kuantiti)MENOKOK
+(Kuantiti)MINIMUM
+(Kuantiti)
+TERIMAAN STOK SUKU TAHUN
+TAHUNPERTAMAKEDUAKETIGAKEEMPATKuantitiNilai (RM)KuantitiNilai (RM)KuantitiNilai (RM)KuantitiNilai (RM)KELUARAN STOK SUKU TAHUN
+TAHUNPERTAMAKEDUAKETIGAKEEMPATKuantitiNilai (RM)KuantitiNilai (RM)KuantitiNilai (RM)KuantitiNilai (RM)TERIMAAN STOK TAHUNANKELUARAN STOK TAHUNANTAHUNKuantitiNilai (RM)KuantitiNilai (RM)
+
+BAHAGIAN B
+Transaksi Stok
+
+
+
+TarikhNo. PK/ BTB/ BPSS/ BPSI/
+BPIN
+Terima Daripada/ Keluar KepadaTERIMAANKELUARANBAKI
+ Nama Pegawai
+
+Kuantiti
+Seunit (RM)
+Jumlah (RM)
+
+Kuantiti
+Jumlah (RM)
+
+Kuantiti
+Jumlah (RM)Baki dibawa ke hadapan.........................
+Nota:
+PK = Pesanan Kerajaan
+BTB = Borang Terimaan Barang-barang
+BPSS = Borang Permohonan Stok (KEW.PS-7) BPSI= Borang Permohonan Stok (KEW.PS-8) BPIN = Borang Pindahan Stok (KEW.PS-17)
+
+
+
+Penjelasan Terperinci Maklumat Daftar Stok
+
+No. Kad	: Bilangan Kad bermula dengan 1
+
+Nama Stor	: Nama Stor Yang Telah Ditetapkan Oleh Ketua Jabatan. Contoh: Stor Utama Jabatan Pendaftaran Negara Negeri
+Sembilan.
+
+Perihal Stok	: Nama stok berdasarkan Pusat Rujukan Maklumat SPPA. Contoh: Kertas A4 Putih 80 gsm
+
+Bahagian A
+
+No. Kod	: No Kod bagi stok berdasarkan Pusat Rujukan Maklumat.
+
+Unit Pengukuran	: Penjodoh bilangan seperti buah, batang, bilah dan sebagainya berdasarkan pengeluaran kepada pengguna akhir.
+Kumpulan	: Kumpulan A atau Kumpulan B (berdasarkan KEW.PS-5). Pergerakan	: Aktif atau Tidak Aktif (Tiada transaksi dalam tempoh 2 tahun). Lokasi
+Penyimpanan Stok : Gudang/ Seksyen, Baris, Rak, Tingkat dan Petak diberi tanda
+Pengenalan.
+
+Paras Stok	: Kuantiti Stok Maksimum - 3 bulan penggunaan
+Kuantiti Stok Menokok - 2 bulan penggunaan Kuantiti Stok Minimum - 1 bulan penggunaan
+
+Terimaan Stok
+Suku Tahun	: Jumlah penerimaan stok samada melalui perolehan, pindahan, hadiah, lucut hak dan lain-lain.
+(i) Suku Tahun Pertama : Sehingga 31 Mac
+(ii) Suku Tahun Kedua	: Sehingga 30 Jun
+(iii) Suku Tahun Ketiga	: Sehingga 30 September
+(iv) Suku Tahun Keempat : Sehingga 31 Disember
+
+
+Keluaran Stok
+Suku Tahun	:
+
+
+
+(i) Suku Tahun Pertama : Sehingga 31 Mac
+(ii) Suku Tahun Kedua	: Sehingga 30 Jun
+(iii) Suku Tahun Ketiga	: Sehingga 30 September
+(iv) Suku Tahun Keempat : Sehingga 31 Disember
+
+
+Terimaan Stok
+Tahunan	: Mulai 1 Januari hingga 31Disember
+
+Keluaran Stok
+Tahunan	: Mulai 1 Januari hingga 31 Disember
+
+
+Bahagian B Transaksi Stok
+Tarikh	: Tarikh Terimaan/ Keluaran
+
+No PK/ BTB/	: No. Pesanan Kerajaan/ Borang Terimaan Barang/ Borang BPSS/BPSI/ BPIN		Permohonan Stok (Antara Stor) dan Borang Permohonan Stok
+(Individu Kepada Stor)/ Borang Pindahan Stok
+
+Terima Daripada/
+Keluar Kepada	: Diterima daripada Pembekal/ Stor/ Agensi Lain dan dikeluar kepada Stor/ Pengguna Akhir/ Agensi Lain.
+
+Terimaan	: Kuantiti dibeli/ diterima, harga seunit dan jumlah harga. Keluaran	: Kuantiti dikeluarkan dan jumlah harga keluaran.
+Baki	: Baki kuantiti selepas terimaan atau keluaran dan jumlah harga. Nama Pegawai	: Nama Pegawai Stor
+
+Pekeliling Perbendaharaan Malaysia	AM 6.3 Lampiran B
+
+
+KEW.PS-4
+
+SENARAI DAFTAR STOK
+
+
+
+
+Bil.
+
+No. Kad
+
+No. Kod
+
+Perihal Stok
+Nilai Baki Semasa
+(RM)Status Stok (Aktif/ Tidak Aktif/
+Kad Dibatalkan)JUMLAH KESELURUHAN
+
+
+KEW.PS-5
+PENENTUAN KUMPULAN STOK
+
+Nama Stor:
+
+
+
+
+Bil.
+
+
+No. Kod
+
+
+Perihal StokJumlah Nilai Pembelian Bagi
+2 Tahun LepasPurata Nilai Pembelian
+[ a+b ] ÷ 2
+
+(c) Peratusan [ c÷? ] x 100
+(%)
+
+(d)
+
+Kumpulan Barang
+A atau B20 .....
+(RM)
+(a)20.... (RM)
+(b)
+? = JUMLAH KESELURUHANCatatan:
+Kumpulan A = 30% Kumpulan B = 70%
+
+
+
+
+
+Kementerian/Jabatan: Kategori Stor:
+Bulan:
+
+
+
+SENARAI STOK BERTARIKH LUPUT
+
+
+KEW.PS-6
+
+
+
+
+
+
+Bil.
+
+
+Perihal Stok
+
+
+No. Kod
+
+Lokasi Stok
+
+ Kuantiti Terimaan
+
+Tarikh LuputBaki Stok Bagi 6 Bulan Sebelum Tamat Tempoh Luput
+*(Kuantiti dan tarikh kemaskini)
+
+
+Catatan6
+bulan5
+bulan4
+bulan3
+bulan2
+bulan1
+bulan* Dikemaskini kuantiti dan tarikh oleh Pegawai Stor dalam bulan yang sama.
+
+
+
+
+
+BORANG PERMOHONAN STOK (ANTARA STOR)
+                     
+KEW.PS-7 No. BPSS. : ..............................
+
+
+Nama dan Alamat Stor Pemesan:Nama dan Alamat Stor Pengeluar:
+Dilengkapkan Oleh Stor PemesanDilengkapkan Oleh Stor PengeluarBAHAGIAN BEKALAN KAWALAN DAN AKAUNBAHAGIAN SIMPANAN
+No. Kod
+Perihal Stok
+ Kuantiti Dimohon
+Catatan
+Kuantiti Diterima
+    Unit Pengukuran
+Baki Sedia Ada Kuantiti DiluluskanHarga (RM)
+Catatan
+  Kuantiti DikeluarkanPembungkusaan
+(Perlu/ Tidak Perlu)No. Borang Pembungkusan Stok (BPS)SeunitJumlahPemohon
+............................... Nama Pegawai: Jawatan:
+Jabatan: Tarikh:Pegawai Penerima
+............................... Nama Pegawai: Jawatan:Jabatan: Tarikh:
+(Dilengkapkan	setelah	stok diterima)Pegawai Pelulus
+............................... Nama Pegawai: Jawatan:
+Jabatan: Tarikh:Dikeluarkan dan Direkod oleh:
+........................................
+Nama Pegawai: Jawatan: Jabatan: Tarikh:NOTA: Ruangan Tandatangan Boleh Ditandatangani Pada Lampiran Terakhir Sahaja.
+
+Pekeliling Perbendaharaan Malaysia	AM 6.5 Lampiran B
+
+
+
+
+
+
+BORANG PERMOHONAN STOK (INDIVIDU KEPADA STOR)
+
+
+KEW.PS-8
+No. BPSI : ..........
+
+
+PermohonanPegawai PelulusPerakuan PenerimaanNo. Kod
+Perihal Stok Kuantiti Dimohon
+CatatanBaki Sedia Ada Kuantiti Diluluskan
+Catatan
+Kuantiti Diterima
+CatatanPemohon:Pegawai Pelulus:Pemohon/ Wakil:.
+........................................ (Tandatangan)
+........................................ (Tandatangan)
+........................................ (Tandatangan)Nama	:Nama	:Nama	:Jawatan	:Jawatan	:Jawatan	:Tarikh	:Tarikh	:Tarikh	:
+
+
+Pekeliling Perbendaharaan Malaysia	AM 6.5 Lampiran C
+
+
+
+
+BORANG PEMBUNGKUSAN STOK (BPS)
+
+KEW.PS-9
+No. BPS.: ....................................
+
+
+
+
+
+Bil.Nombor Permohonan (Rujuk KEW.PS-7)
+Nombor Kod
+Perihal Stok Kuantiti Dibungkus Maklumat Bungkusan  Maklumat Penghantaran
+Diperiksa oleh:
+
+....................................................
+Nama: Jawatan: Tarikh:Dibungkus oleh:
+
+....................................................
+Nama: Jawatan: Tarikh:
+Cap Jabatan:Diterima oleh:
+
+.................................................
+Nama: Jawatan: Tarikh:
+Cap Jabatan:
+Salinan 1 - Disimpan oleh Bahagian Bungkusan dan Penghantaran	Salinan 2 - Dimasukkan ke dalam peti atau kotak bungkusan	Salinan 3 - Dihantar terus kepada Pemohon
+
+Pekeliling Perbendaharaan Malaysia	AM 6.6 Lampiran A
+
+
+
+
+
+BORANG VERIFIKASI STOR TAHUN ............
+(Diisi oleh Pegawai Pemverifikasi)
+
+Kementerian/Jabatan: .......................................................................................
+Bahagian	: ........................................................................................
+Nama Stor	: ........................................................................................
+
+
+                   KEW.PS-10 No. Rujukan:..........................
+
+
+
+MAKLUMAT STOK DI KEW.PS-3KUANTITI STOKSTATUS STOK
+
+CatatanNo. Kod
+Perihal Stok
+Kuantiti Stok
+Fizikal StokPerbezaan (+/-)
+A
+B
+C
+D
+E
+F
+PEGAWAI VERIFIKASI 1PEGAWAI VERIFIKASI 2PENGESAHAN PEGAWAI ASET
+
+
+Tandatangan:
+
+
+Tandatangan:
+
+
+Tandatangan:Nama:Nama:Nama:Jawatan:Jawatan:Jawatan:Jabatan:Jabatan:Tarikh:Tarikh:Tarikh:
+
+M.S. 6/14
+
+
+
+Nama Stor:
+
+
+BORANG PENILAIAN PRESTASI PENGURUSAN STOR BAGI TAHUN .......
+
+KEW.PS-11
+
+
+
+
+PENEMUAN DAN ULASAN
+BIL	KRITERIA	SKALA PRESTASI
+
+
+1.	ORGANISASI STORTB123451.1 Carta Organisasi1.2 Pelan Lantai Stor1.3 Pelantikan(a) Pegawai Stor(b) Pegawai Pelulus(c) Pegawai Penerima2.	KESELAMATAN DAN KEBERSIHAN2.1 Keselamatan(a) Lokasi Kedudukan Stor(b) Pengurusan Kunci Stor(c) Peralatan Keselamatan Yang Sesuai2.2 Kawalan Kebakaran(a) Alat Pemadam Api(b) Penunjuk Arah dan Tanda-tanda
+Keselamatan(c) Penanda Arah Keluar Masuk(d) Latihan Kebakaran2.3 Kebersihan(a) Kebersihan Stor(b) Kawalan Pencegahan Serangga
+
+
+3. KAWALAN STOK (PEMATUHAN)
+(a) Paras Stok
+(b) Kumpulan Stok
+(c) Kadar Pusingan Stok
+
+
+4. PROSES MEREKOD
+(a) Ketepatan Rekod
+(b) Penggunaan Sistem Sepenuhnya.
+
+5. PROSES PENYIMPANAN
+(a) Kod Lokasi Stok
+(b) Label Lokasi
+(c) Sistem MDKD
+(d) Kesesuaian Tempat Penyimpanan Stok
+
+6. PROSES PENGELUARAN
+(a) Sistem MDKD
+(b) Kelulusan Pengeluaran
+
+7. PENEMUAN VERIFIKASI
+(a) Usang
+(b) Tidak Aktif
+(c) Rosak
+(d) Hilang
+(e) Tidak diperlukan
+(f) Luput tempoh
+
+8. PROSES PELUPUSAN
+(a) Pematuhan Kuasa Melulus
+(b) Tempoh Tindakan Pelupusan
+(c) Sijil Pelupusan
+
+9. PROSES HAPUS KIRA
+(a) Pematuhan Kuasa Melulus
+(b) Tempoh Penyediaan Laporan Awal
+(c) Tempoh Penyediaan Laporan Akhir
+(d) Sijil Hapus Kira
+
+10. LATIHAN
+(a) Menghadiri Kursus Tatacara Pengurusan Stor
+(b) Menghadiri Kursus Sistem Pengurusan StorJUMLAHJUMLAH
+KESELURUHAN
+
+Tahap Penilaian (%) = JUMLAH KESELURUHAN
+(Bil. Perkara Yang Disemak x 5)
+
+x  100
+
+
+
+Disediakan Oleh Pegawai Pemverifikasi Stor :
+
+
+
+
+Nama Pemverifikasi 1:
+Jawatan :
+Tarikh : Kementerian/Jabatan :
+
+Nama Pemverifikasi 2:
+Jawatan : Tarikh :
+Kemenerian/Jabatan:
+
+
+
+
+
+Ulasan Ketua Jabatan :
+
+
+PERKIRAAN MARKAH
+Tahap Prestasi	:
+TAHAPCemerlangSangat BaikBaikSederhanaRendahTBSKOR54321Tidak Berkenaan
+Tahap Penilaian	:
+TAHAPCemerlangSangat BaikBaikSederhanaRendahSKOR90% ke atas80%-89%65%-79%50%-64%49% ke bawah
+Pekeliling Perbendaharaan Malaysia	AM 6.6 Lampiran C
+
+
+
+KEW.PS-12
+SIJIL VERIFIKASI STOR BAGI TAHUN...........
+
+
+
+
+
+Adalah disahkan bahawa 	di
+(Kategori Stor)
+
+
+(Jabatan/Bahagian/PTJ)
+telah dilaksanakan verifikasi stor dan telah mendapat markah seperti berikut:-
+
+
+a) Pelaksanaan Verifikasi Stor : 	%
+b) Prestasi Penilaian Stor : 	%
+
+
+
+
+Nama Ketua Jabatan	:.................................................................. Jawatan	:.......................................................................
+Tarikh	:..................................................................
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+M.S. 11/14
+
+Pekeliling Perbendaharaan Malaysia	AM 6.6 Lampiran D
+
+
+KEW.PS-13
+LAPORAN VERIFIKASI STOR
+TAHUN .................
+
+
+
+KEMENTERIAN/ JABATAN
+
+KATEGORI STOR
+JUMLAH KUANTITI STOK
+PERATUSAN DIVERIFIKASI (%)
+(c) = [(b)/(a)]x100
+JUMLAH STOK
+KESELURUHAN
+(a)
+DIVERIFIKASI
+(b)
+    TIDAK DIVERIFIKASI
+A
+B
+C
+D
+E
+FJIM IBU PEJABATPUSAT30015015050%70JUMLAH KESELURUHAN
+
+
+PETUNJUK: Status Aset Semasa Pemeriksaan A: Usang,B: Rosak,C: Tidak Aktif,D: Tidak Diperlukan,E: Luput Tempoh F: Hilang
+
+M.S. 12/14
+
+
+
+
+
+
+
+KEMENTERIAN/JABATAN	:
+KATEGORI STOR	:
+
+
+LAPORAN KEDUDUKAN SEMASA STOK TAHUN .......
+
+KEW.PS-14
+
+
+
+
+
+
+ TAHUN SEMASAKEDUDUKAN STOK
+     KADAR PUSINGAN STOK
+
+
+ 	c	 [(a + d) ? 2]Sedia AdaPenerimaanPengeluaranStok SemasaJumlah Nilai Stok (RM)Jumlah Nilai Stok (RM)Jumlah Nilai Stok (RM)Jumlah Nilai Stok (RM)(a)(b)(c)d = (a+b)-(c)Baki Bawa HadapanBaki Stok Akhir Tahun ........... :Suku Tahun PertamaSuku Tahun KeduaSuku Tahun KetigaSuku Tahun KeempatNilai TahunanKadar Pusingan Stok
+
+KEW.PS-14
+LAPORAN KEDUDUKAN STOK TAHUN 2017
+Contoh Pengiraan KEW.PS-14
+
+
+
+ TAHUN SEMASAKEDUDUKAN STOK
+     KADAR PUSINGAN STOK
+
+ 	c	 [(a + d) ? 2]Sedia AdaPenerimaanPengeluaranStok Semasa Jumlah
+Nilai Stok (RM) Jumlah
+Nilai Stok (RM) Jumlah
+Nilai Stok (RM)Jumlah
+Nilai Stok (RM)(a)(b)(c)d = (a+b)-(c)Baki Bawa Hadapan5,000Suku Tahun Pertama5,0005,0007,500(5,000 + 5,000) - (7,500)
+= 2,500Suku Tahun Kedua2,5009,00010,300(2,500+9,000) - (10,300)
+=1,200Suku Tahun Ketiga1,2006,0006,000(1,200 + 6,000) - (6,000)
+=1,200Suku Tahun Keempat1,20028,00020,800(1,200 + 28,000) - (20,800)
+=8,400
+Nilai Tahunan
+48,000
+44,600
+Kadar Pusingan Stok44,600
+[(5,000 + 8,400) ? 2]
+= 6.66
+Nota : Formula Kadar Pusingan Stok
+
+
+Kadar Pusingan Stok	=
+  
+	Jumlah Nilai Stok Pengeluaran Tahunan	 (Baki Nilai Stok Akhir Tahun Lepas + Baki Nilai Stok Akhir Tahun Semasa) ÷ 2
+
+Pekeliling Perbendaharaan Malaysia	AM 6.6 Lampiran E
+
+KEW.PS-15
+BORANG PELARASAN STOK
+
+Kementerian/ Jabatan:
+Kategori Stor:
+
+
+
+
+No.Kod
+
+Perihal Stok
+
+
+  Tarikh Penemuan
+Baki di Kad Daftar Stok (a)
+Baki Fizikal (b)Perbezaan (+/-)
+(b)-(a)
+
+
+Justifikasi
+Kelulusan Ketua Jabatan
+(Lulus/ Tidak Lulus)
+Kuantiti
+Nilai (RM)
+Kuantiti
+Nilai (RM)
+Kuantiti
+Nilai (RM)
+
+Disediakan oleh:
+Disahkan Oleh:
+
+...............................................................
+(Tandatangan Pegawai Stor)
+.............................................................
+(Tandatangan Ketua Jabatan)
+Nama:Nama:Jawatan:Jawatan:JabatanJabatan:Tarikh:Tarikh:
+
+
+
+
+M.S. 13/14
+
+Pekeliling Perbendaharaan Malaysia	AM 6.6 Lampiran F
+
+
+
+
+
+Kementerian/ Jabatan: Bahagian:
+Nama Stor:
+
+
+
+PERAKUAN AMBIL ALIH STOR
+
+
+KEW.PS-16
+
+
+DIISI OLEH PEGAWAI YANG MENYERAHKAN TUGASDIISI OLEH PEGAWAI YANG MENGAMBIL ALIH
+No. Kad Kawalan Stok
+
+Perihal StokKuantiti StokKuantiti Stok
+
+CATATANBaki di Kad Kawalan Stok
+Fizikal Stok
+Perbezaan (+/-)Baki di Kad Kawalan Stok
+Fizikal Stok
+Perbezaan (+/-)JUMLAH
+
+Tandatangan:
+
+Tandatangan:Nama Pegawai:Nama Pegawai:Nama Jawatan:Nama Jawatan:Tarikh:Tarikh:
+DISAHKAN OLEH:
+.........................................................
+(Tandatangan Ketua Jabatan)
+Nama: Jawatan: Tarikh:
+ULASAN: (TINDAKAN*/ TANPA TINDAKAN)
+*TINDAKAN - PELARASAN/ HAPUS KIRA
+Nota: Ruang Tandatangan boleh di lampiran terakhir.
+
+
+
+
+
+
+M.S. 14/14
+
+Pekeliling Perbendaharaan Malaysia	AM 6.8 Lampiran A
+
+
+KEW.PS-17
+No. Permohonan : ..........
+
+BORANG PINDAHAN STOK
+
+
+
+
+ No Kod
+Perihal Stok    Unit PengukuranJumlah Nilai Stok
+(RM)
+ Kuantiti Dimohon
+Kuantiti Dilulus
+Catatan
+
+
+
+........................................ (Tandatangan Pemohon)
+Nama	: Jawatan : Kem./ Jab. : Tarikh	:
+
+........................................ (Tandatangan Pelulus
+Nama	: Jawatan : Kem./ Jab. : Tarikh	:Dengan ini saya menyerahkan stok yang dinyatakan di atas.Dengan ini saya menerima stok yang dinyatakan di atas.
+........................................ (Tandatangan Penyerah)
+........................................ (Tandatangan Penerima)Nama	:Nama	:Jawatan :Jawatan :Kem./ Jab. :Kem./ Jab. :Tarikh	:Tarikh	:
+
+
+
+
+
+
+M.S. 5/6
+
+Pekeliling Perbendaharaan Malaysia	AM 6.8 Lampiran B
+
+
+
+KEW.PS-18
+
+LAPORAN PINDAHAN STOK BAGI TAHUN ..............
+
+
+
+
+TAHUN SEMASATERIMAANPENGELUARAN JUMLAH
+ KUANTITI PINDAHANJUMLAH NILAI (RM) JUMLAH
+ KUANTITI PINDAHANJUMLAH NILAI (RM)Suku Tahun PertamaSuku Tahun KeduaSuku Tahun KetigaSuku Tahun KeempatJUMLAH
+KESELURUHAN
+
+
+
+
+
+
+
+
+
+
+
+M.S. 6/6
+
+Pekeliling Perbendaharaan Malaysia	AM 6.9 Lampiran A
+
+
+
+
+
+
+
+
+Kepada:
+..............................
+..............................
+(Gelaran Jawatan Pegawai yang dilantik) Tuan/ Puan,
+
+
+
+No. Rujukan: Tarikh:
+
+KEW.PS-19
+
+LANTIKAN SEBAGAI LEMBAGA PEMERIKSA PELUPUSAN STOK KERAJAAN
+
+Adalah dimaklumkan bahawa Tuan/Puan dilantik sebagai Pengerusi/Ahli Lembaga Pemeriksa untuk memeriksa stok yang dicadangkan untuk dilupuskan bagi tempoh selama .................. (tahun) mulai dari	hingga
+................... .
+
+
+2.	Laporan pemeriksaan hendaklah disediakan dengan menggunakan Borang Pelupusan Stok (KEW.PS-20) dan dikemukakan kepada Urus Setia Pelupusan Jabatan dalam tempoh dua (2) minggu selepas pemeriksaan dijalankan.
+
+.............................................. (Tandatangan)
+Nama:....................................... Jawatan:.................................... Kementerian/ Jabatan:.....................
+
+
+
+
+
+
+M.S. 32/49
+
+Pekeliling Perbendaharaan Malaysia	AM 6.9 Lampiran B
+
+
+
+
+Kementerian/ Jabatan: Kategori Stor:
+
+
+BORANG PELUPUSAN STOK
+
+KEW.PS-20
+
+
+
+No. Kod
+
+Perihal Stok
+Tarikh Terima
+ Tempoh Simpanan
+    Unit Pengukuran
+
+KuantitiNilai Perolehan Asal (RM)Nyatakan Keadaan Stok Dengan Jelas
+Syor Kaedah Pelupusan
+
+Justifikasi
+Keputusan Kuasa MelulusSeunitJumlahJUMLAH
+
+Pegawai Pemeriksa 1:Pegawai Pemeriksa 2:Kuasa Melulus:
+....................................................................................................................................................................................
+Nama:
+Jawatan:
+Jabatan:
+Tarikh Lantikan: Tarikh Pemeriksaan:
+Nama:
+Jawatan:
+Jabatan:
+Tarikh Lantikan: Tarikh Pemeriksaan:Nama:
+Jawatan:
+Tarikh:
+Nama Kementerian/ : Jabatan
+Nota: Jika lebih daripada 2 orang ahli Lembaga Pemeriksa ruangan boleh ditambah.
+
+
+
+M.S. 33/49
+
+Pekeliling Perbendaharaan Malaysia	AM 6.9 Lampiran C
+
+
+KEW.PS-21
+
+
+
+
+SIJIL PENYAKSIAN PEMUSNAHAN STOK
+
+
+Disahkan stok di Kementerian/ Jabatan........................................seperti berikut telah dimusnahkan.
+
+Perihal Stok	:......................................... Kuantiti	:.........................................
+Secara	:.................................................
+Tarikh	:.........................................
+Tempat	:..........................................
+
+
+
+
+
+
+
+......................................		.................................... Tandatangan	Tandatangan
+
+
+Nama: ......................... ...Nama: ............................Jawatan: ..............................Jawatan: ..............................Nama Kementerian/ : ........................	Nama Kementerian/ : ..................... Jabatan	Jabatan
+
+Pekeliling Perbendaharaan Malaysia	AM 6.9 Lampiran D
+
+KEW.PS-22
+
+
+SIJIL PELUPUSAN STOK
+(Diisi oleh Jabatan yang melaksanakan pelupusan)
+
+
+Merujuk surat kelulusan No. Rujukan ..................... bertarikh ........................., saya mengesahkan tindakan pelupusan telah dilaksanakan mengikut kaedah berikut:-
+
+1. Jualan (Tender/ Sebut Harga/ Lelong)
+Bilangan item..........No.Resit	(salinan resit disertakan)
+
+
+2. Buangan Terjadual (E-Waste/ Sisa Pepejal)
+Bilangan item..........Ruj. Surat/No. Resit.	(Surat akuan/salinan resit disertakan)
+
+
+3. Jualan Sisa (Tender/ Sebut Harga/ Jualan Terus)
+Bilangan item...........No. Resit.	(salinan resit disertakan)
+
+
+4. Tukar Ganti/ Tukar Beli/ Tukar Barang/Perkhidmatan
+Bilangan item	(Dokumen berkaitan disertakan)
+Stok/ Komponen berikut telah direkodkan.
+Bilangan item .........No. Rekod	(Salinan rekod dilampirkan)
+
+
+5. Hadiah/ Serahan.
+Bilangan item.......... dihadiahkan/ diserahkan kepada	(Surat Akuan
+Terima disertakan)
+
+
+6. Musnah (Tanam/ Bakar/ Buang/ Tenggelam/ Letup/ Ledak/ Lebur)*. Bilangan item	(Sijil Penyaksian Pemusnahan disertakan)
+
+7. Kaedah-Kaedah Lain. Bilangan item..........................
+
+
+*Tandatangan Ketua Jabatan	: .......................................
+Nama	: ..........................................
+Jawatan	: ..........................................
+Tarikh	: ..........................................
+Nama Kementerian/Jabatan	:
+
+Nota: * Tandatangan Ketua Jabatan boleh ditandatangani oleh Ketua Jabatan/Bahagian/Seksyen/Unit
+
+
+
+KEW.PS-23
+
+No. Tender:
+KENYATAAN TAWARAN TENDER PELUPUSAN STOK
+
+
+1. Tender adalah dipelawa kepada pihak yang layak/ berminat untuk membeli Stok seperti berikut:-
+
+
+Bil.Perihal StokKuantitiHarga Simpanan1.2.3.
+* Nota : Bagi yang berkaitan sahaja.
+'
+2. Stok boleh dilihat pada 		 hingga 	 di antara jam	hingga	di			
+	.
+
+3. Tender akan ditutup pada 	jam 12.00 tengah hari.
+
+4. Tawaran boleh dibuat dengan menggunakan Borang Tender Pelupusan Stok (KEW.PS-24) yang boleh diperoleh di alamat seperti di para 5. Tempoh sah laku tawaran adalah 90 hari bagi tender tempatan atau 120 hari bagi tender antarabangsa bermula dari tarikh tender ditutup.
+
+5. Semua tawaran dengan maklumat yang lengkap hendaklah menggunakan sampul berlakri dan di tanda dengan No. Tender 	 dan dihantar melalui pos atau dimasukkan ke dalam Peti Tender di alamat:
+
+
+
+
+
+
+
+
+
+
+
+6. SYARAT-SYARAT DAN PERATURAN TENDER
+
+6.1. Stok akan dijual tertakluk kepada harga simpanan.
+
+6.2. Petender adalah dikehendaki menyertakan deposit tender sebanyak 10% daripada harga tawaran bagi setiap Stok atau tertakluk kepada maksimum RM10,000. Deposit Tender hendaklah dalam  bentuk  Wang  Pos/  Draf  Bank/  Jaminan  Bank  atas
+
+nama	 Jabatan).
+
+(Kementerian	atau
+
+
+6.3. Tawaran tanpa/kurang deposit tender tidak akan dipertimbangkan.
+
+6.4. Semua Stok adalah dijual sebagaimana keadaannya semasa dilihat (as-is-where-is-basis).
+
+6.5. Jabatan ini tidak bertanggungjawab ke atas Stok yang telah dijual.
+
+6.6. Semua perbelanjaan berkaitan pembelian Stok seperti kos menanggal (dismantle), mengangkut, cukai duti import dan sebagainya hendaklah ditanggung oleh pembeli sendiri.
+
+6.7. Petender yang berjaya hendaklah membuat pembayaran penuh dalam tempoh 14 hari dari tarikh pemberitahuan keputusan. Jika bayaran penuh tidak dijelaskan dalam tempoh 14 hari, deposit tender tidak akan dikembalikan.
+
+6.8. Petender yang berjaya hendaklah mengambil Stok dalam tempoh 7 hari selepas bayaran penuh dijelaskan. Jika gagal, bayaran yang telah dibuat tidak akan dikembalikan dan Jabatan berhak untuk melupuskan Stok tersebut.
+
+
+Nota : Syarat-syarat tender boleh dipinda mengikut keperluan Kementerian/Jabatan.
+
+
+
+KEW.PS-24
+
+
+BORANG TENDER PELUPUSAN STOK
+
+
+Nama Individu/ Syarikat:
+
+No. Kad Pengenalan/ Pendaftaran Syarikat: Alamat:
+
+
+
+
+Kepada:
+
+
+
+(Nama dan Alamat Kementerian atau Jabatan) Tuan,
+Tawaran Untuk Tender No. ............../........
+
+Merujuk kepada perkara di atas, saya/ syarikat berminat menyertai tender tersebut.
+
+2. Tawaran saya/ syarikat adalah seperti berikut:-
+
+
+Bil
+Perihal Stok
+KuantitiHarga Tawaran (RM)Deposit Tender
+
+
+3. Bersama-sama ini disertakan deposit tender (sebanyak 10% daripada harga tawaran Stok di atas atau RM10,000 mengikut mana yang terendah) yang bernilai RM	(Ringgit Malaysia 		) dalam bentuk Wang Pos/ Draf Bank, No. 	 atas nama
+	(Kementerian atau Jabatan).
+
+4. Saya/ syarikat memahami dan bersetuju dengan semua syarat-syarat yang ditetapkan.
+
+Sekian, terima kasih.
+
+
+
+Tandatangan : .......................................
+
+Tarikh	: ........................................
+
+Cap Syarikat :
+
+Pekeliling Perbendaharaan Malaysia	AM 6.9 Lampiran G
+
+
+KEW.PS-25
+
+JADUAL TENDER PELUPUSAN STOK
+
+(Untuk dipamer di Papan Kenyataan)
+
+Bil.Kod PetenderHarga
+
+Nota :  Harga tawaran di atas adalah harga yang tercatat di dalam dokumen tender yang diterima sebelum diperiksa. Kerajaan adalah tidak terikat menerima mana-mana tender yang dijadualkan.
+
+
+
+
+
+(Tandatangan Pengerusi)
+
+Nama : .......................................... Jawatan : ........................................
+
+
+
+
+(Tandatangan Ahli)	(Tandatangan Ahli)
+
+Nama : ...................................	Nama : ................................... Jawatan : ...............................	Jawatan : .....................................
+
+
+Tarikh :	
+
+
+
+
+
+No. Sebut harga :
+
+
+
+
+
+KENYATAAN TAWARAN SEBUT HARGA PELUPUSAN STOK
+
+
+KEW.PS-26
+
+Kementerian atau Jabatan:
+
+
+
+
+
+1. Tawaran adalah dipelawa dari syarikat atau orang perseorangan yang berminat untuk membeli Stok seperti berikut:
+
+Bil.Perihal StokKuantitiHarga Simpanan1.2.3.
+* Nota : Bagi yang berkaitan sahaja.
+
+2. Stok boleh dilihat pada 	 dan/hingga 	 di antara jam
+	hingga 	di
+	.
+
+3. Tawaran sebut harga boleh dibuat dengan menggunakan Borang Sebut Harga Pelupusan Stok (KEW.PS-27) yang boleh diperoleh di alamat seperti di para 4. Tawaran hendaklah sah bagi tempoh 90 hari.
+
+4. Semua tawaran dengan maklumat yang lengkap hendaklah menggunakan sampul surat berlakri dan di tanda No. Sebut harga 	/	 dan dihantar melalui pos atau dimasukkan ke dalam Peti Sebut harga di alamat:-
+
+
+
+
+
+5. Tarikh tutup sebut harga pada 	 jam 12.00 tengah hari. Sebut harga yang diterima lewat tidak akan dipertimbangkan.
+
+
+(Tandatangan Ketua Jabatan) Alamat:
+Tarikh:
+
+Cap:
+
+
+
+SYARAT DAN PERATURAN SEBUT HARGA
+
+1. Stok akan dijual tertakluk kepada harga simpanan.
+
+
+2. Penyebut harga adalah dikehendaki menyertakan deposit sebut harga sebanyak 5% daripada harga tawaran bagi setiap Stok atau RM5,000 mengikut mana yang terendah. Deposit sebut harga hendaklah dalam bentuk  Wang  Pos  atau  Draf  Bank  sahaja  atas  nama
+	(Kementerian	atau Jabatan).
+
+3. Tawaran tanpa/kurang deposit sebut harga tidak akan dipertimbangkan.
+
+
+4. Semua Stok adalah dijual sebagaimana keadaannya semasa dilihat (as- is-where-is basis).
+
+5. Jabatan ini tidak bertanggungjawab ke atas Stok yang telah dijual.
+
+
+6. Semua perbelanjaan berkaitan pembelian Stok seperti kos menanggal (dismantle), mengangkut, cukai duti import dan sebagainya hendaklah ditanggung oleh pembeli sendiri.
+
+7. Pembeli yang berjaya hendaklah membuat pembayaran penuh dalam tempoh satu (1) minggu dari tarikh pemberitahu keputusan. Jika bayaran tidak dijelaskan dalam tempoh tersebut, deposit sebut harga tidak akan dikembalikan.
+
+8. Pembeli yang berjaya hendaklah mengambil Stok dalam tempoh 7 hari selepas bayaran penuh dijelaskan. Jika gagal, bayaran yang telah dibuat tidak akan dikembalikan dan Jabatan berhak untuk melupuskan Stok tersebut.
+Nota : Syarat-syarat sebutharga boleh dipinda mengikut keperluan Kementerian/Jabatan.
+
+
+
+KEW.PS-27
+
+
+BORANG SEBUT HARGA PELUPUSAN STOK
+
+
+Nama Individu/ Syarikat	: No. Kad Pengenalan/ Pendaftaran Syarikat: Alamat:
+
+
+
+
+
+
+
+Kepada:
+
+
+
+
+
+
+(Nama dan Alamat Kementerian atau Jabatan)
+
+
+Tuan,
+
+Tawaran Untuk Sebut Harga No. ............../........
+
+
+Merujuk kepada perkara di atas, saya/ syarikat berminat menyertai sebut harga tersebut.
+2. Tawaran saya/ syarikat adalah seperti berikut:-
+
+BilPerihal StokKuantitiHarga Tawaran
+(RM)Deposit Sebut
+Harga
+
+
+
+
+3. Bersama-sama ini disertakan deposit sebut harga (sebanyak 5% daripada harga tawaran aset di atas atau RM5,000 mengikut mana yang terendah) yang bernilai RM	(Ringgit Malaysia 	) dalam bentuk
+Wang	Pos/	Draf	Bank,	No.			atas	nama
+	(Kementerian atau Jabatan).
+
+
+4. Saya/ syarikat memahami dan bersetuju dengan semua syarat-syarat yang ditetapkan.
+
+Sekian, terima kasih.
+
+
+
+
+Tandatangan	: ................................
+
+Tarikh	: ................................
+
+Cap Syarikat	: ................................
+
+Pekeliling Perbendaharaan Malaysia	AM 6.9 Lampiran J
+
+
+
+KEW.PS-28
+
+JADUAL SEBUT HARGA PELUPUSAN STOK
+
+(Untuk Dipamer Di Papan Kenyataan)
+
+Bil.Kod Penyebut HargaHarga
+
+Nota : Harga tawaran di atas adalah harga yang tercatat di dalam dokumen sebut harga yang diterima sebelum diperiksa. Kerajaan adalah tidak terikat menerima mana-mana sebut harga yang dijadualkan.
+
+
+
+
+
+      (Tandatangan Pengerusi) Nama : ...................................... Jawatan : ......................................
+
+
+
+
+      (Tandatangan Ahli)		(Tandatangan Ahli) Nama : ..............................	Nama : ..............................
+Jawatan : ..........................	Jawatan : ..........................
+
+
+Tarikh :	
+
+
+
+KEW.PS-29
+
+KENYATAAN JUALAN LELONG STOK
+
+
+Dimaklumkan	bahawa	Kementerian/	Jabatan	akan
+mengadakan jualan lelong Stok seperti berikut:-
+
+
+Tarikh	:	.................................................
+
+Masa	:	.................................................
+
+Tempat	:	.................................................
+
+2. Senarai Stok yang akan dilelong adalah seperti di KEW.PS-30. Semua Stok  boleh  dilihat  pada  tarikh  .......................  hingga	di
+alamat.................................................................................................di antara jam
+.................... hingga ....................
+
+
+3. Syarat dan peraturan lelong adalah seperti berikut:-
+(i) Stok akan dijual tertakluk kepada harga simpanan.
+(ii) Pembida yang berminat untuk menyertai lelongan, perlu mendaftar dengan Pegawai Pelelong dengan memberikan nama penuh, No. Kad Pengenalan dan alamat kepada Pegawai Pelelong semasa lelongan dilakukan serta membayar deposit sebanyak 5% daripada harga simpanan atau maksimum RM1,000.
+(iii) Penawar harga tertinggi adalah pembida yang berjaya dan jika ada apa-apa perselisihan yang berbangkit mengenai penawar yang tertinggi, Stok berkenaan akan dilelong semula.
+(iv) Jabatan berhak mengubah susunan jualan tersebut di senarai KEW.PS-30 dan menarik balik mana-mana Stok daripada senarai tersebut.
+(v) Semua Stok adalah dilelong sebagaimana keadaannya semasa dilihat (as-is-where-is-basis).
+(vi) Jabatan ini tidak akan bertanggungjawab ke atas Stok yang telah dijual.
+
+
+
+(vii) Semua perbelanjaan bagi mengangkut Stok hendaklah ditanggung oleh pembida sendiri.
+(viii) Pembida yang berjaya hendaklah memberitahu nama penuh, no. Kad Pengenalan dan alamat kepada Pegawai Pelelong semasa jualan dilakukan.
+(ix) Pembayaran penuh hendaklah dibuat dalam tempoh tujuh (7) hari dari tarikh lelongan.
+(x) Pembida yang berjaya hendaklah mengambil Stok dalam tempoh empat belas (14) hari dari tarikh lelong. Jika tidak, Jabatan berhak untuk melupuskannya.
+(xi) Segala bayaran hendaklah dijelaskan sepenuhnya sebelum Stok boleh dikeluarkan dari premis Jabatan
+
+Pekeliling Perbendaharaan Malaysia	AM 6.9 Lampiran L
+
+
+KEW.PS-30
+
+SENARAI STOK YANG DILELONG
+
+KEMENTERIAN/ JABATAN: 	
+
+
+
+Lot
+Perihal Stok
+KuantitiHarga Simpanan (RM)Deposit1.2.3.4.5.6.7.8.9.10.
+
+
+
+
+(Tandatangan Ketua Jabatan)
+
+Nama	:	......................................................................
+
+Jawatan	:	......................................................................
+
+Tarikh	:	......................................................................
+
+Cap Kementerian/ Jabatan :
+
+Pekeliling Perbendaharaan Malaysia	AM 6.9 Lampiran M
+
+
+KEW.PS-31
+
+
+
+
+
+Kementerian/ Jabatan:
+
+LAPORAN PELUPUSAN STOK BAGI TAHUN ..............
+
+
+
+
+
+KEMENTERIAN/ JABATANNILAI PEROLEHAN ASAL
+(RM)JUMLAH NILAI PEROLEHAN ASAL STOK MENGIKUT KAEDAH
+(RM)
+HASIL PELUPUSAN (RM)
+KOS PENGENDALIAN (RM)ABCDEFGHIJJUMLAH KESELURUHAN
+
+PETUNJUK:	A: JUALAN (TENDER, SEBUT HARGA, LELONG)
+B: BUANGAN TERJADUAL (E-WASTE DAN SISA PEPEJAL)
+C: JUALAN SISA (TENDER, SEBUT HARGA & JUALAN TERUS) D: TUKAR BARANG/PERKHIDMATAN
+E: TUKAR BELI F: TUKAR GANTI G: HADIAH
+H: SERAHAN
+I: MUSNAH (TANAM, BAKAR, BUANG, TENGGELAM, LETUP, LEDAK DAN LEBUR) J: KAEDAH-KAEDAH LAIN
+
+
+M.S. 49/49
+
+Pekeliling Perbendaharaan Malaysia	AM 6.10 Lampiran A
+
+
+KEW.PS-32
+LAPORAN AWAL KEHILANGAN STOK
+
+Nyatakan:-
+
+1. Keterangan Stok yang hilang.
+
+(a) Perihal Stok
+(b) Jenama dan Model
+(c) Kuantiti
+(d) Tarikh Perolehan
+(e) Harga Perolehan
+(f) Anggaran Nilai Semasa
+
+2. Tempat sebenar di mana kehilangan berlaku.
+
+3. Tarikh kehilangan berlaku atau diketahui.
+
+4. Nyatakan cara bagaimana kehilangan berlaku lebih terperinci dan jelas termasuk pegawai-pegawai yang terlibat dan Stok kali terakhir ditinggalkan di mana.
+
+5. Nama dan jawatan pegawai yang akhir sekali menyimpan/mengguna Stok yang hilang.
+
+6. Nyatakan taraf jawatan pegawai (tetap/kontrak/sambilan).
+
+(a) Tetap (Tarikh pencen dinyatakan)
+(b) Kontrak (Salinan perjanjian)
+(c) Sambilan (Salinan surat pelantikan)
+
+7. Sama ada seseorang pegawai difikirkan prima facie bertanggungjawab ke atas kehilangan itu. Jika ya, nama dan jawatannya.
+
+8. Sama ada seseorang pegawai telah ditahan kerja.
+
+9. No. Rujukan dan Tarikh Laporan Polis (jika ada).
+
+10. Langkah-langkah sedia ada untuk mengelakkan kehilangan itu berlaku.
+
+11. Langkah-langkah segera yang diambil bagi mencegah berulangnya kejadian ini.
+
+12. Laporan hendaklah disertakan dengan dokumen sokongan dan gambar tempat kejadian.
+
+13. Catatan.
+    ................................ Tandatangan Ketua Jabatan
+Nama : Jawatan: Tarikh:
+Cap Jabatan:
+
+Pekeliling Perbendaharaan Malaysia	AM 6.10 Lampiran B
+
+
+
+
+
+
+Kepada:
+..........................................
+..........................................
+(Nama dan Jawatan Pegawai yang dilantik)
+
+
+
+No. Rujukan Fail: Tarikh:
+
+
+KEW.PS-33
+
+
+PELANTIKAN JAWATANKUASA PENYIASAT KEHILANGAN STOK
+
+Adalah dimaklumkan bahawa tuan/ puan dilantik sebagai Pengerusi/ Ahli Jawatankuasa Penyiasat untuk menyiasat kehilangan .......................................... (nama Stok) di................................................................. (Kementerian/ Jabatan/ PTJ) mulai dari tarikh surat ini. (No. Rujukan Laporan Awal	)
+
+2. Tuan/ Puan adalah diberi kuasa untuk menjalankan siasatan dengan mendapatkan maklumat mengenai kes kehilangan tersebut daripada mana-mana pegawai yang berkenaan. Bersama-sama ini disertakan Laporan Awal dan Senarai Tugas Jawatankuasa Penyiasat sebagai panduan.
+
+3. Laporan siasatan hendaklah menggunakan Laporan Akhir (KEW.PS-34) seperti yang dilampirkan. Laporan ini mestilah dikembalikan sebelum	(tarikh).
+
+Tandatangan	: ................................................................. Nama Pegawai Pengawal : ................................................................. Kementerian/Jabatan    : .................................................................
+
+
+
+KEW.PS-34
+
+LAPORAN AKHIR KEHILANGAN STOK
+
+Nyatakan:-
+
+1. Keterangan Stok yang hilang.
+
+(a) Perihal Stok
+(b) Jenama dan Model
+(c) Kuantiti
+(d) Tarikh Perolehan
+(e) Harga Perolehan Asal
+(f) Anggaran Nilai Semasa
+
+2. Perihal Kehilangan.
+
+(a) Tarikh diketahui
+(b) Tarikh sebenar berlaku
+(c) Tempat kejadian
+(d) Bagaimana kehilangan diketahui
+(e) Bagaimana kehilangan berlaku
+
+3. Sama ada Laporan Hasil Penyiasatan Polis telah diterima. Jika ada, sila sertakan.
+
+4. (a)	Nama pegawai yang:-
+
+(i) Secara langsung menjaga stok tersebut.
+(ii) Bertanggungjawab sebagai penyelia.
+(iii) Bertanggungjawab ke atas kehilangan itu.
+
+(b) Mengenai setiap pegawai di atas, nyatakan:-
+
+(i) Jawatan hakiki pada masa kehilangan.
+(ii) Tugasnya (sertakan senarai tugas).
+(iii) Taraf Jawatan (sama ada tetap/ dalam percubaan/ sementara/ kontrak).
+(iv) Sama ada ditahan kerja atau digantung kerja. Jika ada nyatakan tarikh kuat kuasa hukuman.
+(v) Tarikh bersara atau penamatan perkhidmatan.
+(vi) Sama	ada	pernah	melakukan	apa-apa	kesalahan	dan hukumannya. (Jika ada, berikan butir-butir ringkas dan rujukannya)
+(vii) Maklumat lain, jika ada.
+
+5. Nyatakan adakah Tatacara Pengurusan Stor atau Arahan Keselamatan Kerajaan atau arahan lain termasuk langkah berjaga-jaga yang tidak dipatuhi atau diikuti. Jika ada nyatakan peraturan atau arahan tersebut.
+
+
+
+
+6. Apakah langkah-langkah yang telah diambil untuk mencegah berulangnya kejadian ini.
+
+7. Rumusan Siasatan.
+
+.................................................................................................................................
+.................................................................................................................................
+
+8. Nyatakan sama ada tindakan surcaj patut dikenakan atau tidak dengan memberikan justifikasi.
+
+(a) Syor Surcaj/ Tatatertib: .....................................................................
+Justifikasi: .......................................................................................... Nama dan Jawatan Pegawai: ............................................................
+
+atau
+(b) Syor Tanpa Surcaj: ............................................................................
+Justifikasi: .......................................................................................... Nama dan Jawatan Pegawai: ............................................................
+
+Tandatangan:	(Pengerusi)
+Nama	: .................................................. Jawatan  :  .................................................. Tarikh	:    ..................................................
+
+Tandatangan:	(Ahli)
+Nama	: .................................................. Jawatan  :  .................................................. Tarikh	:    ..................................................
+
+
+9. Ulasan dan Syor Pegawai Pengawal
+
+Ulasan: .................................................................................
+
+Syor: .....................................................................................
+
+
+Tandatangan	: .........................................
+Nama	: ..........................................
+Jawatan	: ..........................................
+Tarikh	: ..........................................
+Nama Kementerian/: ..........................................
+Jabatan
+
+
+
+KEW.PS-35
+
+
+SIJIL HAPUS KIRA STOK
+(diisi oleh Pegawai Stor)
+
+
+Merujuk surat kelulusan Bil ....................................... bertarikh	Stok
+berikut telah dihapus kira dan Daftar Stok berkenaan telah dikemas kini.
+
+
+
+No. KodPerihal StokKuantiti
+
+
+Tandatangan Ketua Jabatan	: ........................................................ Nama	: ........................................................
+Jawatan	: ........................................................
+Tarikh	 : ........................................................ Nama Kementerian/Jabatan	: ....................................................................
+
+Pekeliling Perbendaharaan Malaysia	AM 6.10 Lampiran E
+
+KEW.PS-36
+
+LAPORAN KEHILANGAN DAN HAPUS KIRA STOK BAGI TAHUN ..............
+
+Kementerian/ Jabatan:
+
+
+
+
+KEMENTERIAN/ JABATAN
+TINDAKAN HAPUS KIRATINDAKAN SURCAJTINDAKAN
+TATATERTIBJUMLAH BILANGAN KESNILAI PEROLEHAN ASAL
+(RM)NILAI SEMASA (RM)JUMLAH BILANGAN KESNILAI SURCAJ (RM)
+JUMLAH BILANGAN KES    JUMLAH KESELURUHAN
+
+
+
+
+
+
+
+
+
+M.S. 21/21
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
