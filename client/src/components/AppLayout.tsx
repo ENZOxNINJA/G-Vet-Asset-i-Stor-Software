@@ -17,6 +17,7 @@ import {
   LogOut,
   Moon,
   Sun,
+  FileText,
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
@@ -43,6 +44,11 @@ const menuItems = [
     title: "Registration",
     icon: <Clipboard className="h-5 w-5" />,
     path: "/asset-registration",
+  },
+  {
+    title: "KEW.PA Registration",
+    icon: <Clipboard className="h-5 w-5" />,
+    path: "/asset-registration-kewpa",
   },
   {
     title: "Verification",
