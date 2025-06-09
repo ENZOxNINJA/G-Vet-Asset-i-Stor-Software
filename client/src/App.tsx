@@ -21,6 +21,7 @@ import AssetMovement from "@/pages/AssetMovement";
 import AssetSearch from "@/pages/AssetSearch";
 import StoreManagementKEWPS from "@/pages/StoreManagementKEWPS";
 import Suppliers from "@/pages/Suppliers";
+import InfoTAsetIntegration from "@/pages/InfoTAsetIntegration";
 import FilterModal from "@/components/FilterModal";
 import DeleteConfirmationModal from "@/components/DeleteConfirmationModal";
 import ItemFormModal from "@/components/ItemFormModal";
@@ -45,6 +46,10 @@ function Router() {
       {/* KEW.PS Framework Routes */}
       <Route path="/kewps" component={KEWPSDashboard} />
       <Route path="/store-management-kewps" component={StoreManagementKEWPS} />
+      
+      {/* Info-T Aset & iStor Integration */}
+      <Route path="/info-t-integration" component={InfoTAsetIntegration} />
+      
       <Route component={NotFound} />
     </Switch>
   );
