@@ -21,24 +21,30 @@ import { Calendar } from "@/components/ui/calendar";
 import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover";
 import { format } from "date-fns";
 
-const assetTypes = [
-  "Computing Equipment",
-  "Office Equipment",
-  "Furniture",
-  "Vehicle",
-  "Communication Equipment",
-  "Other"
+// KEW.PA Asset Categories based on Malaysian Government standards
+const assetCategories = [
+  "Peralatan dan Kelengkapan ICT", // ICT Equipment and Accessories
+  "Perabot", // Furniture
+  "Kenderaan", // Vehicles
+  "Mesin dan Jentera", // Machinery and Equipment
+  "Peralatan Elektrik", // Electrical Equipment
+  "Peralatan Komunikasi", // Communication Equipment
+  "Peralatan Saintifik", // Scientific Equipment
+  "Lain-lain", // Others
 ];
 
-const assetCategories = [
-  "Hardware",
-  "Software",
-  "Peripherals",
-  "Networking",
-  "Office Furniture",
-  "Vehicles",
-  "Electronics",
-  "Other"
+const acquisitionMethods = [
+  "Pembelian", // Purchase
+  "Hibah", // Grant/Gift
+  "Sewa Beli", // Hire Purchase
+  "Pemindahan", // Transfer
+  "Pinjaman", // Loan
+  "Lain-lain", // Others
+];
+
+const assetOrigins = [
+  "Tempatan", // Local
+  "Luar Negara", // Foreign
 ];
 
 const assetConditions = [
@@ -68,21 +74,41 @@ const AssetFormModal = () => {
     setCurrentAsset 
   } = useAsset();
 
-  // Set up form with react-hook-form
+  // Set up form with react-hook-form for KEW.PA compliance
   const form = useForm({
     resolver: zodResolver(assetFormSchema),
     defaultValues: {
+      registrationNumber: currentAsset?.registrationNumber || "",
+      nationalCode: currentAsset?.nationalCode || "",
       name: currentAsset?.name || "",
       assetTag: currentAsset?.assetTag || "",
-      type: currentAsset?.type || "",
       category: currentAsset?.category || "",
-      price: currentAsset?.price ? parseFloat(currentAsset.price.toString()).toFixed(2) : "",
-      purchaseDate: currentAsset?.purchaseDate || format(new Date(), "yyyy-MM-dd"),
-      department: currentAsset?.department || "",
+      subCategory: currentAsset?.subCategory || "",
+      type: currentAsset?.type || "",
+      brand: currentAsset?.brand || "",
+      model: currentAsset?.model || "",
+      origin: currentAsset?.origin || "",
+      engineType: currentAsset?.engineType || "",
+      chassisNumber: currentAsset?.chassisNumber || "",
+      vehicleRegistration: currentAsset?.vehicleRegistration || "",
+      warrantyPeriod: currentAsset?.warrantyPeriod || "",
+      originalPrice: currentAsset?.originalPrice ? parseFloat(currentAsset.originalPrice.toString()).toFixed(2) : "",
+      currentValue: currentAsset?.currentValue ? parseFloat(currentAsset.currentValue.toString()).toFixed(2) : "",
+      acquisitionMethod: currentAsset?.acquisitionMethod || "",
+      acquisitionDate: currentAsset?.acquisitionDate || format(new Date(), "yyyy-MM-dd"),
+      receivedDate: currentAsset?.receivedDate || format(new Date(), "yyyy-MM-dd"),
+      purchaseOrderNumber: currentAsset?.purchaseOrderNumber || "",
+      deliveryOrderNumber: currentAsset?.deliveryOrderNumber || "",
+      supplierName: currentAsset?.supplierName || "",
+      supplierAddress: currentAsset?.supplierAddress || "",
       location: currentAsset?.location || "",
-      supplier: currentAsset?.supplier || "",
-      status: currentAsset?.status || "Active",
-      condition: currentAsset?.condition || "Good",
+      department: currentAsset?.department || "",
+      division: currentAsset?.division || "",
+      status: currentAsset?.status || "active",
+      condition: currentAsset?.condition || "good",
+      assetType: currentAsset?.assetType || "capital",
+      specifications: currentAsset?.specifications || "",
+      notes: currentAsset?.notes || "",
       description: currentAsset?.description || "",
     },
   });

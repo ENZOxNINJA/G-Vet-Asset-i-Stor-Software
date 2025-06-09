@@ -193,7 +193,7 @@ export const assetRejections = pgTable("asset_rejections", {
   
   // Supplier acknowledgment
   supplierAcknowledgment: boolean("supplier_acknowledgment").default(false),
-  supplierName: text("supplier_representative"),
+  supplierRepresentative: text("supplier_representative"),
   supplierSignDate: date("supplier_sign_date"),
   
   status: text("status").notNull().default("pending"), // pending, acknowledged
@@ -296,6 +296,47 @@ export const assetLoanRequestItems = pgTable("asset_loan_request_items", {
   notes: text("notes"),
 });
 
+// Schema exports for new KEW.PA forms
+export const insertAssetReceptionSchema = createInsertSchema(assetReceptions)
+  .omit({ id: true, createdAt: true });
+
+export const insertAssetReceptionItemSchema = createInsertSchema(assetReceptionItems)
+  .omit({ id: true });
+
+export const insertAssetRejectionSchema = createInsertSchema(assetRejections)
+  .omit({ id: true, createdAt: true });
+
+export const insertAssetRejectionItemSchema = createInsertSchema(assetRejectionItems)
+  .omit({ id: true });
+
+export const insertAssetDamageReportSchema = createInsertSchema(assetDamageReports)
+  .omit({ id: true, createdAt: true });
+
+export const insertAssetLoanRequestSchema = createInsertSchema(assetLoanRequests)
+  .omit({ id: true, createdAt: true });
+
+export const insertAssetLoanRequestItemSchema = createInsertSchema(assetLoanRequestItems)
+  .omit({ id: true });
+
+// Type exports
+export type InsertAssetReception = z.infer<typeof insertAssetReceptionSchema>;
+export type AssetReception = typeof assetReceptions.$inferSelect;
+export type InsertAssetReceptionItem = z.infer<typeof insertAssetReceptionItemSchema>;
+export type AssetReceptionItem = typeof assetReceptionItems.$inferSelect;
+
+export type InsertAssetRejection = z.infer<typeof insertAssetRejectionSchema>;
+export type AssetRejection = typeof assetRejections.$inferSelect;
+export type InsertAssetRejectionItem = z.infer<typeof insertAssetRejectionItemSchema>;
+export type AssetRejectionItem = typeof assetRejectionItems.$inferSelect;
+
+export type InsertAssetDamageReport = z.infer<typeof insertAssetDamageReportSchema>;
+export type AssetDamageReport = typeof assetDamageReports.$inferSelect;
+
+export type InsertAssetLoanRequest = z.infer<typeof insertAssetLoanRequestSchema>;
+export type AssetLoanRequest = typeof assetLoanRequests.$inferSelect;
+export type InsertAssetLoanRequestItem = z.infer<typeof insertAssetLoanRequestItemSchema>;
+export type AssetLoanRequestItem = typeof assetLoanRequestItems.$inferSelect;
+
 // Suppliers
 export const suppliers = pgTable("suppliers", {
   id: serial("id").primaryKey(),
@@ -361,16 +402,23 @@ export const inventoryItemFormSchema = insertInventoryItemSchema.extend({
   }).optional(),
 });
 
-// Asset validation schema for frontend form
+// Asset validation schema for frontend form - Enhanced for KEW.PA compliance
 export const assetFormSchema = insertAssetSchema.extend({
-  name: z.string().min(1, "Name is required"),
+  registrationNumber: z.string().min(1, "Registration number is required"),
+  nationalCode: z.string().min(1, "National code is required"),
+  name: z.string().min(1, "Asset name is required"),
   assetTag: z.string().min(1, "Asset tag is required"),
   category: z.string().min(1, "Category is required"),
   type: z.string().min(1, "Asset type is required"),
-  price: z.string().refine((val) => !isNaN(parseFloat(val)) && parseFloat(val) >= 0, {
-    message: "Price must be a valid number",
+  originalPrice: z.string().refine((val) => !isNaN(parseFloat(val)) && parseFloat(val) >= 0, {
+    message: "Original price must be a valid number",
   }),
-  purchaseDate: z.string().min(1, "Purchase date is required"),
+  acquisitionMethod: z.string().min(1, "Acquisition method is required"),
+  acquisitionDate: z.string().min(1, "Acquisition date is required"),
+  receivedDate: z.string().min(1, "Received date is required"),
+  assetType: z.enum(["capital", "low-value"], {
+    required_error: "Asset type is required",
+  }),
 });
 
 // The inventory filter type for search and filtering
