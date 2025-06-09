@@ -6,12 +6,17 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Badge } from "@/components/ui/badge";
-import { Search, FileText, Database, Scan, BarChart3, Settings } from "lucide-react";
+import { Search, FileText, Database, Scan, BarChart3, Settings, RefreshCw, AlertCircle, CheckCircle } from "lucide-react";
 import { Asset, InventoryItem } from "@shared/schema";
+import InfoTAssetCard from "@/components/InfoTAssetCard";
+import IStorInventoryCard from "@/components/IStorInventoryCard";
+import { useToast } from "@/hooks/use-toast";
 
 export default function InfoTAsetIntegration() {
   const [searchTerm, setSearchTerm] = useState("");
   const [selectedTab, setSelectedTab] = useState("overview");
+  const [syncStatus, setSyncStatus] = useState<'syncing' | 'synced' | 'error'>('synced');
+  const { toast } = useToast();
 
   const { data: assets } = useQuery<Asset[]>({
     queryKey: ["/api/assets"],
@@ -32,6 +37,49 @@ export default function InfoTAsetIntegration() {
     item.sku.toLowerCase().includes(searchTerm.toLowerCase()) ||
     item.category.toLowerCase().includes(searchTerm.toLowerCase())
   ) || [];
+
+  const handleViewAssetDetails = (id: number) => {
+    window.location.href = `/assets`;
+    toast({
+      title: "Navigating to Asset Details",
+      description: `Opening detailed view for asset ID: ${id}`,
+    });
+  };
+
+  const handleScanQR = (assetTag: string) => {
+    toast({
+      title: "QR Code Scanner",
+      description: `Scanning QR code for asset: ${assetTag}`,
+    });
+    // QR scanning functionality would be implemented here
+  };
+
+  const handleViewInventoryDetails = (id: number) => {
+    window.location.href = `/inventory`;
+    toast({
+      title: "Navigating to Inventory Details",
+      description: `Opening detailed view for inventory ID: ${id}`,
+    });
+  };
+
+  const handleManageStock = (id: number) => {
+    toast({
+      title: "Stock Management",
+      description: `Opening stock management for item ID: ${id}`,
+    });
+  };
+
+  const handleSync = () => {
+    setSyncStatus('syncing');
+    // Simulate sync process
+    setTimeout(() => {
+      setSyncStatus('synced');
+      toast({
+        title: "Sync Complete",
+        description: "All systems synchronized successfully",
+      });
+    }, 2000);
+  };
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-green-50">
@@ -178,36 +226,44 @@ export default function InfoTAsetIntegration() {
 
           {/* Info-T Aset Tab */}
           <TabsContent value="assets" className="mt-6">
-            <div className="grid gap-6">
+            <div className="space-y-6">
               <Card>
                 <CardHeader>
-                  <CardTitle className="text-blue-700">Info-T Aset Management</CardTitle>
-                  <CardDescription>
-                    Fixed asset information and tracking system
-                  </CardDescription>
+                  <div className="flex items-center justify-between">
+                    <div>
+                      <CardTitle className="text-blue-700">Info-T Aset Management</CardTitle>
+                      <CardDescription>
+                        Fixed asset information and tracking with KEW.PA compliance
+                      </CardDescription>
+                    </div>
+                    <Button
+                      variant="outline"
+                      onClick={handleSync}
+                      disabled={syncStatus === 'syncing'}
+                      className="text-blue-600 hover:bg-blue-50"
+                    >
+                      <RefreshCw className={`h-4 w-4 mr-2 ${syncStatus === 'syncing' ? 'animate-spin' : ''}`} />
+                      {syncStatus === 'syncing' ? 'Syncing...' : 'Sync with KEW.PA'}
+                    </Button>
+                  </div>
                 </CardHeader>
                 <CardContent>
-                  <div className="space-y-4">
-                    {filteredAssets.slice(0, 10).map((asset) => (
-                      <div key={asset.id} className="flex items-center justify-between p-4 border rounded-lg hover:bg-blue-50">
-                        <div className="flex-1">
-                          <div className="flex items-center gap-3">
-                            <Badge variant="outline" className="border-blue-300 text-blue-700">
-                              {asset.assetTag}
-                            </Badge>
-                            <h3 className="font-semibold">{asset.name}</h3>
-                          </div>
-                          <div className="text-sm text-gray-600 mt-1">
-                            {asset.category} • {asset.department} • {asset.status}
-                          </div>
-                        </div>
-                        <div className="text-right">
-                          <div className="font-medium">RM {asset.originalPrice || '0.00'}</div>
-                          <div className="text-sm text-gray-500">{asset.brand}</div>
-                        </div>
-                      </div>
+                  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    {filteredAssets.slice(0, 12).map((asset) => (
+                      <InfoTAssetCard
+                        key={asset.id}
+                        asset={asset}
+                        onViewDetails={handleViewAssetDetails}
+                        onScanQR={handleScanQR}
+                      />
                     ))}
                   </div>
+                  {filteredAssets.length === 0 && (
+                    <div className="text-center py-8 text-gray-500">
+                      <Database className="h-12 w-12 mx-auto mb-4 text-gray-300" />
+                      <p>No assets found matching your search criteria</p>
+                    </div>
+                  )}
                 </CardContent>
               </Card>
             </div>
@@ -215,41 +271,44 @@ export default function InfoTAsetIntegration() {
 
           {/* iStor Tab */}
           <TabsContent value="store" className="mt-6">
-            <div className="grid gap-6">
+            <div className="space-y-6">
               <Card>
                 <CardHeader>
-                  <CardTitle className="text-green-700">iStor Management</CardTitle>
-                  <CardDescription>
-                    Store inventory and consumable tracking system
-                  </CardDescription>
+                  <div className="flex items-center justify-between">
+                    <div>
+                      <CardTitle className="text-green-700">iStor Management</CardTitle>
+                      <CardDescription>
+                        Store inventory and consumable tracking with KEW.PS compliance
+                      </CardDescription>
+                    </div>
+                    <Button
+                      variant="outline"
+                      onClick={handleSync}
+                      disabled={syncStatus === 'syncing'}
+                      className="text-green-600 hover:bg-green-50"
+                    >
+                      <RefreshCw className={`h-4 w-4 mr-2 ${syncStatus === 'syncing' ? 'animate-spin' : ''}`} />
+                      {syncStatus === 'syncing' ? 'Syncing...' : 'Sync with KEW.PS'}
+                    </Button>
+                  </div>
                 </CardHeader>
                 <CardContent>
-                  <div className="space-y-4">
-                    {filteredInventory.slice(0, 10).map((item) => (
-                      <div key={item.id} className="flex items-center justify-between p-4 border rounded-lg hover:bg-green-50">
-                        <div className="flex-1">
-                          <div className="flex items-center gap-3">
-                            <Badge variant="outline" className="border-green-300 text-green-700">
-                              {item.sku}
-                            </Badge>
-                            <h3 className="font-semibold">{item.name}</h3>
-                          </div>
-                          <div className="text-sm text-gray-600 mt-1">
-                            {item.category} • Qty: {item.quantity}
-                          </div>
-                        </div>
-                        <div className="text-right">
-                          <div className="font-medium">RM {item.price}</div>
-                          <Badge 
-                            variant={item.quantity > (item.reorderLevel || 0) ? "default" : "destructive"}
-                            className="text-xs"
-                          >
-                            {item.quantity > (item.reorderLevel || 0) ? "In Stock" : "Low Stock"}
-                          </Badge>
-                        </div>
-                      </div>
+                  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    {filteredInventory.slice(0, 12).map((item) => (
+                      <IStorInventoryCard
+                        key={item.id}
+                        item={item}
+                        onViewDetails={handleViewInventoryDetails}
+                        onManageStock={handleManageStock}
+                      />
                     ))}
                   </div>
+                  {filteredInventory.length === 0 && (
+                    <div className="text-center py-8 text-gray-500">
+                      <Package className="h-12 w-12 mx-auto mb-4 text-gray-300" />
+                      <p>No inventory items found matching your search criteria</p>
+                    </div>
+                  )}
                 </CardContent>
               </Card>
             </div>
@@ -257,43 +316,154 @@ export default function InfoTAsetIntegration() {
 
           {/* Integration Tab */}
           <TabsContent value="integration" className="mt-6">
-            <div className="grid gap-6">
+            <div className="space-y-6">
               <Card>
                 <CardHeader>
-                  <CardTitle>System Integration Status</CardTitle>
-                  <CardDescription>
-                    Connection between Info-T Aset, iStor, KEW.PA, and KEW.PS systems
-                  </CardDescription>
+                  <div className="flex items-center justify-between">
+                    <div>
+                      <CardTitle>System Integration Status</CardTitle>
+                      <CardDescription>
+                        Real-time monitoring of Info-T Aset, iStor, KEW.PA, and KEW.PS connections
+                      </CardDescription>
+                    </div>
+                    <div className="flex items-center gap-2">
+                      {syncStatus === 'synced' && <CheckCircle className="h-5 w-5 text-green-500" />}
+                      {syncStatus === 'syncing' && <RefreshCw className="h-5 w-5 text-blue-500 animate-spin" />}
+                      {syncStatus === 'error' && <AlertCircle className="h-5 w-5 text-red-500" />}
+                      <Badge variant={syncStatus === 'synced' ? 'default' : syncStatus === 'syncing' ? 'secondary' : 'destructive'}>
+                        {syncStatus === 'synced' ? 'All Systems Online' : syncStatus === 'syncing' ? 'Synchronizing' : 'Connection Error'}
+                      </Badge>
+                    </div>
+                  </div>
                 </CardHeader>
                 <CardContent>
                   <div className="space-y-6">
-                    <div className="grid grid-cols-2 gap-4">
-                      <div className="p-4 border rounded-lg bg-blue-50">
-                        <h3 className="font-semibold text-blue-700 mb-2">Info-T Aset ↔ KEW.PA</h3>
-                        <Badge variant="default" className="bg-green-100 text-green-800">Connected</Badge>
-                        <p className="text-sm text-gray-600 mt-2">
-                          Asset data synchronized with KEW.PA compliance framework
-                        </p>
-                      </div>
-                      <div className="p-4 border rounded-lg bg-green-50">
-                        <h3 className="font-semibold text-green-700 mb-2">iStor ↔ KEW.PS</h3>
-                        <Badge variant="default" className="bg-green-100 text-green-800">Connected</Badge>
-                        <p className="text-sm text-gray-600 mt-2">
-                          Store inventory integrated with KEW.PS store management
-                        </p>
-                      </div>
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                      <Card className="border-blue-200 bg-blue-50">
+                        <CardHeader className="pb-3">
+                          <div className="flex items-center justify-between">
+                            <CardTitle className="text-lg text-blue-700">Info-T Aset ↔ KEW.PA</CardTitle>
+                            <CheckCircle className="h-5 w-5 text-green-500" />
+                          </div>
+                        </CardHeader>
+                        <CardContent className="pt-0">
+                          <div className="space-y-3">
+                            <Badge className="bg-green-100 text-green-800">Active Connection</Badge>
+                            <p className="text-sm text-gray-600">
+                              Asset data synchronized with KEW.PA compliance framework
+                            </p>
+                            <div className="text-xs text-gray-500">
+                              Last sync: {new Date().toLocaleTimeString()}
+                            </div>
+                            <div className="text-xs text-gray-500">
+                              {assets?.length || 0} assets synchronized
+                            </div>
+                          </div>
+                        </CardContent>
+                      </Card>
+
+                      <Card className="border-green-200 bg-green-50">
+                        <CardHeader className="pb-3">
+                          <div className="flex items-center justify-between">
+                            <CardTitle className="text-lg text-green-700">iStor ↔ KEW.PS</CardTitle>
+                            <CheckCircle className="h-5 w-5 text-green-500" />
+                          </div>
+                        </CardHeader>
+                        <CardContent className="pt-0">
+                          <div className="space-y-3">
+                            <Badge className="bg-green-100 text-green-800">Active Connection</Badge>
+                            <p className="text-sm text-gray-600">
+                              Store inventory integrated with KEW.PS store management
+                            </p>
+                            <div className="text-xs text-gray-500">
+                              Last sync: {new Date().toLocaleTimeString()}
+                            </div>
+                            <div className="text-xs text-gray-500">
+                              {inventory?.length || 0} items synchronized
+                            </div>
+                          </div>
+                        </CardContent>
+                      </Card>
                     </div>
 
-                    <div className="p-4 border rounded-lg">
-                      <h3 className="font-semibold mb-2">Integration Features</h3>
-                      <ul className="space-y-2 text-sm text-gray-600">
-                        <li>• Real-time data synchronization</li>
-                        <li>• Unified search across all systems</li>
-                        <li>• Cross-system reporting and analytics</li>
-                        <li>• Compliance validation and alerts</li>
-                        <li>• Automated workflow triggers</li>
-                      </ul>
-                    </div>
+                    <Card>
+                      <CardHeader>
+                        <CardTitle>Integration Features & Capabilities</CardTitle>
+                      </CardHeader>
+                      <CardContent>
+                        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                          <div>
+                            <h4 className="font-semibold mb-3 text-blue-700">Data Synchronization</h4>
+                            <ul className="space-y-2 text-sm text-gray-600">
+                              <li className="flex items-center gap-2">
+                                <CheckCircle className="h-4 w-4 text-green-500" />
+                                Real-time asset data sync
+                              </li>
+                              <li className="flex items-center gap-2">
+                                <CheckCircle className="h-4 w-4 text-green-500" />
+                                Inventory level monitoring
+                              </li>
+                              <li className="flex items-center gap-2">
+                                <CheckCircle className="h-4 w-4 text-green-500" />
+                                Cross-system validation
+                              </li>
+                              <li className="flex items-center gap-2">
+                                <CheckCircle className="h-4 w-4 text-green-500" />
+                                Automated compliance checks
+                              </li>
+                            </ul>
+                          </div>
+                          <div>
+                            <h4 className="font-semibold mb-3 text-green-700">System Integration</h4>
+                            <ul className="space-y-2 text-sm text-gray-600">
+                              <li className="flex items-center gap-2">
+                                <CheckCircle className="h-4 w-4 text-green-500" />
+                                Unified search across all systems
+                              </li>
+                              <li className="flex items-center gap-2">
+                                <CheckCircle className="h-4 w-4 text-green-500" />
+                                Cross-system reporting
+                              </li>
+                              <li className="flex items-center gap-2">
+                                <CheckCircle className="h-4 w-4 text-green-500" />
+                                Automated workflow triggers
+                              </li>
+                              <li className="flex items-center gap-2">
+                                <CheckCircle className="h-4 w-4 text-green-500" />
+                                Government compliance automation
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </CardContent>
+                    </Card>
+
+                    <Card>
+                      <CardHeader>
+                        <CardTitle>Manual Sync Controls</CardTitle>
+                        <CardDescription>Force synchronization between systems</CardDescription>
+                      </CardHeader>
+                      <CardContent>
+                        <div className="flex gap-4">
+                          <Button
+                            onClick={handleSync}
+                            disabled={syncStatus === 'syncing'}
+                            className="bg-blue-600 hover:bg-blue-700"
+                          >
+                            <RefreshCw className={`h-4 w-4 mr-2 ${syncStatus === 'syncing' ? 'animate-spin' : ''}`} />
+                            Sync All Systems
+                          </Button>
+                          <Button variant="outline" disabled={syncStatus === 'syncing'}>
+                            <Database className="h-4 w-4 mr-2" />
+                            Validate Data Integrity
+                          </Button>
+                          <Button variant="outline" disabled={syncStatus === 'syncing'}>
+                            <FileText className="h-4 w-4 mr-2" />
+                            Generate Sync Report
+                          </Button>
+                        </div>
+                      </CardContent>
+                    </Card>
                   </div>
                 </CardContent>
               </Card>
