@@ -6,7 +6,7 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Badge } from "@/components/ui/badge";
-import { Search, FileText, Database, Scan, BarChart3, Settings, RefreshCw, AlertCircle, CheckCircle } from "lucide-react";
+import { Search, FileText, Database, Scan, BarChart3, Settings, RefreshCw, AlertCircle, CheckCircle, Package } from "lucide-react";
 import { Asset, InventoryItem } from "@shared/schema";
 import InfoTAssetCard from "@/components/InfoTAssetCard";
 import IStorInventoryCard from "@/components/IStorInventoryCard";
