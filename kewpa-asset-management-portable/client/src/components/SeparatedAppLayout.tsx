@@ -19,7 +19,8 @@ import {
   X,
   Building2,
   Warehouse,
-  Command
+  Command,
+  Database
 } from "lucide-react";
 import QuickSearch from "@/components/QuickSearch";
 import { useQuickSearch } from "@/hooks/useQuickSearch";
@@ -48,6 +49,11 @@ const generalNavigation = [
     title: "Suppliers",
     icon: <Truck className="h-5 w-5" />,
     path: "/suppliers",
+  },
+  {
+    title: "Info-T Integration",
+    icon: <Database className="h-5 w-5" />,
+    path: "/info-t-integration",
   },
 ];
 
