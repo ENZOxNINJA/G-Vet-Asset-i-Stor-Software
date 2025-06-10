@@ -1,10 +1,13 @@
+import { useState } from "react";
 import { Switch, Route } from "wouter";
 import { queryClient } from "./lib/queryClient";
 import { QueryClientProvider } from "@tanstack/react-query";
 import { Toaster } from "@/components/ui/toaster";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { InventoryProvider } from "./contexts/InventoryContext";
+import { AuthProvider, useAuth } from "./contexts/AuthContext";
 import NotFound from "@/pages/not-found";
+import Login from "@/pages/Login";
 import Inventory from "@/pages/Inventory";
 import { ThemeProvider } from "@/components/ui/theme-provider";
 import { AssetProvider } from "./contexts/AssetContext";
@@ -28,33 +31,61 @@ import FilterModal from "@/components/FilterModal";
 import DeleteConfirmationModal from "@/components/DeleteConfirmationModal";
 import ItemFormModal from "@/components/ItemFormModal";
 
-function Router() {
+function AuthenticatedRouter() {
+  const { isAuthenticated, user, hasPermission, login } = useAuth();
+
+  if (!isAuthenticated) {
+    return <Login onLogin={login} />;
+  }
+
+  // Route access control based on user role and permissions
+  const canAccessAdmin = user?.role === 'admin';
+  const canAccessManager = ['admin', 'manager'].includes(user?.role || '');
+  const canWrite = hasPermission('write');
+  const canRead = hasPermission('read');
+
   return (
     <Switch>
-      <Route path="/" component={Dashboard} />
-      <Route path="/inventory" component={Inventory} />
-      <Route path="/assets" component={Assets} />
-      <Route path="/suppliers" component={Suppliers} />
+      {/* Default dashboard based on user role */}
+      <Route path="/" component={user?.role === 'visitor' ? VisitorDashboard : Dashboard} />
       
-      {/* KEW.PA Framework Routes */}
-      <Route path="/kewpa" component={KEWPADashboard} />
-      <Route path="/asset-registration-kewpa" component={AssetRegistrationKEWPA} />
-      <Route path="/asset-inspection" component={AssetInspection} />
-      <Route path="/asset-maintenance" component={AssetMaintenance} />
-      <Route path="/asset-verification" component={AssetVerification} />
-      <Route path="/asset-movement" component={AssetMovement} />
-      <Route path="/asset-search" component={AssetSearch} />
+      {/* Basic access for all authenticated users */}
+      {canRead && (
+        <>
+          <Route path="/inventory" component={Inventory} />
+          <Route path="/assets" component={Assets} />
+          <Route path="/suppliers" component={Suppliers} />
+          <Route path="/visitor-dashboard" component={VisitorDashboard} />
+        </>
+      )}
       
-      {/* KEW.PS Framework Routes */}
-      <Route path="/kewps" component={KEWPSDashboard} />
-      <Route path="/store-management-kewps" component={StoreManagementKEWPS} />
+      {/* Write access required */}
+      {canWrite && (
+        <>
+          <Route path="/asset-registration" component={AssetRegistration} />
+          <Route path="/asset-registration-kewpa" component={AssetRegistrationKEWPA} />
+          <Route path="/asset-movement" component={AssetMovement} />
+          <Route path="/store-management-kewps" component={StoreManagementKEWPS} />
+        </>
+      )}
       
-      {/* Info-T Aset & iStor Integration */}
-      <Route path="/info-t-integration" component={InfoTAsetIntegration} />
+      {/* Manager and Admin access */}
+      {canAccessManager && (
+        <>
+          <Route path="/kewpa" component={KEWPADashboard} />
+          <Route path="/kewps" component={KEWPSDashboard} />
+          <Route path="/asset-inspection" component={AssetInspection} />
+          <Route path="/asset-maintenance" component={AssetMaintenance} />
+          <Route path="/asset-verification" component={AssetVerification} />
+          <Route path="/asset-search" component={AssetSearch} />
+          <Route path="/info-t-integration" component={InfoTAsetIntegration} />
+        </>
+      )}
       
-      {/* Admin Control and Visitor Access */}
-      <Route path="/admin-control" component={AdminControl} />
-      <Route path="/visitor-dashboard" component={VisitorDashboard} />
+      {/* Admin only access */}
+      {canAccessAdmin && (
+        <Route path="/admin-control" component={AdminControl} />
+      )}
       
       <Route component={NotFound} />
     </Switch>

@@ -25,7 +25,8 @@ export default function Login({ onLogin }: LoginProps) {
 
     try {
       // Simple authentication check
-      const users = await apiRequest("/api/users");
+      const response = await fetch("/api/users");
+      const users = await response.json();
       const user = users.find((u: any) => 
         u.username === credentials.username && 
         u.password === credentials.password &&
