@@ -93,6 +93,24 @@ export class DatabaseStorage implements IStorage {
     return db.select().from(users);
   }
 
+  async updateUserStatus(id: number, isActive: boolean): Promise<User | undefined> {
+    const [updatedUser] = await db
+      .update(users)
+      .set({ isActive, updatedAt: new Date() })
+      .where(eq(users.id, id))
+      .returning();
+    return updatedUser;
+  }
+
+  async updateUserRole(id: number, role: string, permissions: string): Promise<User | undefined> {
+    const [updatedUser] = await db
+      .update(users)
+      .set({ role, permissions, updatedAt: new Date() })
+      .where(eq(users.id, id))
+      .returning();
+    return updatedUser;
+  }
+
   // Inventory Operations
   async getAllInventoryItems(): Promise<InventoryItem[]> {
     return db.select().from(inventoryItems).orderBy(desc(inventoryItems.createdAt));

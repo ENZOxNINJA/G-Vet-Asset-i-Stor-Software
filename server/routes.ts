@@ -83,6 +83,82 @@ export async function registerRoutes(app: Express): Promise<Server> {
       res.status(500).json({ message: "Failed to create user" });
     }
   });
+
+  // Update user status (activate/deactivate)
+  app.patch("/api/users/:id/status", async (req: Request, res: Response) => {
+    try {
+      const id = parseInt(req.params.id, 10);
+      const { isActive } = req.body;
+      
+      if (isNaN(id)) {
+        return res.status(400).json({ message: "Invalid ID format" });
+      }
+      
+      if (typeof isActive !== 'boolean') {
+        return res.status(400).json({ message: "isActive must be a boolean" });
+      }
+      
+      const updatedUser = await storage.updateUserStatus(id, isActive);
+      
+      if (!updatedUser) {
+        return res.status(404).json({ message: "User not found" });
+      }
+      
+      res.json(updatedUser);
+    } catch (error) {
+      console.error("Error updating user status:", error);
+      res.status(500).json({ message: "Failed to update user status" });
+    }
+  });
+
+  // Update user role and permissions
+  app.patch("/api/users/:id/role", async (req: Request, res: Response) => {
+    try {
+      const id = parseInt(req.params.id, 10);
+      const { role, permissions } = req.body;
+      
+      if (isNaN(id)) {
+        return res.status(400).json({ message: "Invalid ID format" });
+      }
+      
+      if (!role || !permissions) {
+        return res.status(400).json({ message: "Role and permissions are required" });
+      }
+      
+      const updatedUser = await storage.updateUserRole(id, role, permissions);
+      
+      if (!updatedUser) {
+        return res.status(404).json({ message: "User not found" });
+      }
+      
+      res.json(updatedUser);
+    } catch (error) {
+      console.error("Error updating user role:", error);
+      res.status(500).json({ message: "Failed to update user role" });
+    }
+  });
+
+  // Update user profile
+  app.patch("/api/users/:id", async (req: Request, res: Response) => {
+    try {
+      const id = parseInt(req.params.id, 10);
+      
+      if (isNaN(id)) {
+        return res.status(400).json({ message: "Invalid ID format" });
+      }
+      
+      const updatedUser = await storage.updateUser(id, req.body);
+      
+      if (!updatedUser) {
+        return res.status(404).json({ message: "User not found" });
+      }
+      
+      res.json(updatedUser);
+    } catch (error) {
+      console.error("Error updating user:", error);
+      res.status(500).json({ message: "Failed to update user" });
+    }
+  });
   
   // =========== Inventory Routes ===========
   
