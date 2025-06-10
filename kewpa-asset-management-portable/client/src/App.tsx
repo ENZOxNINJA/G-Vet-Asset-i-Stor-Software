@@ -22,6 +22,8 @@ import AssetSearch from "@/pages/AssetSearch";
 import StoreManagementKEWPS from "@/pages/StoreManagementKEWPS";
 import Suppliers from "@/pages/Suppliers";
 import InfoTAsetIntegration from "@/pages/InfoTAsetIntegration";
+import AdminControl from "@/pages/AdminControl";
+import VisitorDashboard from "@/pages/VisitorDashboard";
 import FilterModal from "@/components/FilterModal";
 import DeleteConfirmationModal from "@/components/DeleteConfirmationModal";
 import ItemFormModal from "@/components/ItemFormModal";
@@ -49,6 +51,10 @@ function Router() {
       
       {/* Info-T Aset & iStor Integration */}
       <Route path="/info-t-integration" component={InfoTAsetIntegration} />
+      
+      {/* Admin Control and Visitor Access */}
+      <Route path="/admin-control" component={AdminControl} />
+      <Route path="/visitor-dashboard" component={VisitorDashboard} />
       
       <Route component={NotFound} />
     </Switch>

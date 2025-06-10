@@ -6,18 +6,46 @@ export const users = pgTable("users", {
   id: serial("id").primaryKey(),
   username: text("username").notNull().unique(),
   password: text("password").notNull(),
+  email: text("email"),
   fullName: text("full_name"),
   department: text("department"),
-  role: text("role").default("user"),
+  position: text("position"),
+  role: text("role").notNull().default("visitor"), // admin, manager, staff, visitor
+  permissions: text("permissions").default("read"), // read, write, admin, full
+  isActive: boolean("is_active").default(true),
+  lastLogin: timestamp("last_login"),
+  createdAt: timestamp("created_at").defaultNow(),
+  updatedAt: timestamp("updated_at").defaultNow(),
 });
 
 export const insertUserSchema = createInsertSchema(users).pick({
   username: true,
   password: true,
+  email: true,
   fullName: true,
   department: true,
+  position: true,
   role: true,
+  permissions: true,
 });
+
+// User role definitions
+export const userRoles = {
+  ADMIN: 'admin',
+  MANAGER: 'manager', 
+  STAFF: 'staff',
+  VISITOR: 'visitor'
+} as const;
+
+export const userPermissions = {
+  READ: 'read',
+  WRITE: 'write', 
+  ADMIN: 'admin',
+  FULL: 'full'
+} as const;
+
+export type UserRole = typeof userRoles[keyof typeof userRoles];
+export type UserPermission = typeof userPermissions[keyof typeof userPermissions];
 
 export type InsertUser = z.infer<typeof insertUserSchema>;
 export type User = typeof users.$inferSelect;

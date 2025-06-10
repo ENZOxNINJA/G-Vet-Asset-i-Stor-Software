@@ -17,10 +17,14 @@
   /* Blue for KEW.PA */
   --primary: 217 91% 60%;
   --primary-foreground: 0 0% 100%;
+  --kewpa-blue: 217 91% 60%;
+  --kewpa-blue-light: 217 91% 95%;
   
   /* Green for KEW.PS */
   --secondary: 142 76% 36%;
   --secondary-foreground: 0 0% 100%;
+  --kewps-green: 142 76% 36%;
+  --kewps-green-light: 142 76% 95%;
   
   /* Accent */
   --accent: 210 40% 96%;
@@ -30,6 +34,59 @@
   --destructive-foreground: 60 9.1% 97.8%;
   --ring: 270 76% 40%;
   --radius: 0.5rem;
+  
+  /* Integration theme colors */
+  --info-t-blue: 217 91% 60%;
+  --info-t-blue-light: 217 91% 95%;
+  --istor-green: 142 76% 36%;
+  --istor-green-light: 142 76% 95%;
+}
+
+/* KEW.PA Theme Classes */
+.kewpa-theme {
+  --primary: var(--kewpa-blue);
+  --primary-foreground: 0 0% 100%;
+}
+
+.kewpa-bg {
+  background: hsl(var(--kewpa-blue-light));
+}
+
+.kewpa-border {
+  border-color: hsl(var(--kewpa-blue));
+}
+
+.kewpa-text {
+  color: hsl(var(--kewpa-blue));
+}
+
+/* KEW.PS Theme Classes */
+.kewps-theme {
+  --primary: var(--kewps-green);
+  --primary-foreground: 0 0% 100%;
+}
+
+.kewps-bg {
+  background: hsl(var(--kewps-green-light));
+}
+
+.kewps-border {
+  border-color: hsl(var(--kewps-green));
+}
+
+.kewps-text {
+  color: hsl(var(--kewps-green));
+}
+
+/* Info-T Integration Theme Classes */
+.info-t-theme {
+  --primary: var(--info-t-blue);
+  --primary-foreground: 0 0% 100%;
+}
+
+.istor-theme {
+  --primary: var(--istor-green);
+  --primary-foreground: 0 0% 100%;
 }
 
 .dark {
