@@ -52,6 +52,10 @@ function Router() {
       {/* Info-T Aset & iStor Integration */}
       <Route path="/info-t-integration" component={InfoTAsetIntegration} />
       
+      {/* Admin Control and Visitor Access */}
+      <Route path="/admin-control" component={AdminControl} />
+      <Route path="/visitor-dashboard" component={VisitorDashboard} />
+      
       <Route component={NotFound} />
     </Switch>
   );

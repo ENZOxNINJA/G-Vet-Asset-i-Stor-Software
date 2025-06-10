@@ -17,6 +17,8 @@ export interface IStorage {
   createUser(user: InsertUser): Promise<User>;
   updateUser(id: number, user: Partial<InsertUser>): Promise<User | undefined>;
   getAllUsers(): Promise<User[]>;
+  updateUserStatus(id: number, isActive: boolean): Promise<User | undefined>;
+  updateUserRole(id: number, role: string, permissions: string): Promise<User | undefined>;
   
   // Inventory CRUD Operations
   getAllInventoryItems(): Promise<InventoryItem[]>;
