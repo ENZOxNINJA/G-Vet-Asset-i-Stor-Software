@@ -68,56 +68,58 @@ const Dashboard = () => {
 
   return (
     <AppLayout>
-      <div className="flex flex-col space-y-6">
-        <h2 className="text-3xl font-bold tracking-tight">Welcome to PLT ASSET</h2>
-        <p className="text-muted-foreground">
-          View and manage your organization's assets and inventory efficiently.
-        </p>
+      <div className="flex flex-col space-y-6 p-6 bg-gradient-to-br from-background to-muted/30 min-h-screen">
+        <div className="space-y-2">
+          <h2 className="text-3xl font-bold tracking-tight text-foreground">Welcome to KEW System</h2>
+          <p className="text-muted-foreground">
+            View and manage your organization's assets and inventory efficiently with KEW.PA and KEW.PS frameworks.
+          </p>
+        </div>
 
         <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
-          <Card>
+          <Card className="glass card-hover border-border/50">
             <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
-              <CardTitle className="text-sm font-medium">Total Assets</CardTitle>
-              <ClipboardList className="h-4 w-4 text-muted-foreground" />
+              <CardTitle className="text-sm font-medium text-foreground">Total Assets</CardTitle>
+              <ClipboardList className="h-4 w-4 text-primary" />
             </CardHeader>
             <CardContent>
-              <div className="text-2xl font-bold">{totalAssets}</div>
+              <div className="text-2xl font-bold bg-gradient-to-r from-primary to-blue-500 bg-clip-text text-transparent">{totalAssets}</div>
               <p className="text-xs text-muted-foreground">
                 Registered assets across all departments
               </p>
             </CardContent>
           </Card>
-          <Card>
+          <Card className="glass card-hover border-border/50">
             <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
-              <CardTitle className="text-sm font-medium">Pending Verification</CardTitle>
+              <CardTitle className="text-sm font-medium text-foreground">Pending Verification</CardTitle>
               <AlertCircle className="h-4 w-4 text-amber-500" />
             </CardHeader>
             <CardContent>
-              <div className="text-2xl font-bold">{pendingVerification}</div>
+              <div className="text-2xl font-bold bg-gradient-to-r from-amber-500 to-orange-500 bg-clip-text text-transparent">{pendingVerification}</div>
               <p className="text-xs text-muted-foreground">
                 Assets awaiting verification
               </p>
             </CardContent>
           </Card>
-          <Card>
+          <Card className="glass card-hover border-border/50">
             <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
-              <CardTitle className="text-sm font-medium">Inventory Items</CardTitle>
-              <PackageOpen className="h-4 w-4 text-muted-foreground" />
+              <CardTitle className="text-sm font-medium text-foreground">Inventory Items</CardTitle>
+              <PackageOpen className="h-4 w-4 text-secondary" />
             </CardHeader>
             <CardContent>
-              <div className="text-2xl font-bold">{totalInventory}</div>
+              <div className="text-2xl font-bold bg-gradient-to-r from-secondary to-green-500 bg-clip-text text-transparent">{totalInventory}</div>
               <p className="text-xs text-muted-foreground">
                 Total items in the inventory
               </p>
             </CardContent>
           </Card>
-          <Card>
+          <Card className="glass card-hover border-border/50">
             <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
-              <CardTitle className="text-sm font-medium">Stock Alerts</CardTitle>
+              <CardTitle className="text-sm font-medium text-foreground">Stock Alerts</CardTitle>
               <AlertCircle className="h-4 w-4 text-red-500" />
             </CardHeader>
             <CardContent>
-              <div className="text-2xl font-bold">{lowStockItems + outOfStockItems}</div>
+              <div className="text-2xl font-bold bg-gradient-to-r from-red-500 to-pink-500 bg-clip-text text-transparent">{lowStockItems + outOfStockItems}</div>
               <p className="text-xs text-muted-foreground">
                 Low and out of stock items
               </p>
@@ -126,17 +128,17 @@ const Dashboard = () => {
         </div>
 
         <Tabs defaultValue="overview" className="space-y-4">
-          <TabsList>
+          <TabsList className="glass">
             <TabsTrigger value="overview">Overview</TabsTrigger>
             <TabsTrigger value="analytics">Analytics</TabsTrigger>
             <TabsTrigger value="reports">Reports</TabsTrigger>
           </TabsList>
           <TabsContent value="overview" className="space-y-4">
             <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
-              <Card>
+              <Card className="glass card-hover border-border/50">
                 <CardHeader>
-                  <CardTitle>Recent Asset Movements</CardTitle>
-                  <CardDescription>Latest asset transfers and loans</CardDescription>
+                  <CardTitle className="text-foreground">Recent Asset Movements</CardTitle>
+                  <CardDescription className="text-muted-foreground">Latest asset transfers and loans</CardDescription>
                 </CardHeader>
                 <CardContent>
                   {loadingAssets ? (

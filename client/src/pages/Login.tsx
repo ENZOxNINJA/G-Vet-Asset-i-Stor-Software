@@ -5,7 +5,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Label } from "@/components/ui/label";
 import { useToast } from "@/hooks/use-toast";
 import { Shield, User, Lock } from "lucide-react";
-import { apiRequest } from "@/lib/queryClient";
+import { ThemeToggle } from "@/components/ThemeToggle";
 
 interface LoginProps {
   onLogin: (user: any) => void;
@@ -24,9 +24,25 @@ export default function Login({ onLogin }: LoginProps) {
     setIsLoading(true);
 
     try {
-      // Simple authentication check
-      const response = await fetch("/api/users");
-      const users = await response.json();
+      // Demo users for authentication
+      const demoUsers = [
+        { id: 1, username: "admin", password: "admin123", fullName: "System Administrator", role: "admin", permissions: "full", isActive: true, department: "IT", position: "IT Manager" },
+        { id: 2, username: "manager", password: "manager123", fullName: "Department Manager", role: "manager", permissions: "admin", isActive: true, department: "Administration", position: "Operations Manager" },
+        { id: 3, username: "staff", password: "staff123", fullName: "Asset Staff", role: "staff", permissions: "write", isActive: true, department: "Administration", position: "Asset Officer" },
+        { id: 4, username: "visitor", password: "visitor123", fullName: "Guest User", role: "visitor", permissions: "read", isActive: true, department: "External", position: "Visitor" }
+      ];
+
+      // Try to fetch from API first, fallback to demo users if database is unavailable
+      let users = demoUsers;
+      try {
+        const response = await fetch("/api/users");
+        if (response.ok) {
+          users = await response.json();
+        }
+      } catch (apiError) {
+        console.warn("API unavailable, using demo authentication");
+      }
+
       const user = users.find((u: any) => 
         u.username === credentials.username && 
         u.password === credentials.password &&
@@ -48,8 +64,8 @@ export default function Login({ onLogin }: LoginProps) {
       }
     } catch (error) {
       toast({
-        title: "Login Error",
-        description: "Unable to connect to the server.",
+        title: "Login Error", 
+        description: "Authentication failed.",
         variant: "destructive",
       });
     } finally {
@@ -65,22 +81,29 @@ export default function Login({ onLogin }: LoginProps) {
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-blue-50 to-green-50 flex items-center justify-center p-4">
+    <div className="min-h-screen bg-gradient-animated flex items-center justify-center p-4 relative">
+      {/* Theme Toggle */}
+      <div className="absolute top-6 right-6">
+        <ThemeToggle />
+      </div>
+      
       <div className="w-full max-w-md space-y-6">
         {/* Header */}
         <div className="text-center">
           <div className="flex justify-center mb-4">
-            <Shield className="h-12 w-12 text-blue-600" />
+            <div className="p-3 rounded-full glass">
+              <Shield className="h-12 w-12 text-white" />
+            </div>
           </div>
-          <h1 className="text-2xl font-bold text-gray-900">KEW.PA Asset Management</h1>
-          <p className="text-gray-600 mt-2">Malaysian Government Asset & Store Management System</p>
+          <h1 className="text-2xl font-bold text-white drop-shadow-lg">KEW.PA Asset Management</h1>
+          <p className="text-white/90 mt-2 drop-shadow">Malaysian Government Asset & Store Management System</p>
         </div>
 
         {/* Login Form */}
-        <Card>
+        <Card className="glass card-hover">
           <CardHeader>
-            <CardTitle className="text-center">System Login</CardTitle>
-            <CardDescription className="text-center">
+            <CardTitle className="text-center text-foreground">System Login</CardTitle>
+            <CardDescription className="text-center text-muted-foreground">
               Enter your credentials to access the system
             </CardDescription>
           </CardHeader>
@@ -126,10 +149,10 @@ export default function Login({ onLogin }: LoginProps) {
         </Card>
 
         {/* Sample Accounts */}
-        <Card>
+        <Card className="glass card-hover">
           <CardHeader>
-            <CardTitle className="text-sm">Demo Accounts</CardTitle>
-            <CardDescription className="text-xs">
+            <CardTitle className="text-sm text-foreground">Demo Accounts</CardTitle>
+            <CardDescription className="text-xs text-muted-foreground">
               Use these sample accounts for testing
             </CardDescription>
           </CardHeader>
@@ -138,14 +161,14 @@ export default function Login({ onLogin }: LoginProps) {
               {sampleAccounts.map((account) => (
                 <div 
                   key={account.username}
-                  className="flex justify-between items-center p-2 bg-gray-50 rounded cursor-pointer hover:bg-gray-100"
+                  className="flex justify-between items-center p-2 bg-muted/50 rounded cursor-pointer hover:bg-muted/70 transition-colors"
                   onClick={() => setCredentials({ username: account.username, password: account.password })}
                 >
                   <div>
-                    <span className="font-medium">{account.username}</span>
-                    <span className={`ml-2 text-sm ${account.color}`}>({account.role})</span>
+                    <span className="font-medium text-foreground">{account.username}</span>
+                    <span className={`ml-2 text-sm ${account.color} dark:text-white/80`}>({account.role})</span>
                   </div>
-                  <span className="text-xs text-gray-500">Click to use</span>
+                  <span className="text-xs text-muted-foreground">Click to use</span>
                 </div>
               ))}
             </div>

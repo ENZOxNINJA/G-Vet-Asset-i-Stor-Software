@@ -22,10 +22,13 @@ import {
   Command,
   Database,
   Shield,
-  Eye
+  Eye,
+  LogOut
 } from "lucide-react";
 import QuickSearch from "@/components/QuickSearch";
 import { useQuickSearch } from "@/hooks/useQuickSearch";
+import { ThemeToggle } from "@/components/ThemeToggle";
+import { useAuth } from "@/contexts/AuthContext";
 
 type AppLayoutProps = {
   children: ReactNode;
@@ -133,11 +136,16 @@ const AppLayout = ({ children }: AppLayoutProps) => {
   const [location] = useLocation();
   const [sidebarOpen, setSidebarOpen] = useState(false);
   const { isOpen, openSearch, closeSearch } = useQuickSearch();
+  const { user, logout } = useAuth();
 
   const isActive = (path: string) => {
     if (path === "/" && location === "/") return true;
     if (path !== "/" && location.startsWith(path)) return true;
     return false;
+  };
+
+  const handleLogout = () => {
+    logout();
   };
 
   const NavigationSection = ({ 
@@ -150,7 +158,7 @@ const AppLayout = ({ children }: AppLayoutProps) => {
     icon: ReactNode;
   }) => (
     <div className="space-y-2">
-      <div className="flex items-center gap-2 px-3 py-2 text-sm font-semibold text-gray-900">
+      <div className="flex items-center gap-2 px-3 py-2 text-sm font-semibold text-foreground">
         {icon}
         <span>{title}</span>
       </div>
@@ -160,8 +168,8 @@ const AppLayout = ({ children }: AppLayoutProps) => {
             <Button
               variant={isActive(item.path) ? "secondary" : "ghost"}
               className={cn(
-                "w-full justify-start gap-3 h-auto py-2",
-                isActive(item.path) && "bg-blue-100 text-blue-700"
+                "w-full justify-start gap-3 h-auto py-2 hover:bg-primary/10 transition-colors",
+                isActive(item.path) && "bg-primary/10 text-primary border-primary/20"
               )}
             >
               {item.icon}
@@ -179,7 +187,7 @@ const AppLayout = ({ children }: AppLayoutProps) => {
   );
 
   return (
-    <div className="flex min-h-screen bg-gray-50">
+    <div className="flex min-h-screen bg-gradient-to-br from-background to-muted">
       {/* Mobile sidebar overlay */}
       {sidebarOpen && (
         <div
@@ -191,23 +199,26 @@ const AppLayout = ({ children }: AppLayoutProps) => {
       {/* Sidebar */}
       <div
         className={cn(
-          "fixed inset-y-0 left-0 z-50 w-80 transform bg-white shadow-lg transition-transform duration-300 ease-in-out lg:static lg:transform-none",
+          "fixed inset-y-0 left-0 z-50 w-80 transform glass border-r border-border/50 transition-transform duration-300 ease-in-out lg:static lg:transform-none",
           sidebarOpen ? "translate-x-0" : "-translate-x-full lg:translate-x-0"
         )}
       >
-        <div className="flex h-16 items-center justify-between border-b px-6">
+        <div className="flex h-16 items-center justify-between border-b border-border/50 px-6">
           <div className="flex items-center gap-2">
-            <Building2 className="h-6 w-6 text-blue-600" />
-            <span className="text-lg font-semibold">KEW System</span>
+            <Building2 className="h-6 w-6 text-primary" />
+            <span className="text-lg font-semibold text-foreground">KEW System</span>
           </div>
-          <Button
-            variant="ghost"
-            size="sm"
-            className="lg:hidden"
-            onClick={() => setSidebarOpen(false)}
-          >
-            <X className="h-4 w-4" />
-          </Button>
+          <div className="flex items-center gap-2">
+            <ThemeToggle />
+            <Button
+              variant="ghost"
+              size="sm"
+              className="lg:hidden"
+              onClick={() => setSidebarOpen(false)}
+            >
+              <X className="h-4 w-4" />
+            </Button>
+          </div>
         </div>
 
         <ScrollArea className="flex-1 p-4">
@@ -224,9 +235,9 @@ const AppLayout = ({ children }: AppLayoutProps) => {
             {/* KEW.PA Framework */}
             <div className="space-y-2">
               <div className="flex items-center gap-2 px-3 py-2">
-                <Building2 className="h-4 w-4" />
-                <span className="text-sm font-semibold text-gray-900">KEW.PA Framework</span>
-                <Badge variant="secondary" className="bg-primary/10 text-primary text-xs">
+                <Building2 className="h-4 w-4 text-primary" />
+                <span className="text-sm font-semibold text-foreground">KEW.PA Framework</span>
+                <Badge variant="secondary" className="bg-gradient-to-r from-primary/20 to-blue-500/20 text-primary text-xs border-primary/20">
                   Asset Management
                 </Badge>
               </div>
@@ -236,8 +247,8 @@ const AppLayout = ({ children }: AppLayoutProps) => {
                     <Button
                       variant={isActive(item.path) ? "secondary" : "ghost"}
                       className={cn(
-                        "w-full justify-start gap-3 h-auto py-3",
-                        isActive(item.path) && "bg-primary/10 text-primary"
+                        "w-full justify-start gap-3 h-auto py-3 hover:bg-gradient-to-r hover:from-primary/10 hover:to-blue-500/10 transition-all",
+                        isActive(item.path) && "bg-gradient-to-r from-primary/10 to-blue-500/10 text-primary border-primary/20"
                       )}
                     >
                       {item.icon}
@@ -256,9 +267,9 @@ const AppLayout = ({ children }: AppLayoutProps) => {
             {/* KEW.PS Framework */}
             <div className="space-y-2">
               <div className="flex items-center gap-2 px-3 py-2">
-                <Warehouse className="h-4 w-4" />
-                <span className="text-sm font-semibold text-gray-900">KEW.PS Framework</span>
-                <Badge variant="secondary" className="bg-secondary/10 text-secondary text-xs">
+                <Warehouse className="h-4 w-4 text-secondary" />
+                <span className="text-sm font-semibold text-foreground">KEW.PS Framework</span>
+                <Badge variant="secondary" className="bg-gradient-to-r from-secondary/20 to-green-500/20 text-secondary text-xs border-secondary/20">
                   Store Management
                 </Badge>
               </div>
@@ -268,8 +279,8 @@ const AppLayout = ({ children }: AppLayoutProps) => {
                     <Button
                       variant={isActive(item.path) ? "secondary" : "ghost"}
                       className={cn(
-                        "w-full justify-start gap-3 h-auto py-3",
-                        isActive(item.path) && "bg-secondary/10 text-secondary"
+                        "w-full justify-start gap-3 h-auto py-3 hover:bg-gradient-to-r hover:from-secondary/10 hover:to-green-500/10 transition-all",
+                        isActive(item.path) && "bg-gradient-to-r from-secondary/10 to-green-500/10 text-secondary border-secondary/20"
                       )}
                     >
                       {item.icon}
@@ -285,9 +296,36 @@ const AppLayout = ({ children }: AppLayoutProps) => {
           </div>
         </ScrollArea>
 
-        {/* Footer */}
-        <div className="border-t p-4">
-          <div className="text-center text-xs text-muted-foreground">
+        {/* User Profile Section */}
+        <div className="border-t border-border/50 p-4">
+          {user && (
+            <div className="glass rounded-lg p-3">
+              <div className="flex items-center gap-3">
+                <div className="h-10 w-10 rounded-full bg-gradient-to-br from-primary to-secondary flex items-center justify-center">
+                  <span className="text-primary-foreground font-medium">
+                    {user.fullName?.charAt(0) || user.username?.charAt(0) || 'U'}
+                  </span>
+                </div>
+                <div className="flex-1 min-w-0">
+                  <div className="text-sm font-medium text-foreground truncate">
+                    {user.fullName || user.username}
+                  </div>
+                  <div className="text-xs text-muted-foreground truncate">
+                    {user.department} • {user.role}
+                  </div>
+                </div>
+                <Button
+                  variant="ghost"
+                  size="sm"
+                  onClick={handleLogout}
+                  className="h-8 w-8 p-0"
+                >
+                  <LogOut className="h-4 w-4" />
+                </Button>
+              </div>
+            </div>
+          )}
+          <div className="text-center text-xs text-muted-foreground mt-3">
             <div>Malaysian Government</div>
             <div>Asset & Store Management System</div>
             <div className="mt-1 font-medium">KEW.PA & KEW.PS Compliant</div>
@@ -298,7 +336,7 @@ const AppLayout = ({ children }: AppLayoutProps) => {
       {/* Main content */}
       <div className="flex-1 lg:ml-0">
         {/* Mobile header */}
-        <div className="flex h-16 items-center justify-between border-b bg-white px-4 lg:hidden">
+        <div className="flex h-16 items-center justify-between border-b border-border/50 glass backdrop-blur-sm px-4 lg:hidden">
           <Button
             variant="ghost"
             size="sm"
@@ -308,26 +346,29 @@ const AppLayout = ({ children }: AppLayoutProps) => {
           </Button>
           <div className="flex items-center gap-2">
             <Building2 className="h-5 w-5 text-primary" />
-            <span className="font-semibold">KEW System</span>
+            <span className="font-semibold text-foreground">KEW System</span>
           </div>
-          <Button
-            variant="ghost"
-            size="sm"
-            onClick={openSearch}
-            className="flex items-center gap-2"
-          >
-            <Search className="h-4 w-4" />
-          </Button>
+          <div className="flex items-center gap-2">
+            <Button
+              variant="ghost"
+              size="sm"
+              onClick={openSearch}
+              className="flex items-center gap-2"
+            >
+              <Search className="h-4 w-4" />
+            </Button>
+            <ThemeToggle />
+          </div>
         </div>
 
         {/* Desktop header - Quick Search */}
-        <div className="hidden lg:flex h-16 items-center justify-between border-b bg-white px-6">
+        <div className="hidden lg:flex h-16 items-center justify-between border-b border-border/50 glass backdrop-blur-sm px-6">
           <div className="flex-1" />
           <div className="flex items-center gap-4">
             <Button
               variant="outline"
               onClick={openSearch}
-              className="flex items-center gap-2 min-w-64 justify-start text-muted-foreground"
+              className="flex items-center gap-2 min-w-64 justify-start text-muted-foreground glass border-border/50"
             >
               <Search className="h-4 w-4" />
               <span>Search everything...</span>

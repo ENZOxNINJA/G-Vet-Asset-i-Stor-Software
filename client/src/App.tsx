@@ -97,16 +97,18 @@ function App() {
     <ThemeProvider defaultTheme="light" storageKey="plt-asset-theme">
       <QueryClientProvider client={queryClient}>
         <TooltipProvider>
-          <AssetProvider>
-            <InventoryProvider>
-              <Toaster />
-              <Router />
-              {/* Global Modals */}
-              <FilterModal />
-              <DeleteConfirmationModal />
-              <ItemFormModal />
-            </InventoryProvider>
-          </AssetProvider>
+          <AuthProvider>
+            <AssetProvider>
+              <InventoryProvider>
+                <Toaster />
+                <AuthenticatedRouter />
+                {/* Global Modals */}
+                <FilterModal />
+                <DeleteConfirmationModal />
+                <ItemFormModal />
+              </InventoryProvider>
+            </AssetProvider>
+          </AuthProvider>
         </TooltipProvider>
       </QueryClientProvider>
     </ThemeProvider>
