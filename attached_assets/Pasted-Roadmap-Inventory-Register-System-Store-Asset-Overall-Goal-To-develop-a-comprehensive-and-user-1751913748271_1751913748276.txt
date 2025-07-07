@@ -1,0 +1,166 @@
+Roadmap: Inventory Register System (Store & Asset)
+Overall Goal: To develop a comprehensive and user-friendly inventory management system that tracks store items and assets, facilitates multi-unit operations, and provides location-based tracking.
+Phase 1: Planning & Requirements Gathering (Weeks 1-3)
+Objective: Define the scope, detailed requirements, and foundational architecture.
+Key Activities:
+ * Stakeholder Interviews & Needs Assessment:
+   * Identify all users (store managers, asset managers, IT, finance).
+   * Gather requirements for item types (consumables, fixed assets), quantities, locations, in/out processes, reporting, and user roles.
+   * Specific focus: Multi-unit needs (what constitutes a unit, how do they interact with inventory).
+ * Current State Analysis:
+   * Document existing inventory processes (manual logs, spreadsheets, existing software).
+   * Identify pain points and inefficiencies.
+ * Define Core Data Model:
+   * Items: Item ID, Name, Description, Category, Unit of Measure, Current Quantity, Reorder Level, Supplier Info.
+   * Assets: Asset ID, Name, Description, Category, Serial Number, Purchase Date, Cost, Depreciation Method, Current Location (FK to Location Table), Assigned To (FK to User Table), Status (In Use, In Storage, Under Repair, Disposed).
+   * Locations: Location ID, Name, Address, Type (Store, Warehouse, Specific Room/Unit).
+   * Transactions: Transaction ID, Item/Asset ID, Type (In, Out, Transfer, Adjustment), Quantity, Date/Time, User, Source/Destination Location.
+   * Units: Unit ID, Unit Name, Address, Contact Person (if multi-unit tracking involves separate entities/locations).
+ * Technology Stack Selection:
+   * Database: PostgreSQL, MySQL (for relational data, good for complex queries and integrity).
+   * Backend: Python (Django/Flask), Node.js (Express), Ruby on Rails (for rapid development and robust frameworks).
+   * Frontend: React, Angular, Vue.js (for interactive UI and single-page application experience).
+   * Mapping API: Google Maps API, OpenStreetMap API (for asset location tracking).
+   * Reporting/BI: Looker Studio, Power BI, custom dashboards.
+   * Cloud Platform (Optional but Recommended): AWS, Azure, Google Cloud (for scalability and reliability).
+ * Wireframing & UI/UX Design (Initial Concepts):
+   * Sketch basic layouts for key screens (item list, asset detail, in/out form, search).
+ * Project Plan & Resource Allocation:
+   * Detailed timeline, team roles, and budget.
+Deliverables: Requirements Document, Data Model Design, Technology Stack Proposal, Initial Wireframes, Project Plan.
+Phase 2: Core System Development (Weeks 4-12)
+Objective: Build the foundational inventory management capabilities, including core KEW.PS and KEW.PA flows.
+Key Activities:
+ * Database Setup & API Development:
+   * Set up the chosen database.
+   * Develop RESTful APIs for CRUD operations on Items, Assets, Locations, and Users.
+ * User Authentication & Authorization:
+   * Implement secure login, user roles (Admin, Store Manager, Asset Custodian, Viewer).
+   * Role-based access control (RBAC).
+ * Basic Inventory Management (Store Items):
+   * Item Listing: View all store items with current quantities.
+   * Add/Edit/Delete Items: Functionality for managing item master data.
+   * In/Out Transactions:
+     * Form for recording items coming in (purchase, return).
+     * Form for recording items going out (sale, usage).
+     * Automatic quantity updates.
+ * Basic Asset Management:
+   * Asset Listing: View all assets.
+   * Add/Edit/Delete Assets: Functionality for managing asset master data (including serial numbers).
+   * Asset Status Tracking: Update asset status (e.g., In Use, In Storage, Under Repair).
+ * Multi-Unit Support (Initial):
+   * Establish Unit as a core entity in the database.
+   * Allow items and assets to be associated with a specific Unit.
+   * Filtering inventory by Unit.
+ * Basic Reporting:
+   * Simple reports on current stock levels.
+   * Transaction history logs.
+ * Detailed KEW.PS (Inventory) Core Flows Implementation:
+   * Store Preparation and Stock Registration:
+     * Implement the ability to define stock categories (category, sub-category, type, sub-type).
+     * Enable registration of different stores (e.g., Central, Main, Unit) and appointment of store officers.
+     * Allow definition of physical storage locations within a store (sections, rows, levels, compartments).
+     * Implement registration of new stock items, including minimum, reorder, and maximum levels, current quantity, and value.
+     * Enable activation of stock registrations to create stock cards and allow transaction recording, updating KEW.PS-3 (Daftar Stok).
+   * Stock Receipt (Penerimaan Stok):
+     * Develop functionality to record incoming stock from suppliers, other stores, or transfers.
+     * Automate generation of KEW.PS-1 (Borang Terimaan Barang-Barang) for official receipt documentation.
+     * Automate generation of KEW.PS-2 (Borang Penolakan Barang-Barang) for rejected goods.
+     * Implement confirmation of stock receipt and storage, updating KEW.PS-3 (Daftar Stok).
+   * Stock Request and Issuance (Permohonan dan Pengeluaran Stok):
+     * Inter-Store Request (KEW.PS-7): Enable stores to request stock from other stores, generating KEW.PS-7 (Borang Permohonan Stok - Antara Stor). Implement approval workflows for these requests.
+     * Individual Request (KEW.PS-8): Allow individual staff members to request stock, generating KEW.PS-8 (Borang Permohonan Stok - Individu Kepada Stor). Implement approval and direct issue options.
+   * Stock Return (Pemulangan Stok):
+     * Implement functionality to record stock returns, primarily for items previously issued via KEW.PS-8.
+ * Detailed KEW.PA (Movable Asset) Core Flows Implementation:
+   * Asset Acquisition and Registration:
+     * Implement registration for Capital Assets (RM1,000+ or requiring scheduled maintenance) using KEW.PA-2 (Daftar Harta Modal), capturing detailed information.
+     * Implement registration for Low Value Movable Assets (less than RM1,000, no scheduled maintenance) using KEW.PA-3 (Daftar Aset Alih Bernilai Rendah).
+     * Ensure Head of Department/Unit Head signature confirmation for KEW.PA-2 and KEW.PA-3.
+     * Develop annual listing capabilities for Capital Assets (KEW.PA-4) and Low Value Movable Assets (KEW.PA-5).
+     * Implement annual summary reporting for all movable assets using KEW.PA-8 (Laporan Tahunan Harta Modal Dan Aset Bernilai Rendah) for submission to relevant authorities.
+   * Asset Movement and Location Tracking:
+     * Implement recording of temporary asset movements (loans, temporary placements) using KEW.PA-6 (Buku Daftar Pergerakan Harta Modal/Aset Bernilai Rendah).
+     * Develop functionality to list assets by their specific placement location using KEW.PA-7 (Senarai Aset Di Lokasi), with periodic updates.
+Deliverables: Functional Backend APIs, Basic Inventory & Asset Management Modules, User Authentication, Database Schema, Initial KEW.PS and KEW.PA form generation and core workflow implementation.
+Phase 3: Advanced Features & Multi-Unit Enhancement (Weeks 13-20)
+Objective: Implement advanced features, especially focusing on asset tracking, mapping, and robust multi-unit operations, and complete all KEW.PS and KEW.PA form flows.
+Key Activities:
+ * Map-Based Asset Location Tracking:
+   * Geocoding Integration: When an asset's location (address or coordinates) is entered, use the mapping API to plot it.
+   * Interactive Map View: Display assets on a map. Allow users to click on markers to view asset details.
+   * Location Updates: Implement a process to update asset locations (e.g., manually, or via mobile app if planned later).
+ * Regenerate Forms (Templating & Customization):
+   * Dynamic Form Generation: Allow administrators to define custom fields for items and assets.
+   * Printable Forms: Generate pre-filled forms for physical inventory counts, asset checks, or in/out procedures, which can be printed or exported (PDF).
+   * Barcode/QR Code Integration (Optional but Recommended): Generate and print QR/barcodes on forms for easy scanning during inventory operations.
+ * Enhanced Multi-Unit In/Out & Transfers:
+   * Inter-Unit Transfers: System to record transfers of items/assets between different units.
+   * Unit-Specific Inventory: Clear segregation of inventory by unit.
+   * Centralized View: Option for administrators to view inventory across all units.
+ * Transaction History & Audit Trails:
+   * Detailed logs of all inventory and asset movements (who, what, when, where).
+   * Ability to revert or adjust incorrect transactions (with proper audit logging).
+ * Alerts & Notifications:
+   * Low stock alerts (for store items).
+   * Asset maintenance reminders.
+   * Overdue asset returns.
+ * Reporting & Dashboards (Advanced):
+   * Visual dashboards for key metrics (inventory value, asset utilization, popular items).
+   * Customizable reports (e.g., assets by location, items by category, transaction summaries by unit).
+ * Complete KEW.PS (Inventory) Flows Implementation:
+   * Stock Verification: Implement full verification process including registration, appointment of verifiers, physical counting, and generation of KEW.PS-10 (Borang Verifikasi Stor Tahun), KEW.PS-11 (Borang Penilaian Prestasi Pengurusan Stor Bagi Tahun), KEW.PS-12 (Sijil Verifikasi Stor Bagi Tahun), and KEW.PS-13 (Laporan Verifikasi Stok).
+   * Stock Adjustment: Implement formal adjustment process for discrepancies (non-theft/fraud) using KEW.PS-15 (Borang Pelarasan Stok).
+   * Stock Disposal: Implement comprehensive disposal workflows, including appointment of Board of Examiners (KEW.PS-19), general disposal forms (KEW.PS-20), witnessing destruction certificates (KEW.PS-21), disposal certificates (KEW.PS-22), and all tender/quotation/auction related forms (KEW.PS-23 to KEW.PS-30).
+   * Stock Loss and Write-off: Implement detailed loss reporting and write-off procedures, including initial reports (KEW.PS-32), appointment of investigation committees (KEW.PS-33), final reports (KEW.PS-34), write-off certificates (KEW.PS-35), and comprehensive loss/write-off reports (KEW.PS-36).
+   * Store Handover: Implement formal store handover process, including physical stock checks and generation of KEW.PS-16 (Perakuan Ambil Alih).
+   * Stock Transfers: Ensure full functionality for stock transfers between locations/entities using KEW.PS-17 (Borang Pindahan Stok).
+   * Stock Monitoring: Implement generation of KEW.PS-14 for stock monitoring and turnover rate display.
+   * Stock Grouping: Implement functionality for determining stock groups using KEW.PS-5 (Penentuan Kumpulan Stok).
+   * Expired Stock Listing: Implement generation of KEW.PS-6 (Senarai Stok Bertarikh Luput).
+   * Stock Packaging: Implement generation of KEW.PS-9 (Borang Pembungkusan Stok) for packaging details.
+ * Complete KEW.PA (Movable Asset) Flows Implementation:
+   * Asset Inspection and Damage Reporting: Implement detailed damage reporting using KEW.PA-9 (Borang Aduan Kerosakan Harta Modal Kerajaan) and KEW.PA-9(A) (Borang Aduan Kerosakan Aset Alih Bernilai Rendah Kerajaan). Implement inspection reports for Capital Assets (KEW.PA-10) and Low-Value Movable Assets (KEW.PA-11), culminating in the KEW.PA-12 (Sijil Tahunan Pemeriksaan Harta Modal Dan Aset Alih Bernilai Rendah).
+   * Asset Disposal: Implement formal asset disposal processes, including certificates for witnessing destruction (KEW.PA-22) and general disposal certificates (KEW.PA-23).
+   * Asset Loss and Write-off: Implement comprehensive asset loss management, including appointment of investigation committees (KEW.PA-34), final loss reports (KEW.PA-35), and write-off certificates (KEW.PA-36).
+Deliverables: Map Integration for Assets, Dynamic Form Generator, Inter-Unit Transfer Functionality, Comprehensive Transaction Logs, Advanced Reports/Dashboards, Full implementation and generation capabilities for all specified KEW.PS and KEW.PA forms.
+Phase 4: Testing, Deployment & Optimization (Weeks 21-26)
+Objective: Ensure system quality, performance, and successful deployment.
+Key Activities:
+ * User Acceptance Testing (UAT):
+   * Engage end-users to test all functionalities, identify bugs, and provide feedback.
+   * Gather requirements for minor tweaks and improvements.
+ * Performance Testing:
+   * Test system under load to ensure scalability and responsiveness.
+   * Optimize database queries and API performance.
+ * Security Audits:
+   * Identify and fix potential security vulnerabilities.
+   * Ensure data privacy and compliance.
+ * Documentation:
+   * User Manuals, Admin Guides, API Documentation.
+   * Technical documentation for future maintenance.
+ * Data Migration:
+   * Plan and execute migration of existing inventory data into the new system.
+ * Deployment:
+   * Deploy the system to production environment.
+   * Set up monitoring and logging.
+ * Training:
+   * Conduct training sessions for all relevant users.
+Deliverables: Fully Tested System, Comprehensive Documentation, Production Deployment, Trained Users.
+Phase 5: Post-Launch & Continuous Improvement (Ongoing)
+Objective: Provide ongoing support, gather feedback, and implement enhancements.
+Key Activities:
+ * Monitoring & Support:
+   * Ongoing system monitoring for performance and errors.
+   * Dedicated support channel for user queries and issues.
+ * Feedback Collection:
+   * Regularly solicit feedback from users.
+   * Conduct periodic reviews of system usage.
+ * Feature Enhancements & Iterations:
+   * Based on feedback, prioritize and implement new features or improvements (e.g., mobile app for scanning, RFID integration, advanced analytics).
+   * Regular software updates and patches.
+ * Backup & Disaster Recovery:
+   * Establish robust backup procedures.
+   * Develop a disaster recovery plan.
+Deliverables: Stable and Supported System, Continuous Improvement Roadmap, User Satisfaction.
+This roadmap provides a structured approach. The specific duration for each phase might vary based on team size, complexity, and available resources. Remember to remain agile and adapt the plan as new insights emerge during development.

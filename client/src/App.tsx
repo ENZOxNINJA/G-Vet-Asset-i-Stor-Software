@@ -27,6 +27,7 @@ import Suppliers from "@/pages/Suppliers";
 import InfoTAsetIntegration from "@/pages/InfoTAsetIntegration";
 import AdminControl from "@/pages/AdminControl";
 import VisitorDashboard from "@/pages/VisitorDashboard";
+import RoadmapAnalysis from "@/pages/RoadmapAnalysis";
 import FilterModal from "@/components/FilterModal";
 import DeleteConfirmationModal from "@/components/DeleteConfirmationModal";
 import ItemFormModal from "@/components/ItemFormModal";
@@ -56,6 +57,7 @@ function AuthenticatedRouter() {
           <Route path="/assets" component={Assets} />
           <Route path="/suppliers" component={Suppliers} />
           <Route path="/visitor-dashboard" component={VisitorDashboard} />
+          <Route path="/roadmap-analysis" component={RoadmapAnalysis} />
         </>
       )}
       

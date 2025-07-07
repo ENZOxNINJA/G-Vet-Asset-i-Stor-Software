@@ -19,6 +19,21 @@ export interface IStorage {
   getAllUsers(): Promise<User[]>;
   updateUserStatus(id: number, isActive: boolean): Promise<User | undefined>;
   updateUserRole(id: number, role: string, permissions: string): Promise<User | undefined>;
+
+  // Unit Operations (Multi-unit support)
+  getAllUnits(): Promise<Unit[]>;
+  getUnitById(id: number): Promise<Unit | undefined>;
+  createUnit(unit: InsertUnit): Promise<Unit>;
+  updateUnit(id: number, unit: Partial<InsertUnit>): Promise<Unit | undefined>;
+  deleteUnit(id: number): Promise<boolean>;
+
+  // Location Operations (Enhanced tracking)
+  getAllLocations(): Promise<Location[]>;
+  getLocationById(id: number): Promise<Location | undefined>;
+  getLocationsByUnit(unitId: number): Promise<Location[]>;
+  createLocation(location: InsertLocation): Promise<Location>;
+  updateLocation(id: number, location: Partial<InsertLocation>): Promise<Location | undefined>;
+  deleteLocation(id: number): Promise<boolean>;
   
   // Inventory CRUD Operations
   getAllInventoryItems(): Promise<InventoryItem[]>;

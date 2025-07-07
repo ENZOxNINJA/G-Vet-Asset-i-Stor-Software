@@ -69,6 +69,18 @@ This is a comprehensive Malaysian Government Asset and Store Management System t
 - **Real-Time Synchronization**: Live sync status monitoring
 - **QR Code Integration**: Asset scanning and identification
 
+### 6. Enhanced Multi-Unit Support
+- **Unit Management**: Hierarchical organization structure
+- **Location Tracking**: GPS coordinates and map-based asset tracking
+- **Inter-Unit Transfers**: Asset and inventory movement between units
+- **QR Code Generation**: Automated QR codes for assets, inventory, locations, and units
+
+### 7. Roadmap Compliance Dashboard
+- **Progress Tracking**: Visual progress indicators for all roadmap phases
+- **Feature Status**: Real-time tracking of implementation status
+- **Phase Analytics**: Detailed breakdown by development phases
+- **Compliance Reporting**: Comprehensive reports on system completeness
+
 ## Data Flow
 
 ### Request Flow
@@ -141,6 +153,14 @@ This is a comprehensive Malaysian Government Asset and Store Management System t
 
 ## Changelog
 
+- July 7, 2025. Enhanced roadmap compliance features:
+  - Added comprehensive QR code generation utility for assets and inventory tracking
+  - Enhanced database schema with multi-unit support (units, locations tables)
+  - Added QR code and barcode fields to assets and inventory items
+  - Created roadmap compliance analysis dashboard with progress tracking
+  - Added maintenance and inspection tracking fields to assets schema
+  - Enhanced inventory schema with KEW.PS specific fields and stock level management
+  - Added roadmap analysis page with detailed progress visualization
 - June 16, 2025. Initial setup
 
 ## User Preferences

@@ -2,6 +2,38 @@ import { pgTable, text, serial, decimal, integer, boolean, timestamp, date } fro
 import { createInsertSchema } from "drizzle-zod";
 import { z } from "zod";
 
+// Units/Organizations table - Multi-unit support as per roadmap
+export const units = pgTable("units", {
+  id: serial("id").primaryKey(),
+  unitId: text("unit_id").notNull().unique(), // Unit identifier code
+  unitName: text("unit_name").notNull(),
+  address: text("address"),
+  contactPerson: text("contact_person"),
+  contactEmail: text("contact_email"),
+  contactPhone: text("contact_phone"),
+  unitType: text("unit_type").notNull().default("department"), // department, branch, store, warehouse
+  parentUnitId: integer("parent_unit_id"),
+  isActive: boolean("is_active").default(true),
+  createdAt: timestamp("created_at").defaultNow(),
+  updatedAt: timestamp("updated_at").defaultNow(),
+});
+
+// Locations table - Enhanced location tracking as per roadmap
+export const locations = pgTable("locations", {
+  id: serial("id").primaryKey(),
+  locationId: text("location_id").notNull().unique(), // Location identifier code
+  locationName: text("location_name").notNull(),
+  description: text("description"),
+  address: text("address"),
+  coordinates: text("coordinates"), // For map-based tracking (lat,lng)
+  locationType: text("location_type").notNull().default("room"), // room, building, warehouse, section, unit
+  unitId: integer("unit_id").references(() => units.id),
+  parentLocationId: integer("parent_location_id"),
+  isActive: boolean("is_active").default(true),
+  createdAt: timestamp("created_at").defaultNow(),
+  updatedAt: timestamp("updated_at").defaultNow(),
+});
+
 export const users = pgTable("users", {
   id: serial("id").primaryKey(),
   username: text("username").notNull().unique(),
@@ -87,15 +119,26 @@ export const assets = pgTable("assets", {
   supplierName: text("supplier_name"), // Nama Pembekal
   supplierAddress: text("supplier_address"), // Alamat Pembekal
   
-  // Location and management
-  location: text("location"),
+  // Location and management - Enhanced for multi-unit support
+  unitId: integer("unit_id").references(() => units.id),
+  locationId: integer("location_id").references(() => locations.id),
+  location: text("location"), // Legacy text location
   department: text("department"), // Kementerian/Jabatan
   division: text("division"), // Bahagian/Cawangan
+  
+  // QR Code and tracking - As per roadmap Phase 3 requirements
+  qrCode: text("qr_code").unique(), // Generated QR code for asset tracking
+  barcode: text("barcode"), // Optional barcode support
   
   // Status and condition
   status: text("status").notNull().default("active"), // active, maintenance, disposed, transferred
   condition: text("condition").default("good"), // good, fair, poor
   assetType: text("asset_type").notNull().default("capital"), // capital (Harta Modal), low-value (Bernilai Rendah)
+  
+  // Maintenance and inspection tracking - KEW.PA requirements
+  lastInspectionDate: date("last_inspection_date"),
+  nextInspectionDate: date("next_inspection_date"),
+  maintenanceSchedule: text("maintenance_schedule"), // regular, quarterly, annual
   
   // Additional specifications
   specifications: text("specifications"), // Spesifikasi
@@ -628,23 +671,48 @@ export type InsertSupplier = z.infer<typeof insertSupplierSchema>;
 export type UpdateSupplier = z.infer<typeof updateSupplierSchema>;
 export type Supplier = typeof suppliers.$inferSelect;
 
-// Legacy Inventory Items Schema - keeping for backward compatibility
+// Enhanced Inventory Items Schema - KEW.PS Store Management with multi-unit support
 export const inventoryItems = pgTable("inventory_items", {
   id: serial("id").primaryKey(),
   name: text("name").notNull(),
   sku: text("sku").notNull().unique(),
   description: text("description"),
   category: text("category").notNull(),
+  subCategory: text("sub_category"),
+  
+  // Multi-unit support as per roadmap
+  unitId: integer("unit_id").references(() => units.id),
+  locationId: integer("location_id").references(() => locations.id),
+  storeType: text("store_type").default("central"), // central, main, unit
+  
+  // QR Code and tracking - Phase 3 roadmap requirements
+  qrCode: text("qr_code").unique(), // Generated QR code for inventory tracking
+  barcode: text("barcode"), // Optional barcode support
+  
+  // Financial and quantity management
   price: decimal("price", { precision: 10, scale: 2 }).notNull(),
   quantity: integer("quantity").notNull().default(0),
-  reorderLevel: integer("reorder_level").default(10),
-  status: text("status").notNull().default("active"),
+  minimumLevel: integer("minimum_level").default(5), // KEW.PS minimum stock level
+  reorderLevel: integer("reorder_level").default(10), // KEW.PS reorder level
+  maximumLevel: integer("maximum_level").default(100), // KEW.PS maximum stock level
+  
+  // KEW.PS specific fields
+  unitOfMeasure: text("unit_of_measure").notNull().default("unit"), // unit, kg, liter, etc.
+  stockGroup: text("stock_group"), // As per KEW.PS-5 stock grouping
+  expiryDate: date("expiry_date"), // For perishable items
+  supplierCode: text("supplier_code"),
+  
+  // Status and monitoring
+  status: text("status").notNull().default("active"), // active, inactive, expired, disposed
+  lastCountDate: date("last_count_date"), // For stock verification
+  nextCountDate: date("next_count_date"),
+  
   createdAt: timestamp("created_at").defaultNow(),
   updatedAt: timestamp("updated_at").defaultNow(),
 });
 
 export const insertInventoryItemSchema = createInsertSchema(inventoryItems)
-  .omit({ id: true, createdAt: true, updatedAt: true });
+  .omit({ id: true, createdAt: true, updatedAt: true, qrCode: true });
 
 export const updateInventoryItemSchema = createInsertSchema(inventoryItems)
   .omit({ id: true, createdAt: true, updatedAt: true })
@@ -653,6 +721,18 @@ export const updateInventoryItemSchema = createInsertSchema(inventoryItems)
 export type InsertInventoryItem = z.infer<typeof insertInventoryItemSchema>;
 export type UpdateInventoryItem = z.infer<typeof updateInventoryItemSchema>;
 export type InventoryItem = typeof inventoryItems.$inferSelect;
+
+// Enhanced schema types for multi-unit support
+export const insertUnitSchema = createInsertSchema(units)
+  .omit({ id: true, createdAt: true, updatedAt: true });
+
+export const insertLocationSchema = createInsertSchema(locations)
+  .omit({ id: true, createdAt: true, updatedAt: true });
+
+export type InsertUnit = z.infer<typeof insertUnitSchema>;
+export type InsertLocation = z.infer<typeof insertLocationSchema>;
+export type Unit = typeof units.$inferSelect;
+export type Location = typeof locations.$inferSelect;
 
 // Validation schema for frontend form with additional validation rules
 export const inventoryItemFormSchema = insertInventoryItemSchema.extend({

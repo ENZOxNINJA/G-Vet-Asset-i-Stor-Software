@@ -23,7 +23,8 @@ import {
   Database,
   Shield,
   Eye,
-  LogOut
+  LogOut,
+  BarChart3
 } from "lucide-react";
 import QuickSearch from "@/components/QuickSearch";
 import { useQuickSearch } from "@/hooks/useQuickSearch";
@@ -69,6 +70,11 @@ const generalNavigation = [
     title: "Visitor Dashboard",
     icon: <Eye className="h-5 w-5" />,
     path: "/visitor-dashboard",
+  },
+  {
+    title: "Roadmap Analysis",
+    icon: <BarChart3 className="h-5 w-5" />,
+    path: "/roadmap-analysis",
   },
 ];
 
