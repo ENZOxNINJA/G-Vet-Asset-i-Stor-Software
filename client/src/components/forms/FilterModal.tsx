@@ -7,28 +7,28 @@ import {
   DialogFooter, 
   DialogHeader, 
   DialogTitle 
-} from "./ui/dialog";
-import { Button } from "./ui/button";
-import { Input } from "./ui/input";
+} from "@/components/ui/dialog";
+import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
 import { 
   Form, 
   FormControl, 
   FormField, 
   FormItem, 
   FormLabel 
-} from "./ui/form";
+} from "@/components/ui/form";
 import { 
   Select, 
   SelectContent, 
   SelectItem, 
   SelectTrigger, 
   SelectValue 
-} from "./ui/select";
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "./ui/tabs";
+} from "@/components/ui/select";
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { useInventory } from "@/contexts/InventoryContext";
 import { useAsset } from "@/contexts/AssetContext";
-import { Calendar } from "./ui/calendar";
-import { Popover, PopoverContent, PopoverTrigger } from "./ui/popover";
+import { Calendar } from "@/components/ui/calendar";
+import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover";
 import { cn } from "@/lib/utils";
 import { format } from "date-fns";
 import { CalendarIcon } from "lucide-react";

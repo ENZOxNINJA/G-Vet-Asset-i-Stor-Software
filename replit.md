@@ -2,36 +2,40 @@
 
 ## Overview
 
-This is a comprehensive Malaysian Government Asset and Store Management System that implements both KEW.PA (Asset Management) and KEW.PS (Store Management) frameworks. The system is designed for government organizations to manage fixed assets and consumable inventory in compliance with Malaysian public sector standards.
+This is a comprehensive Malaysian Government Asset and Store Management System that implements both KEW.PA (Asset Management) and KEW.PS (Store Management) frameworks. The system is designed for government organizations to ensure compliance with Malaysian public sector financial regulations while providing modern web-based management capabilities.
 
 ## System Architecture
 
 ### Frontend Architecture
-- **Technology Stack**: React 18 with TypeScript
+- **Technology Stack**: React 18 with TypeScript for type safety
 - **UI Framework**: shadcn/ui components built on Radix UI primitives
-- **Styling**: Tailwind CSS with custom theme system
-- **State Management**: React Query for server state, React Context for UI state
+- **Styling**: Tailwind CSS with custom theme system supporting dual-color schemes (Blue for KEW.PA, Green for KEW.PS)
+- **State Management**: React Query for server state management, React Context for UI state
 - **Routing**: Wouter for lightweight client-side routing
-- **Form Handling**: React Hook Form with Zod validation
+- **Form Handling**: React Hook Form with Zod validation schemas
+- **Build Tool**: Vite for fast development and optimized builds
 
 ### Backend Architecture
 - **Runtime**: Node.js with Express.js server
-- **Database**: PostgreSQL with Drizzle ORM
-- **API Design**: RESTful API endpoints
+- **Database**: PostgreSQL with Drizzle ORM for type-safe database operations
+- **API Design**: RESTful API endpoints with consistent error handling
 - **Data Validation**: Zod schemas shared between frontend and backend
-- **Connection Pool**: Neon Database serverless connection
+- **Connection Management**: Neon Database serverless connection with pooling
+- **Authentication**: Role-based access control with four user levels (Admin, Manager, Staff, Visitor)
 
 ### Database Architecture
-- **ORM**: Drizzle ORM with PostgreSQL adapter
+- **ORM**: Drizzle ORM with PostgreSQL adapter for type-safe queries
 - **Schema**: TypeScript-first schema definitions in `/shared/schema.ts`
 - **Migrations**: Automated database migrations with Drizzle Kit
-- **Connection**: Serverless PostgreSQL connection with connection pooling
+- **Multi-tenancy**: Support for multiple units and locations
+- **Compliance**: Schema designed to meet KEW.PA and KEW.PS requirements
 
 ## Key Components
 
 ### 1. KEW.PA Framework (Asset Management)
 - **Theme**: Blue color scheme for visual identification
 - **Purpose**: Fixed asset lifecycle management for government entities
+- **Asset Classification**: Supports both Capital Assets (≥RM2,000) and Low-Value Assets (<RM2,000)
 - **Forms Implemented**:
   - KEW.PA-1, 2, 3: Asset registration and reception
   - KEW.PA-9, 17, 18: Asset movement and transfer
@@ -42,126 +46,102 @@ This is a comprehensive Malaysian Government Asset and Store Management System t
 ### 2. KEW.PS Framework (Store Management)
 - **Theme**: Green color scheme for visual identification
 - **Purpose**: Consumable inventory and store operations management
+- **Stock Management**: Perpetual inventory tracking with reorder levels
 - **Forms Implemented**:
   - KEW.PS-1, 2: Store receipts processing
   - KEW.PS-3, 4, 5: Stock register management
   - KEW.PS-7, 8, 9: Stock issuance procedures
   - KEW.PS-10, 11, 12, 13: Store verification processes
 
-### 3. User Management System
-- **Role-Based Access Control**: Four user levels (Admin, Manager, Staff, Visitor)
-- **Authentication**: User sessions with role-based permissions
-- **Access Levels**:
-  - Administrator (Red Badge): Full system access
-  - Manager (Blue Badge): Department management
-  - Staff (Green Badge): Daily operations
-  - Visitor (Gray Badge): Read-only access
+### 3. Info-T Aset & iStor Integration
+- **Integration Portal**: Unified interface combining all four systems
+- **QR Code Support**: Asset tracking with QR code generation and scanning
+- **Real-time Sync**: Cross-system data synchronization monitoring
+- **Compliance Bridge**: Automatic form generation between systems
 
 ### 4. Enhanced Search System
-- **Global Search**: Ctrl+K/Cmd+K keyboard shortcut access
-- **Fuzzy Matching**: Character-based matching with position scoring
-- **Multi-Entity Search**: Assets, inventory, suppliers, movements
-- **Real-Time Filtering**: 150ms debounced search with instant results
-
-### 5. Integration Portal (Info-T Aset & iStor)
-- **Unified Interface**: Combined system dashboard
-- **Cross-System Navigation**: Seamless movement between frameworks
-- **Real-Time Synchronization**: Live sync status monitoring
-- **QR Code Integration**: Asset scanning and identification
-
-### 6. Enhanced Multi-Unit Support
-- **Unit Management**: Hierarchical organization structure
-- **Location Tracking**: GPS coordinates and map-based asset tracking
-- **Inter-Unit Transfers**: Asset and inventory movement between units
-- **QR Code Generation**: Automated QR codes for assets, inventory, locations, and units
-
-### 7. Roadmap Compliance Dashboard
-- **Progress Tracking**: Visual progress indicators for all roadmap phases
-- **Feature Status**: Real-time tracking of implementation status
-- **Phase Analytics**: Detailed breakdown by development phases
-- **Compliance Reporting**: Comprehensive reports on system completeness
+- **Global Search**: Keyboard shortcut access (Ctrl+K/Cmd+K)
+- **Fuzzy Matching**: Intelligent search with partial term matching
+- **Multi-Entity Search**: Covers assets, inventory, suppliers, movements
+- **Real-time Filtering**: 150ms debounced search for optimal performance
 
 ## Data Flow
 
-### Request Flow
-1. **Client Request**: React components make API calls via React Query
-2. **API Router**: Express.js routes handle incoming requests
-3. **Validation**: Zod schemas validate request data
-4. **Database**: Drizzle ORM executes SQL queries on PostgreSQL
-5. **Response**: JSON data returned to client with proper error handling
+### Asset Management Flow (KEW.PA)
+1. **Asset Reception**: KEW.PA-1 form processing with supplier verification
+2. **Asset Registration**: KEW.PA-3 form with unique asset tagging
+3. **Asset Inspection**: KEW.PA-11-13 inspection workflow
+4. **Asset Maintenance**: KEW.PA-14-16 maintenance scheduling and tracking
+5. **Asset Movement**: KEW.PA-9, 17-18 transfer and movement documentation
+6. **Asset Disposal**: KEW.PA-19-23 disposal workflow with board approval
 
-### State Management
-1. **Server State**: React Query manages API data with caching
-2. **UI State**: React Context for modal states and form data
-3. **Form State**: React Hook Form for complex form handling
-4. **Global State**: URL-based navigation state with wouter
+### Store Management Flow (KEW.PS)
+1. **Store Receipt**: KEW.PS-1-2 receiving process
+2. **Stock Registration**: KEW.PS-3-5 inventory recording
+3. **Stock Issuance**: KEW.PS-7-9 distribution management
+4. **Store Verification**: KEW.PS-10-13 audit and verification
 
-### Search Flow
-1. **Input Capture**: Debounced search input (150ms delay)
-2. **Fuzzy Matching**: Character-based scoring algorithm
-3. **Multi-Entity Query**: Parallel searches across all data types
-4. **Result Ranking**: Score-based result ordering
-5. **Navigation**: Direct result navigation with highlighting
+### User Authentication Flow
+1. **Login**: Username/password authentication
+2. **Role Assignment**: Admin, Manager, Staff, or Visitor privileges
+3. **Permission Validation**: Route and action-based access control
+4. **Session Management**: Secure session handling with timeout
 
 ## External Dependencies
 
 ### Core Dependencies
 - **@neondatabase/serverless**: PostgreSQL serverless connection
-- **drizzle-orm**: TypeScript ORM for database operations
-- **express**: Web server framework
-- **react**: Frontend UI library
+- **@radix-ui/react-***: Accessible UI component primitives
 - **@tanstack/react-query**: Server state management
-- **wouter**: Lightweight routing solution
-
-### UI Dependencies
-- **@radix-ui/react-\***: Accessible UI component primitives
+- **drizzle-orm**: Type-safe database operations
+- **react-hook-form**: Form handling with validation
+- **zod**: Schema validation
 - **tailwindcss**: Utility-first CSS framework
-- **react-hook-form**: Form state management
-- **zod**: TypeScript-first schema validation
-- **cmdk**: Command palette component
+- **wouter**: Lightweight routing
 
 ### Development Dependencies
+- **@types/node**: Node.js type definitions
+- **typescript**: Type checking
 - **vite**: Build tool and development server
-- **typescript**: Type checking and compilation
-- **drizzle-kit**: Database migration management
-- **tsx**: TypeScript execution for development
+- **@vercel/ncc**: Code compilation for executables
+- **pkg**: Executable generation
+
+### Malaysian Government Compliance
+- **KEW.PA Standards**: Asset management compliance
+- **KEW.PS Standards**: Store management compliance
+- **Perbendaharaan Malaysia**: Treasury guidelines adherence
 
 ## Deployment Strategy
 
-### Development Environment
-- **Local Development**: Vite dev server with HMR
-- **Database**: Local PostgreSQL or cloud PostgreSQL
-- **Port Configuration**: Frontend on :5173, Backend on :5000
+### Development Deployment
+- **Local Development**: Vite dev server with hot module replacement
+- **Database**: PostgreSQL with Drizzle migrations
+- **Environment**: NODE_ENV=development with debug logging
 
 ### Production Deployment
-- **Build Process**: Vite builds frontend, esbuild bundles server
-- **Static Assets**: Frontend built to `/dist/public`
-- **Server Bundle**: Backend bundled to `/dist/index.js`
-- **Database**: Production PostgreSQL with connection pooling
+- **Build Process**: Vite build + esbuild server bundling
+- **Executable Generation**: Cross-platform executables using pkg
+- **Portable Version**: Self-contained deployment package
+- **Database**: PostgreSQL with connection pooling
 
 ### Portable Deployment
-- **Self-Contained**: Complete system in `/kewpa-asset-management-portable`
-- **Startup Scripts**: Windows (start.bat) and Unix (start.sh) scripts
-- **Dependencies**: Bundled Node.js modules with npm install
-- **Database**: Configurable PostgreSQL connection string
-
-### Replit Deployment
-- **Auto-deployment**: Configured for Replit autoscale deployment
-- **Build Command**: `npm run build`
-- **Start Command**: `npm run start`
-- **Port Mapping**: Internal 5000 → External 80
+- **Standalone Package**: Complete system in portable directory
+- **Cross-platform**: Windows, macOS, and Linux support
+- **No Dependencies**: Bundled with all required modules
+- **Quick Setup**: Automated startup scripts
 
 ## Changelog
-
-- July 7, 2025. Enhanced roadmap compliance features:
-  - Added comprehensive QR code generation utility for assets and inventory tracking
-  - Enhanced database schema with multi-unit support (units, locations tables)
-  - Added QR code and barcode fields to assets and inventory items
-  - Created roadmap compliance analysis dashboard with progress tracking
-  - Added maintenance and inspection tracking fields to assets schema
-  - Enhanced inventory schema with KEW.PS specific fields and stock level management
-  - Added roadmap analysis page with detailed progress visualization
-- June 16, 2025. Initial setup
+- July 07, 2025. Initial setup
+- July 07, 2025. Major restructuring and design refinement:
+  - Created organized folder structure (docs/, archives/, component subdirectories)
+  - Implemented modern design system with enhanced CSS framework
+  - Created new modern components: ModernLayout, ModernCard, ModernButton, ModernTable, ModernHeader, ModernBadge
+  - Restructured client/src with organized folders: layout/, shared/, tables/, forms/, kewpa/, kewps/
+  - Enhanced visual design with gradient effects, glass morphism, and modern UI patterns
+  - Implemented comprehensive color palette and spacing system
+  - Added responsive utilities and animations
+  - Updated routing to use ModernDashboard as default
+  - Reorganized imports and file structure for better maintainability
 
 ## User Preferences
 

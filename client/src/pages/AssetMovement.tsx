@@ -34,7 +34,7 @@ import { Input } from "@/components/ui/input";
 import { type Asset, type AssetMovement } from "@shared/schema";
 import { formatCurrency } from "@/lib/utils";
 import { format } from "date-fns";
-import MovementFormModal from "@/components/MovementFormModal";
+import MovementFormModal from "@/components/forms/MovementFormModal";
 import { useMutation } from "@tanstack/react-query";
 import { apiRequest, queryClient } from "@/lib/queryClient";
 import { useState } from "react";

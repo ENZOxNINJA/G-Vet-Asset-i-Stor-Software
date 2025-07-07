@@ -6,7 +6,7 @@ import { Clipboard, Plus, PlusCircle, ArrowRightLeft, Clock, CheckCircle2 } from
 import { Button } from "@/components/ui/button";
 import { useToast } from "@/hooks/use-toast";
 import { useAsset } from "@/contexts/AssetContext";
-import AssetFormModal from "@/components/AssetFormModal";
+import AssetFormModal from "@/components/forms/AssetFormModal";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
 import { Badge } from "@/components/ui/badge";

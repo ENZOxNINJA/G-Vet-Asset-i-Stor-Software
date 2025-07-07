@@ -28,9 +28,11 @@ import InfoTAsetIntegration from "@/pages/InfoTAsetIntegration";
 import AdminControl from "@/pages/AdminControl";
 import VisitorDashboard from "@/pages/VisitorDashboard";
 import RoadmapAnalysis from "@/pages/RoadmapAnalysis";
-import FilterModal from "@/components/FilterModal";
-import DeleteConfirmationModal from "@/components/DeleteConfirmationModal";
-import ItemFormModal from "@/components/ItemFormModal";
+import FilterModal from "@/components/forms/FilterModal";
+import DeleteConfirmationModal from "@/components/forms/DeleteConfirmationModal";
+import ItemFormModal from "@/components/forms/ItemFormModal";
+import ModernLayout from "@/components/layout/ModernLayout";
+import ModernDashboard from "@/pages/ModernDashboard";
 
 function AuthenticatedRouter() {
   const { isAuthenticated, user, hasPermission, login } = useAuth();
@@ -48,7 +50,7 @@ function AuthenticatedRouter() {
   return (
     <Switch>
       {/* Default dashboard based on user role */}
-      <Route path="/" component={user?.role === 'visitor' ? VisitorDashboard : Dashboard} />
+      <Route path="/" component={user?.role === 'visitor' ? VisitorDashboard : ModernDashboard} />
       
       {/* Basic access for all authenticated users */}
       {canRead && (

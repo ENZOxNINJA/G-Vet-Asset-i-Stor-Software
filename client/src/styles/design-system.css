@@ -1,0 +1,349 @@
+/* Modern Design System for KEW.PA/KEW.PS Asset Management */
+
+/* Enhanced Color Palette */
+:root {
+  /* Primary Colors - Government Blue */
+  --primary-50: #e6f0ff;
+  --primary-100: #cce0ff;
+  --primary-200: #99c2ff;
+  --primary-300: #66a3ff;
+  --primary-400: #3385ff;
+  --primary-500: #0066ff; /* Main Primary */
+  --primary-600: #0052cc;
+  --primary-700: #003d99;
+  --primary-800: #002966;
+  --primary-900: #001433;
+
+  /* Secondary Colors - Teal Accent */
+  --secondary-50: #e6f7f7;
+  --secondary-100: #ccefef;
+  --secondary-200: #99dfdf;
+  --secondary-300: #66cfcf;
+  --secondary-400: #33bfbf;
+  --secondary-500: #00afaf; /* Main Secondary */
+  --secondary-600: #008c8c;
+  --secondary-700: #006969;
+  --secondary-800: #004646;
+  --secondary-900: #002323;
+
+  /* Framework Colors */
+  --kewpa-primary: #2563eb; /* Blue for Assets */
+  --kewpa-secondary: #3b82f6;
+  --kewpa-accent: #60a5fa;
+  
+  --kewps-primary: #10b981; /* Green for Inventory */
+  --kewps-secondary: #34d399;
+  --kewps-accent: #6ee7b7;
+
+  /* Status Colors */
+  --success: #10b981;
+  --warning: #f59e0b;
+  --error: #ef4444;
+  --info: #3b82f6;
+
+  /* Neutral Colors */
+  --gray-50: #f9fafb;
+  --gray-100: #f3f4f6;
+  --gray-200: #e5e7eb;
+  --gray-300: #d1d5db;
+  --gray-400: #9ca3af;
+  --gray-500: #6b7280;
+  --gray-600: #4b5563;
+  --gray-700: #374151;
+  --gray-800: #1f2937;
+  --gray-900: #111827;
+
+  /* Spacing Scale */
+  --space-xs: 0.25rem;
+  --space-sm: 0.5rem;
+  --space-md: 1rem;
+  --space-lg: 1.5rem;
+  --space-xl: 2rem;
+  --space-2xl: 3rem;
+  --space-3xl: 4rem;
+
+  /* Border Radius */
+  --radius-sm: 0.375rem;
+  --radius-md: 0.5rem;
+  --radius-lg: 0.75rem;
+  --radius-xl: 1rem;
+  --radius-2xl: 1.5rem;
+  --radius-full: 9999px;
+
+  /* Typography Scale */
+  --text-xs: 0.75rem;
+  --text-sm: 0.875rem;
+  --text-base: 1rem;
+  --text-lg: 1.125rem;
+  --text-xl: 1.25rem;
+  --text-2xl: 1.5rem;
+  --text-3xl: 1.875rem;
+  --text-4xl: 2.25rem;
+  --text-5xl: 3rem;
+
+  /* Shadows */
+  --shadow-xs: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  --shadow-sm: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+  --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  --shadow-xl: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+  --shadow-2xl: 0 25px 50px -12px rgb(0 0 0 / 0.25);
+
+  /* Glass Effect Variables */
+  --glass-bg: rgba(255, 255, 255, 0.1);
+  --glass-border: rgba(255, 255, 255, 0.18);
+  --glass-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+}
+
+/* Dark Mode Variables */
+.dark {
+  --glass-bg: rgba(17, 25, 40, 0.75);
+  --glass-border: rgba(255, 255, 255, 0.125);
+  --glass-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+
+/* Glass Morphism Components */
+.glass {
+  background: var(--glass-bg);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid var(--glass-border);
+  box-shadow: var(--glass-shadow);
+}
+
+.glass-card {
+  @apply glass;
+  border-radius: var(--radius-xl);
+  padding: var(--space-lg);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.glass-card:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-xl);
+}
+
+/* Modern Card Styles */
+.card-gradient {
+  background: linear-gradient(135deg, var(--primary-50) 0%, var(--secondary-50) 100%);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+  position: relative;
+}
+
+.card-gradient::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, transparent 0%, rgba(255, 255, 255, 0.1) 100%);
+  pointer-events: none;
+}
+
+/* Refined Button Styles */
+.btn-modern {
+  position: relative;
+  padding: var(--space-sm) var(--space-lg);
+  border-radius: var(--radius-md);
+  font-weight: 500;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  overflow: hidden;
+}
+
+.btn-modern::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+  transition: left 0.5s;
+}
+
+.btn-modern:hover::before {
+  left: 100%;
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, var(--primary-500) 0%, var(--primary-600) 100%);
+  color: white;
+  box-shadow: 0 4px 15px 0 rgba(0, 102, 255, 0.3);
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px 0 rgba(0, 102, 255, 0.4);
+}
+
+/* KEW.PA Specific Styles */
+.kewpa-theme {
+  --theme-primary: var(--kewpa-primary);
+  --theme-secondary: var(--kewpa-secondary);
+  --theme-accent: var(--kewpa-accent);
+}
+
+.kewpa-card {
+  background: linear-gradient(135deg, rgba(37, 99, 235, 0.1) 0%, rgba(59, 130, 246, 0.1) 100%);
+  border: 1px solid rgba(37, 99, 235, 0.2);
+}
+
+/* KEW.PS Specific Styles */
+.kewps-theme {
+  --theme-primary: var(--kewps-primary);
+  --theme-secondary: var(--kewps-secondary);
+  --theme-accent: var(--kewps-accent);
+}
+
+.kewps-card {
+  background: linear-gradient(135deg, rgba(16, 185, 129, 0.1) 0%, rgba(52, 211, 153, 0.1) 100%);
+  border: 1px solid rgba(16, 185, 129, 0.2);
+}
+
+/* Modern Table Design */
+.table-modern {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  background: var(--glass-bg);
+  backdrop-filter: blur(10px);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+}
+
+.table-modern thead {
+  background: linear-gradient(135deg, var(--primary-100) 0%, var(--secondary-100) 100%);
+}
+
+.table-modern th {
+  padding: var(--space-md);
+  font-weight: 600;
+  text-align: left;
+  border-bottom: 2px solid var(--primary-200);
+}
+
+.table-modern td {
+  padding: var(--space-md);
+  border-bottom: 1px solid var(--gray-200);
+}
+
+.table-modern tbody tr {
+  transition: all 0.2s ease;
+}
+
+.table-modern tbody tr:hover {
+  background: rgba(0, 102, 255, 0.05);
+  transform: scale(1.01);
+}
+
+/* Form Styles */
+.form-modern {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-lg);
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+}
+
+.form-label {
+  font-weight: 500;
+  color: var(--gray-700);
+  font-size: var(--text-sm);
+}
+
+.form-input {
+  padding: var(--space-sm) var(--space-md);
+  border: 2px solid var(--gray-300);
+  border-radius: var(--radius-md);
+  background: rgba(255, 255, 255, 0.8);
+  transition: all 0.2s ease;
+}
+
+.form-input:focus {
+  outline: none;
+  border-color: var(--primary-500);
+  box-shadow: 0 0 0 3px rgba(0, 102, 255, 0.1);
+}
+
+/* Badge Styles */
+.badge-modern {
+  display: inline-flex;
+  align-items: center;
+  padding: var(--space-xs) var(--space-sm);
+  border-radius: var(--radius-full);
+  font-size: var(--text-xs);
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.badge-success {
+  background: rgba(16, 185, 129, 0.1);
+  color: var(--success);
+  border: 1px solid rgba(16, 185, 129, 0.2);
+}
+
+.badge-warning {
+  background: rgba(245, 158, 11, 0.1);
+  color: var(--warning);
+  border: 1px solid rgba(245, 158, 11, 0.2);
+}
+
+.badge-error {
+  background: rgba(239, 68, 68, 0.1);
+  color: var(--error);
+  border: 1px solid rgba(239, 68, 68, 0.2);
+}
+
+/* Animations */
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.animate-slideIn {
+  animation: slideIn 0.5s ease-out;
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.3s ease-out;
+}
+
+/* Responsive Utilities */
+@media (max-width: 768px) {
+  :root {
+    --space-xs: 0.125rem;
+    --space-sm: 0.25rem;
+    --space-md: 0.5rem;
+    --space-lg: 0.75rem;
+    --space-xl: 1rem;
+    --space-2xl: 1.5rem;
+    --space-3xl: 2rem;
+  }
+  
+  .glass-card {
+    padding: var(--space-md);
+  }
+}
